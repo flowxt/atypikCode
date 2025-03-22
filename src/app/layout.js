@@ -1,26 +1,31 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
+import Navbar from "@/components/global/Navbar";
+import Footer from "@/components/global/Footer";
+
 import "./globals.css";
+import BackgroundEffects from "@/components/global/BackgroundEffects";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Développeur Web en Haute-Savoie | Création de Sites Web",
-  description:
-    "Création de sites web et landing pages professionnels pour auto-entrepreneurs, sociétés et PME en Haute-Savoie. À partir de 800€.",
+  title: {
+    default: "Atypik Code",
+    template: "%s | Atypik Code",
+  },
+  description: "Développement web premium en Haute-Savoie",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body className="bg-gray-900 text-white">{children}</body>
+      <body
+        className={`${inter.className} bg-[#0A0A0F] text-white min-h-screen`}
+      >
+        <BackgroundEffects />
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

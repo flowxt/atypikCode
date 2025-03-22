@@ -1,27 +1,29 @@
-import About from "@/components/About";
-import BackgroundEffects from "@/components/BackgroundEffects";
-import Contact from "@/components/Contact";
-import FAQ from "@/components/FAQ";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero.jsx";
-import Navbar from "@/components/Navbar";
-import Pricing from "@/components/Pricing";
-import Services from "@/components/Service";
-import Testimonials from "@/components/Testimonials";
+import Hero from "@/components/home/Hero";
+
+import Values from "@/components/home/Values";
+import FAQ from "@/components/home/FAQ";
+import CTA from "@/components/global/CTA";
+import ServicesOverview from "@/components/services/ServicesOverview";
+
+export const metadata = {
+  title: "Atypik Code | Développement Web en Haute-Savoie",
+  description:
+    "Création de sites web, landing pages et applications sur mesure pour entreprises et auto-entrepreneurs en Haute-Savoie",
+};
 
 export default function Home() {
   return (
-    <main className="bg-[#0A0A0F] text-white min-h-screen relative overflow-hidden">
-      <BackgroundEffects />
-      <Navbar />
+    <main>
       <Hero />
-      <About />
-      <Services />
-      <Pricing />
-      <Testimonials />
+      <ServicesOverview />
+      <Values />
       <FAQ />
-      <Contact />
-      <Footer />
+      <CTA
+        title="Prêt à donner vie à votre projet ?"
+        description="Discutons de vos besoins et objectifs lors d'un appel de découverte gratuit."
+        buttonText="Réserver un appel"
+        buttonLink="/services#booking"
+      />
     </main>
   );
 }
