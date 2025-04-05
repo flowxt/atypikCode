@@ -1,6 +1,7 @@
 import ServiceDetail from "@/components/services/ServiceDetail";
 import ProcessSteps from "@/components/services/ProcessSteps";
 import CTA from "@/components/global/CTA";
+import BookingCalendar from "@/components/services/BookingCalendar";
 
 export const metadata = {
   title: "Nos Services de Développement Web",
@@ -21,7 +22,7 @@ const services = [
       "Optimisation SEO avancée",
       "Formulaires de capture de leads",
       "Intégration analytics",
-      "Tests A/B",
+      "Suivi mensuel des performances et optimisations régulières",
     ],
     icon: "landing-page-icon",
     processSteps: [
@@ -159,20 +160,8 @@ export default function Services() {
             </p>
           </div>
 
-          {/* Calendly doit être dans un composant client */}
-          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-white/10 shadow-xl">
-            <div className="text-center py-16">
-              <p className="text-gray-300 mb-4">
-                Le calendrier de réservation sera affiché ici
-              </p>
-              <a
-                href="#"
-                className="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg text-white font-medium"
-              >
-                Charger le calendrier
-              </a>
-            </div>
-          </div>
+          {/* Calendly intégré via un composant client */}
+          <BookingCalendar />
         </div>
 
         <div className="mt-32">

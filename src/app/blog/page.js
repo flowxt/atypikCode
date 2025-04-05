@@ -56,7 +56,7 @@ export default function BlogPage() {
   return (
     <main className="container mx-auto px-4 py-24">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 mb-4">
+        <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 mb-4 pb-4">
           Blog
         </h1>
 

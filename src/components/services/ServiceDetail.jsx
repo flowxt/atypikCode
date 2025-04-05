@@ -1,8 +1,16 @@
 "use client"
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function ServiceDetail({ service }) {
+  // Mapping des images par ID de service
+  const serviceImages = {
+    'landing-page': '/image/landing.png',
+    'site-vitrine': '/image/site-vitrine.png',
+    'application': '/image/appli.jpg'
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -11,8 +19,24 @@ export default function ServiceDetail({ service }) {
       transition={{ duration: 0.7 }}
       className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 md:p-10 rounded-2xl border border-white/10 shadow-lg"
     >
-      <div className="flex flex-col md:flex-row gap-10">
-        <div className="md:w-2/3">
+      {/* Image en pleine largeur pour mobile */}
+      <div className="md:hidden mb-8">
+        {serviceImages[service.id] && (
+          <div className="w-full aspect-[16/9] relative overflow-hidden rounded-xl">
+            <Image 
+              src={serviceImages[service.id]} 
+              alt={service.title}
+              fill
+              className="object-cover"
+              sizes="100vw"
+              priority
+            />
+          </div>
+        )}
+      </div>
+      
+      <div className="flex flex-col md:flex-row gap-8">
+        <div className="md:w-1/2">
           <h2 className="text-3xl font-bold mb-4">{service.title}</h2>
           <p className="text-xl text-gray-300 mb-8">{service.description}</p>
           
@@ -33,17 +57,20 @@ export default function ServiceDetail({ service }) {
           </div>
         </div>
         
-        <div className="md:w-1/3">
-          <div className="bg-gray-900/70 p-6 rounded-xl border border-white/10 h-full flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-blue-600 rounded-2xl mx-auto flex items-center justify-center mb-4">
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                </svg>
-              </div>
-              <p className="text-gray-400">Image illustrative</p>
+        {/* Image plus grande pour desktop */}
+        <div className="hidden md:block md:w-1/2">
+          {serviceImages[service.id] && (
+            <div className="w-full h-full aspect-video relative overflow-hidden rounded-xl">
+              <Image 
+                src={serviceImages[service.id]} 
+                alt={service.title}
+                fill
+                className="object-cover object-center"
+                sizes="50vw"
+                priority
+              />
             </div>
-          </div>
+          )}
         </div>
       </div>
     </motion.div>

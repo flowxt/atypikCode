@@ -89,7 +89,7 @@ export default function Services() {
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-purple-400 text-lg">✓</span>
-                <span>Tests A/B pour optimiser constamment les résultats</span>
+                <span>Suivi mensuel des performances et optimisations régulières</span>
               </li>
             </ul>
           </div>
