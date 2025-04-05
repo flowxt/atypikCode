@@ -154,7 +154,7 @@ export default function Services() {
               Réservez un appel gratuit
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Discutons de votre projet lors d'un appel de 30 minutes sans
+              Discutons de votre projet pendant un appel de 30 minutes sans
               engagement
             </p>
           </div>

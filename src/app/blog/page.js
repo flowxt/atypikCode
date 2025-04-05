@@ -94,7 +94,7 @@ export default function BlogPage() {
                     <span className="text-gray-400 text-sm">{post.date}</span>
 
                     <span className="text-purple-400 font-medium flex items-center">
-                      Lire l'article
+                      Lire l&apos;article
                       <svg
                         className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                         fill="none"
