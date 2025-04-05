@@ -9,10 +9,30 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: "Atypik Code",
-    template: "%s | Atypik Code",
+    default: "Atypik Code | Développeur Web & Landing Pages en Haute-Savoie",
+    template: "%s | Atypik Code - Développement Web Premium",
   },
-  description: "Développement web premium en Haute-Savoie",
+  description:
+    "Développeur web freelance en Haute-Savoie spécialisé dans la création de sites web professionnels, landing pages et applications React / Next.js. Transformation digitale pour entreprises et particuliers.",
+  keywords:
+    "développeur web, création site internet, landing page, développeur freelance, Haute-Savoie, React, Next.js, développement web, site responsive, SEO",
+  metadataBase: new URL("https://www.atypikcode.fr"),
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Atypik Code | Développeur Web Premium en Haute-Savoie",
+    description:
+      "Création de sites web professionnels et landing pages optimisés. Solutions digitales sur-mesure pour votre entreprise.",
+    url: "https://www.atypikcode.fr",
+    siteName: "Atypik Code",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {

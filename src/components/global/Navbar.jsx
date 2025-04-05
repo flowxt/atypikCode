@@ -81,7 +81,7 @@ export default function Navbar() {
             className="hidden md:block"
           >
             <Link 
-              href="/contact"
+              href="/services#booking"
               className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-2.5 px-6 rounded-full font-semibold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all hover:scale-105"
             >
               Prendre rendez-vous

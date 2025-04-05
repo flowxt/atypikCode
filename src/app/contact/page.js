@@ -2,9 +2,11 @@ import { Metadata } from "next";
 import ContactForm from "@/components/contact/ContactForm";
 
 export const metadata = {
-  title: "Contact | Atypik Code",
+  title: "Contact | Développeur Web en Haute-Savoie | Atypik Code",
   description:
-    "Contactez Atypik Code pour discuter de votre projet web ou mobile",
+    "Contactez Florian Barjon, développeur web freelance en Haute-Savoie, pour discuter de votre projet de site web, landing page ou application React/Next.js. Demandez un devis gratuit.",
+  keywords:
+    "contact développeur web, devis site internet, freelance Haute-Savoie, création landing page, contact Atypik Code",
 };
 
 export default function ContactPage() {

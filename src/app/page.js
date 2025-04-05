@@ -6,9 +6,14 @@ import CTA from "@/components/global/CTA";
 import ServicesOverview from "@/components/services/ServicesOverview";
 
 export const metadata = {
-  title: "Atypik Code | Développement Web en Haute-Savoie",
+  title: "Développeur Web & Landing Pages en Haute-Savoie | Atypik Code",
   description:
-    "Création de sites web, landing pages et applications sur mesure pour entreprises et auto-entrepreneurs en Haute-Savoie",
+    "Création de sites web professionnels, landing pages et applications sur mesure pour entreprises en Haute-Savoie. Expert en développement React/Next.js, SEO et design responsive.",
+  keywords:
+    "développeur web Haute-Savoie, création site internet, landing page, site vitrine, application web, React, Next.js, SEO, site responsive, Annecy",
+  alternates: {
+    canonical: "https://www.atypikcode.fr",
+  },
 };
 
 export default function Home() {

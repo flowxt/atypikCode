@@ -122,10 +122,10 @@ export default function MobileMenu() {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="fixed inset-0 bg-gray-900/95 backdrop-blur-sm z-40 md:hidden"
+            className="fixed inset-0 bg-gray-900/95 backdrop-blur-sm z-40 md:hidden overflow-y-auto"
           >
-            <div className="flex flex-col h-full justify-center items-center p-8">
-              <nav className="flex flex-col items-center gap-8">
+            <div className="flex flex-col min-h-screen justify-start items-center pt-24 pb-16 px-8">
+              <nav className="flex flex-col items-center gap-8 w-full">
                 {navLinks.map((link, index) => (
                   <motion.div
                     key={index}
@@ -148,7 +148,7 @@ export default function MobileMenu() {
                 className="mt-12"
               >
                 <Link 
-                  href="/contact"
+                  href="/services#booking"
                   onClick={() => setIsOpen(false)}
                   className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 px-8 rounded-full font-semibold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all"
                 >

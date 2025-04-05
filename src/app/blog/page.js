@@ -3,9 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Blog | Atypik Code",
+  title: "Blog | Conseils et Astuces en Développement Web | Atypik Code",
   description:
-    "Articles techniques et conseils de développement web par Atypik Code",
+    "Découvrez nos articles et conseils d'expert sur le développement web, la création de landing pages et l'optimisation SEO. Ressources gratuites pour améliorer votre présence en ligne.",
+  keywords:
+    "blog développement web, astuces création site internet, conseils landing page, optimisation SEO, tutoriels React, Next.js, expérience utilisateur",
 };
 
 // Données simulées des articles de blog

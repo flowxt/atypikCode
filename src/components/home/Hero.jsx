@@ -21,13 +21,13 @@ export default function Hero() {
         
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
-            Sites web premium
-          </span> <br />pour les entreprises <br />qui se démarquent
+            Développeur Web & Landing Pages
+          </span> <br />pour entreprises <br />qui veulent se démarquer
         </h1>
         
         <p className="text-xl text-gray-300 mb-8 max-w-xl">
-          Je crée des sites web et landing pages d'exception pour auto-entrepreneurs, 
-          PME et entreprises en Haute-Savoie et partout en France.
+          Création de sites web professionnels, landing pages optimisées pour le SEO et applications web 
+          performantes pour entreprises en Haute-Savoie et partout en France.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-5">
@@ -62,7 +62,7 @@ export default function Hero() {
         <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-purple-500/20 border border-white/10 backdrop-blur-sm h-[400px] md:h-[600px] w-full group">
           <Image
             src="/image/florian-dev.png"
-            alt="Développeur Web en Haute-Savoie"
+            alt="Florian Barjon - Développeur Web en Haute-Savoie spécialisé dans la création de sites web et landing pages optimisés"
             fill
             style={{ objectFit: 'cover', objectPosition: 'top center' }}
             className="transition-transform duration-700 group-hover:scale-105"
