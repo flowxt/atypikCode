@@ -1,44 +1,61 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  })
+  const nameRef = useRef(null)
+  const emailRef = useRef(null)
+  const subjectRef = useRef(null)
+  const messageRef = useRef(null)
   
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState(null)
-  
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData(prev => ({ ...prev, [name]: value }))
-  }
   
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simuler l'envoi du formulaire (à remplacer par votre API réelle)
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setSubmitStatus('success')
+    // Collecter les données du formulaire directement depuis les refs
+    const formData = {
+      name: nameRef.current.value,
+      email: emailRef.current.value,
+      subject: subjectRef.current.value,
+      message: messageRef.current.value
+    }
+    
+    try {
+      // Appel à l'API Resend
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
       
-      // Réinitialiser le formulaire
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      })
+      if (response.ok) {
+        // Réinitialisation des champs en cas de succès
+        nameRef.current.value = ''
+        emailRef.current.value = ''
+        subjectRef.current.value = ''
+        messageRef.current.value = ''
+        
+        setSubmitStatus('success')
+      } else {
+        console.error('Erreur lors de l\'envoi:', await response.text())
+        setSubmitStatus('error')
+      }
       
-      // Réinitialiser le statut après 5 secondes
+      // Réinitialisation du statut après 5 secondes
       setTimeout(() => setSubmitStatus(null), 5000)
-    }, 1500)
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error)
+      setSubmitStatus('error')
+      setTimeout(() => setSubmitStatus(null), 5000)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
   
   return (
@@ -47,7 +64,7 @@ export default function ContactForm() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7, delay: 0.1 }}
-      className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 md:p-10 rounded-2xl border border-white/10 shadow-lg"
+      className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 md:p-10 rounded-2xl border border-white/10 shadow-lg relative z-10"
     >
       {submitStatus === 'success' ? (
         <div className="bg-green-500/20 border border-green-500/30 rounded-xl p-6 text-center">
@@ -61,54 +78,58 @@ export default function ContactForm() {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className="block mb-2 text-gray-200 font-medium">Nom</label>
+              <label htmlFor="name" className="block mb-2 text-gray-200 font-medium">Nom</label>
               <input 
                 type="text" 
+                id="name"
                 name="name"
-                value={formData.name}
-                onChange={handleChange}
+                ref={nameRef}
                 required
                 className="w-full p-4 bg-gray-700/50 rounded-xl border border-white/5 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 focus:outline-none transition-all"
                 placeholder="Votre nom"
+                style={{ zIndex: 20, position: 'relative' }}
               />
             </div>
             
             <div>
-              <label className="block mb-2 text-gray-200 font-medium">Email</label>
+              <label htmlFor="email" className="block mb-2 text-gray-200 font-medium">Email</label>
               <input 
                 type="email" 
+                id="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
+                ref={emailRef}
                 required
                 className="w-full p-4 bg-gray-700/50 rounded-xl border border-white/5 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 focus:outline-none transition-all"
                 placeholder="Votre email"
+                style={{ zIndex: 20, position: 'relative' }}
               />
             </div>
           </div>
           
           <div>
-            <label className="block mb-2 text-gray-200 font-medium">Sujet</label>
+            <label htmlFor="subject" className="block mb-2 text-gray-200 font-medium">Sujet</label>
             <input 
               type="text" 
+              id="subject"
               name="subject"
-              value={formData.subject}
-              onChange={handleChange}
+              ref={subjectRef}
               required
               className="w-full p-4 bg-gray-700/50 rounded-xl border border-white/5 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 focus:outline-none transition-all"
               placeholder="Sujet de votre message"
+              style={{ zIndex: 20, position: 'relative' }}
             />
           </div>
           
           <div>
-            <label className="block mb-2 text-gray-200 font-medium">Message</label>
+            <label htmlFor="message" className="block mb-2 text-gray-200 font-medium">Message</label>
             <textarea 
+              id="message"
               name="message"
-              value={formData.message}
-              onChange={handleChange}
+              ref={messageRef}
               required
               className="w-full p-4 bg-gray-700/50 rounded-xl border border-white/5 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 focus:outline-none transition-all h-40 resize-none"
               placeholder="Décrivez votre projet..."
+              style={{ zIndex: 20, position: 'relative' }}
             ></textarea>
           </div>
           
