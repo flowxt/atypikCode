@@ -56,7 +56,7 @@ export default function Hero() {
       >
         <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-purple-500/20 border border-white/10 backdrop-blur-sm h-[400px] md:h-[600px] w-full group">
           <Image
-            src="/image/flo1.png"
+            src="/image/florian-dev.png"
             alt="Développeur Web en Haute-Savoie"
             fill
             style={{ objectFit: 'cover', objectPosition: 'top center' }}

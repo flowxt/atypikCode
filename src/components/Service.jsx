@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Services() {
   return (
@@ -37,6 +38,20 @@ export default function Services() {
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
             </svg>
+          </div>
+          
+          <div className="bg-gray-900/70 p-6 rounded-xl border border-white/10 mb-6">
+            <div className="text-center">
+              <div className="relative w-full h-40 mb-4">
+                <Image 
+                  src="/image/landing.png" 
+                  alt="Landing Page" 
+                  fill 
+                  className="object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="text-gray-400">Image illustrative</p>
+            </div>
           </div>
           
           <div className="flex-grow">
@@ -107,6 +122,20 @@ export default function Services() {
             </svg>
           </div>
           
+          <div className="bg-gray-900/70 p-6 rounded-xl border border-white/10 mb-6">
+            <div className="text-center">
+              <div className="relative w-full h-40 mb-4">
+                <Image 
+                  src="/image/site-vitrine.png" 
+                  alt="Site Vitrine" 
+                  fill 
+                  className="object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="text-gray-400">Image illustrative</p>
+            </div>
+          </div>
+          
           <div className="flex-grow">
             <h3 className="text-2xl font-bold mb-4 group-hover:text-blue-300 transition-all">Création de Site Web</h3>
             <p className="text-gray-300 mb-6">
@@ -163,6 +192,90 @@ export default function Services() {
           </div>
         </motion.div>
       </div>
+      
+      {/* Section Application Mobile */}
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.5 }}
+        whileHover={{ y: -5, boxShadow: "0 10px 30px -10px rgba(236, 72, 153, 0.3)" }}
+        className="group relative overflow-hidden bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-10 rounded-2xl border border-white/10 shadow-lg transition-all duration-300 flex flex-col h-full mt-10 max-w-6xl mx-auto"
+      >
+        {/* Icône */}
+        <div className="absolute top-0 right-0 w-40 h-40 bg-pink-600/5 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+        <div className="relative mb-8 w-16 h-16 flex items-center justify-center bg-gradient-to-br from-pink-500 to-pink-700 rounded-2xl shadow-lg shadow-pink-600/20 group-hover:shadow-pink-600/40 transition-all">
+          <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-10">
+          <div className="flex-grow">
+            <h3 className="text-2xl font-bold mb-4 group-hover:text-pink-300 transition-all">Développement d'Application</h3>
+            <p className="text-gray-300 mb-6">
+              Des applications web et mobiles performantes et intuitives qui offrent une expérience utilisateur exceptionnelle et répondent précisément aux besoins de votre activité.
+            </p>
+            
+            <p className="text-gray-300 mb-6">
+              Je développe des applications qui se démarquent par leur ergonomie, leur rapidité et leur fiabilité, en utilisant les technologies les plus adaptées à votre projet.
+            </p>
+            
+            <h4 className="text-lg font-semibold mb-3 text-white">Solutions adaptées à vos besoins</h4>
+            <p className="text-gray-300 mb-6">
+              Que vous ayez besoin d'une application web progressive, d'une application native ou hybride, je vous propose une solution sur mesure qui correspond parfaitement à vos objectifs.
+            </p>
+            
+            <ul className="space-y-3 text-gray-300 mb-8">
+              <li className="flex items-center gap-3">
+                <span className="text-pink-400 text-lg">✓</span>
+                <span>Architecture robuste et évolutive</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-pink-400 text-lg">✓</span>
+                <span>Interface utilisateur intuitive et moderne</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-pink-400 text-lg">✓</span>
+                <span>Optimisation des performances</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-pink-400 text-lg">✓</span>
+                <span>Compatibilité multiplateforme</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-pink-400 text-lg">✓</span>
+                <span>Maintenance et support continus</span>
+              </li>
+            </ul>
+            
+            <div className="flex items-end justify-between mt-auto pt-4 border-t border-white/10">
+              <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-400">
+                À partir de 1800€
+              </p>
+              <div className="group-hover:translate-x-0 translate-x-10 transition-all duration-300 opacity-0 group-hover:opacity-100">
+                <svg className="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-gray-900/70 p-6 rounded-xl border border-white/10 h-full flex items-center justify-center">
+            <div className="text-center">
+              <div className="relative w-full h-60 mb-4">
+                <Image 
+                  src="/image/appli.jpg" 
+                  alt="Application Mobile" 
+                  fill 
+                  className="object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <p className="text-gray-400">Image illustrative</p>
+            </div>
+          </div>
+        </div>
+      </motion.div>
     </section>
   )
 }
