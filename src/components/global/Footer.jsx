@@ -25,7 +25,10 @@ export default function Footer() {
         </div>
         
         <div className="mt-10 pt-10 border-t border-white/5 text-center">
-          <p className="text-gray-500">© 2025 - Tous droits réservés | Créé avec passion en Haute-Savoie</p>
+          <p className="text-gray-500 mb-3">© 2025 - Tous droits réservés | Créé avec passion en Haute-Savoie</p>
+          <a href="https://portfolio-florian-rose.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm text-purple-400 hover:text-purple-300 transition-all">
+            Voir mon portfolio
+          </a>
         </div>
       </div>
     </footer>
