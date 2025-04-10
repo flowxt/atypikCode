@@ -194,7 +194,7 @@ export default function Services() {
 
         <div className="space-y-32">
           {services.map((service) => (
-            <div key={service.id}>
+            <div key={service.id} id={service.id}>
               <ServiceDetail service={service} />
               <div className="mt-16">
                 <ProcessSteps steps={service.processSteps} />

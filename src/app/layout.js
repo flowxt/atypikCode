@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/global/Navbar";
 import Footer from "@/components/global/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import PageTransition from "@/components/global/PageTransition";
 
 import "./globals.css";
 import BackgroundEffects from "@/components/global/BackgroundEffects";
@@ -44,7 +45,7 @@ export default function RootLayout({ children }) {
       >
         <BackgroundEffects />
         <Navbar />
-        {children}
+        <PageTransition>{children}</PageTransition>
         <Footer />
         <Analytics />
       </body>

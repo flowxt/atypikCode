@@ -57,7 +57,7 @@ export default function ServicesOverview() {
             transition={{ duration: 0.5 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            Des solutions qui <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">génèrent des résultats</span>
+            Nos <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">packs</span>
           </motion.h2>
           
           <motion.p 
@@ -67,7 +67,7 @@ export default function ServicesOverview() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            Votre site web n&apos;est pas une dépense, c&apos;est un investissement qui doit vous rapporter des clients et développer votre activité.
+            Un site web qui génère des clients, adapté à votre activité
           </motion.p>
         </div>
         

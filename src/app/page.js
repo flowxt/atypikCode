@@ -23,9 +23,9 @@ export default function Home() {
       <Values />
       <FAQ />
       <CTA
-        title="Prêt à donner vie à votre projet ?"
-        description="Discutons de vos besoins et objectifs lors d'un appel de découverte gratuit."
-        buttonText="Réserver un appel"
+        title="Prêt pour un site qui génère des clients ?"
+        description="Réservez un appel gratuit et sans engagement de 30 minutes"
+        buttonText="Réserver mon appel"
         buttonLink="/services#booking"
       />
     </main>
