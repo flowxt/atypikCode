@@ -25,10 +25,20 @@ export default function Hero() {
           </span> <br />pour entreprises <br />qui veulent se démarquer
         </h1>
         
-        <p className="text-xl text-gray-300 mb-8 max-w-xl">
+        <p className="text-xl text-gray-300 mb-6 max-w-xl">
           Création de sites web professionnels, landing pages optimisées pour le SEO et applications web 
           performantes pour entreprises en Haute-Savoie et partout en France.
         </p>
+
+        <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 px-6 py-4 rounded-xl border border-purple-500/20 mb-8">
+          <h2 className="font-semibold text-white text-lg mb-2">
+            Vous êtes artisan, thérapeute ou indépendant ?
+          </h2>
+          <p className="text-gray-300">
+            Gagnez en visibilité avec un site web clé en main adapté à votre métier et 
+            <span className="text-purple-300 font-medium"> transformez les visiteurs en clients</span>.
+          </p>
+        </div>
         
         <div className="flex flex-col sm:flex-row gap-5">
           <Link href="/services">

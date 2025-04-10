@@ -9,37 +9,40 @@ export default function ServicesOverview() {
   
   const services = [
     {
-      id: 'landing',
+      id: 'pack-essentiel',
       icon: (
         <svg className="w-12 h-12 text-purple-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
         </svg>
       ),
-      title: 'Landing pages',
-      description: 'Des pages d\'atterrissage optimisées pour convertir vos visiteurs en clients.',
-      link: '/services#landing',
+      title: 'Pack Essentiel',
+      description: 'Votre meilleur commercial en ligne qui travaille pour vous 24h/24, même quand vous dormez.',
+      benefit: 'Visibilité immédiate dans votre zone géographique',
+      link: '/services#pack-essentiel',
     },
     {
-      id: 'vitrine',
+      id: 'pack-professionnel',
       icon: (
         <svg className="w-12 h-12 text-purple-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
         </svg>
       ),
-      title: 'Sites vitrines',
-      description: 'Présentez votre activité avec élégance et professionnalisme pour établir votre présence en ligne.',
-      link: '/services#vitrine',
+      title: 'Pack Professionnel',
+      description: 'Transformez vos visiteurs en clients grâce à un site complet et parfaitement optimisé.',
+      benefit: 'Augmentation des demandes de devis et réservations',
+      link: '/services#pack-professionnel',
     },
     {
-      id: 'application',
+      id: 'pack-premium',
       icon: (
         <svg className="w-12 h-12 text-purple-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
         </svg>
       ),
-      title: 'Applications web',
-      description: 'Des applications sur mesure avec des fonctionnalités avancées adaptées à vos besoins spécifiques.',
-      link: '/services#application',
+      title: 'Pack Premium',
+      description: 'Une solution digitale complète pour vous démarquer de la concurrence et générer des leads qualifiés.',
+      benefit: 'Génération continue de nouveaux clients',
+      link: '/services#pack-premium',
     }
   ]
   
@@ -54,7 +57,7 @@ export default function ServicesOverview() {
             transition={{ duration: 0.5 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            Mes <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">services</span>
+            Des solutions qui <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">génèrent des résultats</span>
           </motion.h2>
           
           <motion.p 
@@ -64,8 +67,7 @@ export default function ServicesOverview() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            Des solutions web sur mesure pour concrétiser votre présence en ligne et 
-            atteindre vos objectifs.
+            Votre site web n&apos;est pas une dépense, c&apos;est un investissement qui doit vous rapporter des clients et développer votre activité.
           </motion.p>
         </div>
         
@@ -85,11 +87,16 @@ export default function ServicesOverview() {
               <Link href={service.link}>
                 <div className="h-full bg-gradient-to-br from-gray-800/80 to-gray-900/80 p-8 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all duration-300 shadow-lg hover:shadow-purple-500/10">
                   {service.icon}
-                  <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                  <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
+                  
+                  <div className="bg-gradient-to-r from-purple-500/10 to-blue-500/10 px-3 py-1.5 rounded-lg border border-purple-500/20 inline-block mb-4">
+                    <span className="text-sm font-medium text-purple-300">{service.benefit}</span>
+                  </div>
+                  
                   <p className="text-gray-300 mb-6">{service.description}</p>
                   
                   <div className="flex items-center text-purple-400 font-medium">
-                    En savoir plus
+                    Voir les détails
                     <svg 
                       className={`w-5 h-5 ml-2 transition-transform duration-300 ${hoveredService === service.id ? 'translate-x-1' : ''}`} 
                       fill="none" 
@@ -115,12 +122,9 @@ export default function ServicesOverview() {
         >
           <Link 
             href="/services"
-            className="inline-flex items-center text-purple-400 font-medium hover:text-purple-300 transition-colors"
+            className="inline-block px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg font-medium text-white hover:from-purple-600 hover:to-blue-600 transition duration-300 relative z-20"
           >
-            Voir tous les services
-            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-            </svg>
+            Découvrir tous les packs
           </Link>
         </motion.div>
       </div>

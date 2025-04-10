@@ -1,5 +1,4 @@
 import Hero from "@/components/home/Hero";
-
 import Values from "@/components/home/Values";
 import FAQ from "@/components/home/FAQ";
 import CTA from "@/components/global/CTA";

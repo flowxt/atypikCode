@@ -15,112 +15,149 @@ export const metadata = {
 // Données statiques pour les services (vous pourriez les placer dans un fichier séparé)
 const services = [
   {
-    id: "landing-page",
-    title: "Landing Page",
+    id: "pack-essentiel",
+    title: "Pack Essentiel",
     description:
-      "Une page web optimisée pour convertir vos visiteurs en clients",
-    priceFrom: 800,
+      "Votre vitrine professionnelle en ligne pour attirer vos premiers clients",
+    priceFrom: 600,
+    idealFor: "Artisans, autoentrepreneurs et TPE en démarrage",
+    benefits: [
+      "Visibilité immédiate sur Google dans votre zone géographique",
+      "Contact direct avec vos clients potentiels via formulaire",
+      "Présentation professionnelle de votre activité 24h/24",
+      "Site responsive accessible sur mobile, tablette et ordinateur",
+    ],
     features: [
-      "Design responsive sur mesure",
-      "Optimisation SEO avancée",
-      "Formulaires de capture de leads",
-      "Intégration analytics",
-      "Suivi mensuel des performances et optimisations régulières",
+      "Site vitrine 1 à 3 pages (accueil, services, contact)",
+      "Formulaire de contact optimisé pour les conversions",
+      "Référencement local optimisé pour votre zone d'activité",
+      "Intégration de vos coordonnées et horaires d'ouverture",
+      "Mise en place de Google Business Profile",
     ],
     icon: "landing-page-icon",
+    image: "/image/landing.png",
     processSteps: [
       {
-        title: "Analyse des besoins",
-        description: "Nous définissons ensemble vos objectifs",
+        title: "Découverte",
+        description: "Entretien personnalisé pour comprendre votre activité",
       },
       {
-        title: "Design personnalisé",
-        description: "Création de maquettes adaptées à votre marque",
+        title: "Design adapté",
+        description:
+          "Maquette moderne reflétant l'identité de votre entreprise",
       },
       {
         title: "Développement",
         description:
-          "Codage de votre landing page avec des technologies modernes",
+          "Création de votre site avec des technologies performantes",
       },
       {
-        title: "Tests",
-        description: "Vérification de la compatibilité et des performances",
+        title: "Référencement local",
+        description:
+          "Optimisation pour être visible dans votre zone géographique",
       },
       {
         title: "Mise en ligne",
-        description: "Déploiement et configuration finale",
+        description: "Publication et configuration de votre présence en ligne",
       },
     ],
   },
   {
-    id: "site-vitrine",
-    title: "Site Vitrine",
+    id: "pack-professionnel",
+    title: "Pack Professionnel",
     description:
-      "Un site web complet pour présenter votre entreprise et vos services",
+      "Développez votre clientèle avec un site complet qui convertit vos visiteurs",
     priceFrom: 1200,
+    idealFor: "PME, cabinets libéraux et commerces locaux établis",
+    benefits: [
+      "Augmentation significative de vos demandes de devis et réservations",
+      "Renforcement de votre crédibilité avec des témoignages clients",
+      "Présentation détaillée de vos services et spécialités",
+      "Fidélisation de vos clients grâce à une image professionnelle",
+    ],
     features: [
-      "Design exclusif multi-pages",
-      "Optimisation SEO complète",
-      "Interface d'administration",
-      "Formulaire de contact",
-      "Intégration réseaux sociaux",
+      "Site multi-pages complet (5 à 8 pages personnalisées)",
+      "Système de prise de rendez-vous ou demande de devis en ligne",
+      "Galerie photo et portfolios de vos réalisations",
+      "Témoignages clients pour renforcer votre crédibilité",
+      "Optimisation SEO complète pour un meilleur classement",
+      "Tableau de bord analytics pour suivre vos performances",
     ],
     icon: "site-icon",
+    image: "/image/site-vitrine.png",
     processSteps: [
       {
-        title: "Analyse et stratégie",
-        description: "Définition des objectifs et de la structure",
+        title: "Stratégie personnalisée",
+        description: "Analyse de votre marché et de vos objectifs commerciaux",
       },
       {
-        title: "Conception UX/UI",
-        description: "Création des wireframes et maquettes",
+        title: "Architecture et UX",
+        description:
+          "Structure optimisée pour guider efficacement vos visiteurs",
       },
       {
-        title: "Développement",
-        description: "Création du site avec Next.js et Tailwind",
+        title: "Développement avancé",
+        description: "Création du site avec des fonctionnalités sur mesure",
       },
       {
-        title: "Contenu et SEO",
-        description: "Optimisation pour les moteurs de recherche",
+        title: "Production de contenu",
+        description:
+          "Rédaction optimisée pour convertir et rassurer vos clients",
       },
       {
-        title: "Tests et lancement",
-        description: "Vérification complète et mise en ligne",
+        title: "Formation et lancement",
+        description: "Prise en main et stratégie post-lancement",
       },
     ],
   },
   {
-    id: "application",
-    title: "Application Web",
+    id: "pack-premium",
+    title: "Pack Premium",
     description:
-      "Une application sur mesure pour digitaliser vos processus métier",
-    priceFrom: 3000,
+      "Maximisez votre impact en ligne avec une solution digitale complète",
+    priceFrom: 2500,
+    idealFor:
+      "Entreprises en croissance ayant besoin d'une présence digitale avancée",
+    benefits: [
+      "Génération continue de leads qualifiés grâce au contenu régulier",
+      "Automatisation de vos processus de vente et réservation",
+      "Image de marque premium qui vous démarque de la concurrence",
+      "Suivi personnalisé pour adapter votre stratégie en continu",
+    ],
     features: [
-      "Développement sur mesure",
-      "Interface utilisateur intuitive",
-      "Panneau d'administration",
-      "Intégrations API tierces",
-      "Sécurité renforcée",
+      "Site web premium avec fonctionnalités avancées",
+      "Blog intégré avec calendrier éditorial sur 3 mois",
+      "Système de réservation/paiement en ligne si nécessaire",
+      "Espace client ou fonctionnalités métier personnalisées",
+      "Stratégie de contenu optimisée pour le référencement",
+      "Accompagnement mensuel et ajustements stratégiques",
     ],
     icon: "app-icon",
+    image: "/image/appli.jpg",
     processSteps: [
       {
-        title: "Spécifications",
-        description: "Définition détaillée des fonctionnalités",
+        title: "Workshop stratégique",
+        description:
+          "Session approfondie pour définir votre stratégie digitale globale",
       },
       {
-        title: "Architecture",
-        description: "Conception de la structure technique",
+        title: "Architecture sur mesure",
+        description: "Conception d'un système adapté à vos processus métier",
       },
       {
-        title: "Développement",
-        description: "Programmation des fonctionnalités",
+        title: "Développement personnalisé",
+        description:
+          "Programmation de fonctionnalités spécifiques à votre activité",
       },
       {
-        title: "Tests rigoureux",
-        description: "Vérification de chaque aspect",
+        title: "Stratégie de contenu",
+        description: "Création d'un plan de contenu SEO optimisé",
       },
-      { title: "Déploiement", description: "Mise en production et formation" },
+      {
+        title: "Formation et suivi",
+        description:
+          "Accompagnement continu pour maximiser votre retour sur investissement",
+      },
     ],
   },
 ];
@@ -132,13 +169,27 @@ export default function Services() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
-              Nos Services
+              Des Solutions Web Qui Génèrent des Résultats
             </span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Des solutions digitales sur mesure pour répondre à vos objectifs
-            commerciaux
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            Votre site web doit être bien plus qu&apos;une simple présence en
+            ligne - il doit être votre meilleur commercial, travaillant pour
+            vous 24h/24.
           </p>
+          <div className="bg-gradient-to-br from-gray-800/70 to-gray-900/70 p-6 rounded-xl border border-white/10 max-w-2xl mx-auto">
+            <p className="text-white">
+              Chaque formule inclut une{" "}
+              <strong className="text-purple-300">
+                stratégie personnalisée
+              </strong>{" "}
+              pour votre activité, un{" "}
+              <strong className="text-purple-300">design moderne</strong> adapté
+              à votre marque, et une{" "}
+              <strong className="text-purple-300">optimisation SEO</strong> pour
+              être visible par vos clients potentiels.
+            </p>
+          </div>
         </div>
 
         <div className="space-y-32">
@@ -155,12 +206,19 @@ export default function Services() {
         <div id="booking" className="mt-32">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Réservez un appel gratuit
+              Discutons de votre projet
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Discutons de votre projet pendant un appel de 30 minutes sans
-              engagement
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
+              Réservez un appel découverte gratuit de 30 minutes pour parler de
+              vos objectifs et recevoir des conseils personnalisés
             </p>
+            <div className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 p-5 rounded-xl border border-purple-500/20 max-w-2xl mx-auto">
+              <p className="text-white text-sm">
+                Pendant cet appel, nous évaluerons vos besoins, discuterons des
+                solutions possibles et vous recevrez des recommandations
+                concrètes - même si vous décidez de ne pas travailler avec moi.
+              </p>
+            </div>
           </div>
 
           {/* Calendly intégré via un composant client */}
