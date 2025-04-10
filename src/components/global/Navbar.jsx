@@ -28,6 +28,7 @@ export default function Navbar() {
   const navLinks = [
     { text: 'Accueil', href: '/' },
     { text: 'Services', href: '/services' },
+    { text: 'Informatique', href: '/informatique' },
     { text: 'Blog', href: '/blog' },
     { text: 'Contact', href: '/contact' },
   ]
