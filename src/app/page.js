@@ -3,6 +3,7 @@ import Values from "@/components/home/Values";
 import FAQ from "@/components/home/FAQ";
 import CTA from "@/components/global/CTA";
 import ServicesOverview from "@/components/services/ServicesOverview";
+import Testimonials from "@/components/Testimonials";
 
 export const metadata = {
   title: "Développeur Web & Landing Pages en Haute-Savoie | Atypik Code",
@@ -21,6 +22,7 @@ export default function Home() {
       <Hero />
       <ServicesOverview />
       <Values />
+      <Testimonials />
       <FAQ />
       <CTA
         title="Prêt pour un site qui génère des clients ?"
