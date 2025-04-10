@@ -52,8 +52,7 @@ export default function Footer() {
             <a href="https://portfolio-florian-rose.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm text-purple-400 hover:text-purple-300 transition-all">
               Voir mon portfolio
             </a>
-            <span className="hidden sm:inline text-gray-600">|</span>
-            <a href="/sitemap.xml" className="text-sm text-gray-500 hover:text-gray-400 transition-all">Sitemap</a>
+           
           </div>
           <p className="text-xs text-gray-600 mt-3">
             Création de site web et Landing page en Haute-Savoie, Annecy, Annemasse et toute la France
