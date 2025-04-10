@@ -34,7 +34,7 @@ export default function Navbar() {
   ]
   
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-3 bg-gray-900/90 backdrop-blur-lg shadow-lg' : 'py-5 bg-transparent'}`}>
+    <header className={`fixed w-full z-[110] transition-all duration-300 ${scrolled ? 'py-3 bg-gray-900/90 backdrop-blur-lg shadow-lg' : 'py-5 bg-transparent'}`}>
       <div className="container mx-auto px-4">
         <nav className="flex justify-between items-center">
           {/* Logo */}

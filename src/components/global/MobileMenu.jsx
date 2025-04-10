@@ -23,12 +23,21 @@ export default function MobileMenu() {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'
+      document.body.style.height = '100%'
+      document.documentElement.style.overflow = 'hidden'
+      document.documentElement.style.height = '100%'
     } else {
-      document.body.style.overflow = 'unset'
+      document.body.style.overflow = ''
+      document.body.style.height = ''
+      document.documentElement.style.overflow = ''
+      document.documentElement.style.height = ''
     }
     
     return () => {
-      document.body.style.overflow = 'unset'
+      document.body.style.overflow = ''
+      document.body.style.height = ''
+      document.documentElement.style.overflow = ''
+      document.documentElement.style.height = ''
     }
   }, [isOpen])
   
@@ -52,7 +61,6 @@ export default function MobileMenu() {
   const menuVariants = {
     closed: {
       opacity: 0,
-      x: '100%',
       transition: {
         type: 'tween',
         duration: 0.3,
@@ -63,7 +71,6 @@ export default function MobileMenu() {
     },
     open: {
       opacity: 1,
-      x: 0,
       transition: {
         type: 'tween',
         duration: 0.3,
@@ -74,8 +81,8 @@ export default function MobileMenu() {
   }
   
   const itemVariants = {
-    closed: { opacity: 0, x: 30 },
-    open: { opacity: 1, x: 0 }
+    closed: { opacity: 0, y: 10 },
+    open: { opacity: 1, y: 0 }
   }
   
   // Liens de navigation
@@ -123,7 +130,8 @@ export default function MobileMenu() {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="fixed inset-0 bg-gray-900/95 backdrop-blur-sm z-40 md:hidden overflow-y-auto"
+            className="fixed inset-0 top-0 left-0 right-0 bottom-0 bg-gray-900/95 backdrop-blur-sm z-[100] md:hidden overflow-y-auto"
+            style={{ position: 'fixed', height: '100vh', width: '100vw' }}
           >
             <div className="flex flex-col min-h-screen justify-start items-center pt-24 pb-16 px-8">
               <nav className="flex flex-col items-center gap-8 w-full">
