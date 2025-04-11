@@ -48,7 +48,7 @@ const blogPosts = [
     title: "Créer des animations fluides avec Framer Motion",
     excerpt:
       "Guide complet sur l'utilisation de Framer Motion pour ajouter des animations professionnelles à votre site React.",
-    date: "15 Avril 2023",
+    date: "5 Avril 2025",
     image: "/image/blog/framer.png",
     category: "Animation",
     slug: "animations-framer-motion",
@@ -58,7 +58,7 @@ const blogPosts = [
     title: "Déployer votre site Next.js sur Vercel",
     excerpt:
       "Comment configurer et déployer votre application Next.js sur la plateforme Vercel en quelques étapes simples.",
-    date: "2 Avril 2023",
+    date: "2 Avril 2025",
     image: "/image/blog/vercel.jpeg",
     category: "Déploiement",
     slug: "deployer-nextjs-vercel",
