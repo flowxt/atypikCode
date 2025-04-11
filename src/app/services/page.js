@@ -5,11 +5,14 @@ import BookingCalendar from "@/components/services/BookingCalendar";
 
 export const metadata = {
   title:
-    "Services de Développement Web en Haute-Savoie | Landing Pages & Sites Web | Atypik Code",
+    "Développement Web en Haute-Savoie | Sites & Landing Pages | Atypik Code",
   description:
-    "Création de sites web professionnels, landing pages optimisées et applications React/Next.js sur mesure. Services de développement web en Haute-Savoie et à distance pour entreprises et startups.",
+    "Création de sites web professionnels et landing pages en Haute-Savoie. SEO et design responsive. Solutions sur mesure pour entreprises.",
   keywords:
-    "développeur web Haute-Savoie, création site internet, landing page optimisée, développement Next.js, React, sites web professionnels, Annecy, 74800",
+    "développement web Haute-Savoie, création site internet, landing page, site vitrine, application web, SEO, site responsive, Annecy",
+  alternates: {
+    canonical: "https://www.atypikcode.fr/services",
+  },
 };
 
 // Données statiques pour les services (vous pourriez les placer dans un fichier séparé)

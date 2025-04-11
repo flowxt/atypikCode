@@ -643,6 +643,9 @@ export async function generateMetadata({ params }) {
     title: `${post.title} | Blog Atypik Code`,
     description: post.excerpt,
     keywords: `développement web, ${post.category.toLowerCase()}, blog tech, Atypik Code, ${post.slug.replace(/-/g, ", ")}`,
+    alternates: {
+      canonical: `https://www.atypikcode.fr/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
