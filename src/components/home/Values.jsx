@@ -90,12 +90,10 @@ export default function Values() {
           {values.map((value, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "0px 0px -150px 0px" }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ 
-                duration: 0.5,
-                ease: "easeOut",
+                duration: 0.3,
               }}
               className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all duration-300 shadow-lg hover:shadow-purple-500/10"
             >
