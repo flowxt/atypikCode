@@ -523,107 +523,88 @@ export default function App({ Component, pageProps }) {
     `,
   },
   {
-    id: 5,
+    id: 6,
     title:
-      "Pourquoi un site vitrine est indispensable pour votre activité en 2025",
+      "Pourquoi les indépendants ont besoin d'un site web professionnel en 2025",
     excerpt:
-      "Découvrez comment un site vitrine bien optimisé peut transformer votre visibilité en ligne et devenir votre meilleur commercial 24h/24.",
-    date: "6 avril 2025",
-    image: "/image/site-vitrine.png",
-    category: "Marketing Digital",
-    slug: "importance-site-vitrine-seo",
+      "Découvrez pourquoi posséder un site web est devenu indispensable pour les artisans, thérapeutes et autres indépendants qui veulent se démarquer et attirer des clients locaux.",
+    date: "12 avril 2025",
+    image: "/image/entrepreneur.jpg",
+    category: "Stratégie Web",
+    slug: "pourquoi-site-web-independants-2025",
     content: `
-      <h2>L'importance d'un site vitrine à l'ère numérique</h2>
-      <p>En 2025, avoir une présence en ligne n'est plus optionnel pour les entreprises - c'est une nécessité absolue. Un site vitrine bien conçu et optimisé est aujourd'hui l'équivalent d'une devanture premium sur l'avenue la plus fréquentée du monde digital. Mais contrairement à une boutique physique, votre site vitrine ne ferme jamais ses portes et accueille des visiteurs du monde entier, 24 heures sur 24.</p>
+      <h1>Pourquoi les indépendants ont besoin d'un site web professionnel en 2025 (artisans, thérapeutes, food trucks…)</h1>
       
-      <h2>Votre site vitrine : votre commercial le plus performant</h2>
-      <p>Imaginez disposer d'un commercial infatigable, qui travaille sans relâche, ne prend jamais de congés, et présente parfaitement votre activité à chaque prospect potentiel. <strong>Votre commercial le plus efficace, c'est votre site vitrine.</strong> Il communique votre proposition de valeur, met en avant vos réalisations et convertit les visiteurs en clients potentiels pendant que vous dormez.</p>
+      <p>À l'ère du numérique, posséder simplement une page Facebook ou un compte Instagram ne suffit plus pour se démarquer en tant qu'indépendant. Les consommateurs d'aujourd'hui recherchent activement des services locaux via Google, et un site web professionnel est devenu la pierre angulaire d'une présence en ligne crédible. Que vous soyez artisan, thérapeute, restaurateur ambulant ou tout autre travailleur indépendant, un site web bien conçu représente l'investissement le plus rentable pour votre visibilité et votre crédibilité en 2025.</p>
       
-      <p>Contrairement aux idées reçues, un site vitrine n'est pas simplement une brochure numérique statique. C'est un outil marketing dynamique qui :</p>
+      <h2>1. Un site web = votre carte de visite disponible 24h/24</h2>
+      
+      <p>Contrairement aux réseaux sociaux où votre contenu est rapidement noyé dans un flux incessant, votre site web reste accessible à tout moment. C'est votre vitrine permanente qui travaille pour vous pendant que vous dormez.</p>
+      
+      <p>Un site professionnel vous permet de :</p>
       <ul>
-        <li>Établit votre crédibilité professionnelle</li>
-        <li>Renforce votre image de marque</li>
-        <li>Génère des leads qualifiés</li>
-        <li>Élargit votre portée géographique</li>
-        <li>Vous différencie de la concurrence</li>
+        <li>Présenter clairement vos services, tarifs et disponibilités</li>
+        <li>Montrer votre travail à travers un portfolio ou une galerie</li>
+        <li>Offrir un premier contact professionnel qui inspire confiance</li>
+        <li>Être trouvable par des clients potentiels à toute heure</li>
       </ul>
       
-      <h2>Le SEO : le carburant de votre visibilité en ligne</h2>
-      <p>Disposer d'un site vitrine est une première étape cruciale, mais sans une stratégie SEO efficace, c'est comme avoir une boutique dans une ruelle déserte. L'optimisation pour les moteurs de recherche (SEO) est ce qui permet à votre site d'être visible par les personnes qui recherchent activement vos produits ou services.</p>
+      <p>Selon une étude récente, 78% des consommateurs recherchent des informations en ligne avant de contacter un professionnel local. Sans site web, vous êtes tout simplement invisible pour cette clientèle.</p>
       
-      <h3>Les piliers d'un SEO performant en 2025</h3>
-      <ol>
-        <li><strong>Contenu de qualité et pertinent</strong> - Les moteurs de recherche privilégient désormais le contenu qui répond précisément aux intentions des utilisateurs</li>
-        <li><strong>Expérience utilisateur optimale</strong> - La vitesse de chargement, la navigation intuitive et l'adaptation mobile sont des facteurs de classement déterminants</li>
-        <li><strong>Backlinks de qualité</strong> - Les liens provenant de sites autoritaires dans votre secteur renforcent votre crédibilité</li>
-        <li><strong>Référencement local</strong> - Particulièrement crucial pour les entreprises ayant une présence physique</li>
-        <li><strong>Optimisation technique</strong> - Structure du site, balisage schema.org et sécurité HTTPS sont incontournables</li>
-      </ol>
+      <h2>2. Être visible sur Google, pas juste sur Instagram</h2>
       
-      <h2>Mesurer le retour sur investissement de votre site vitrine</h2>
-      <p>Un des grands avantages d'un site vitrine par rapport aux méthodes marketing traditionnelles est la possibilité de mesurer précisément son efficacité. Voici quelques métriques clés à surveiller :</p>
+      <p>Si les réseaux sociaux sont excellents pour fidéliser une communauté, c'est Google qui vous apporte les nouveaux clients qui cherchent activement vos services.</p>
       
-      <table>
-        <tr>
-          <th>Métrique</th>
-          <th>Ce qu'elle mesure</th>
-          <th>Pourquoi c'est important</th>
-        </tr>
-        <tr>
-          <td>Trafic organique</td>
-          <td>Nombre de visiteurs provenant des moteurs de recherche</td>
-          <td>Indique l'efficacité de votre stratégie SEO</td>
-        </tr>
-        <tr>
-          <td>Taux de conversion</td>
-          <td>Pourcentage de visiteurs qui effectuent une action souhaitée</td>
-          <td>Mesure l'efficacité de votre site à transformer les visiteurs en prospects</td>
-        </tr>
-        <tr>
-          <td>Taux de rebond</td>
-          <td>Pourcentage de visiteurs qui quittent votre site après avoir vu une seule page</td>
-          <td>Indique la pertinence et l'engagement de votre contenu</td>
-        </tr>
-        <tr>
-          <td>Positions des mots-clés</td>
-          <td>Classement de votre site pour des termes spécifiques</td>
-          <td>Montre votre visibilité pour des recherches importantes</td>
-        </tr>
-      </table>
-      
-      <h2>Études de cas : quand le site vitrine devient générateur de croissance</h2>
-      
-      <h3>PME locale multiplie son chiffre d'affaires par 3</h3>
-      <p>Une entreprise de services locaux a investi dans un site vitrine optimisé avec une stratégie SEO locale. En 18 mois, leur visibilité en ligne a généré suffisamment de nouveaux clients pour tripler leur chiffre d'affaires, sans augmenter leur budget marketing global.</p>
-      
-      <h3>Artisan étend sa zone de chalandise</h3>
-      <p>Un artisan traditionnellement limité à sa ville a pu, grâce à son site vitrine, attirer des clients dans un rayon de 50km. Son portefeuille de clients s'est diversifié et son activité est désormais moins dépendante des fluctuations économiques locales.</p>
-      
-      <h2>Les erreurs à éviter pour votre site vitrine</h2>
-      <p>Même en 2025, de nombreuses entreprises commettent des erreurs qui limitent l'efficacité de leur site vitrine :</p>
+      <p>Le référencement local (SEO local) est particulièrement puissant pour les indépendants :</p>
       <ul>
-        <li>Négliger l'expérience mobile, alors que plus de 70% des recherches sont effectuées sur smartphone</li>
-        <li>Publier du contenu générique qui ne démontre pas votre expertise unique</li>
-        <li>Ignorer les analyses de performance et ne pas ajuster la stratégie en conséquence</li>
-        <li>Sous-estimer l'importance des appels à l'action clairs et stratégiquement placés</li>
-        <li>Créer un site et l'abandonner sans mises à jour régulières</li>
+        <li>"Plombier Annecy", "Massage thérapeutique Annemasse", "Food truck Thonon" - ces recherches locales sont effectuées par des personnes prêtes à passer à l'action</li>
+        <li>97% des utilisateurs recherchent des entreprises locales en ligne</li>
+        <li>Un site bien référencé vous place directement devant des clients qualifiés de votre région</li>
       </ul>
       
-      <h2>Comment démarrer ou améliorer votre site vitrine</h2>
-      <p>Si vous n'avez pas encore de site vitrine ou si le vôtre nécessite une refonte, voici les étapes essentielles :</p>
-      <ol>
-        <li><strong>Définissez clairement vos objectifs</strong> - Génération de leads, renforcement de marque, vente en ligne...</li>
-        <li><strong>Identifiez votre public cible</strong> - Leurs besoins, problématiques et comportements de recherche</li>
-        <li><strong>Choisissez une technologie adaptée</strong> - WordPress, Webflow ou des frameworks comme Next.js offrent d'excellentes performances</li>
-        <li><strong>Créez un contenu qui démontre votre expertise</strong> - Articles de blog, études de cas, témoignages clients</li>
-        <li><strong>Optimisez techniquement votre site</strong> - Vitesse, structure, sécurité</li>
-        <li><strong>Mettez en place une stratégie de suivi et d'amélioration continue</strong> - Le SEO est un marathon, pas un sprint</li>
-      </ol>
+      <div class="bg-blue-700 p-4 rounded-lg my-6">
+        <p class="font-bold">À savoir :</p>
+        <p>70% des consommateurs consultent Google avant de contacter un professionnel, et 88% font confiance aux avis en ligne autant qu'aux recommandations personnelles.</p>
+      </div>
       
-      <h2>Conclusion</h2>
-      <p>Un site vitrine optimisé n'est plus un luxe marketing mais une infrastructure commerciale essentielle. Il constitue le pilier central de votre présence numérique et souvent le premier point de contact avec vos futurs clients. En 2025, les entreprises qui négligent cet aspect se privent non seulement de visibilité, mais aussi d'un outil de conversion disponible 24h/24.</p>
+      <h2>3. Rassurer avec du contenu professionnel</h2>
       
-      <p>Souvenez-vous : <strong>votre site vitrine est votre meilleur commercial. Il ne dort jamais, ne prend jamais de vacances, et avec une optimisation SEO adéquate, travaille constamment à attirer les clients qui cherchent exactement ce que vous proposez.</strong> C'est l'investissement marketing avec potentiellement le meilleur retour sur investissement pour votre activité.</p>
+      <p>Votre site web est souvent le premier point de contact avec vos futurs clients. C'est l'occasion de créer une première impression mémorable et rassurante.</p>
+      
+      <p>Un site efficace doit inclure :</p>
+      <ul>
+        <li>Une présentation claire de qui vous êtes et de votre parcours</li>
+        <li>Des tarifs transparents ou une fourchette de prix</li>
+        <li>Des témoignages clients vérifiés qui renforcent votre crédibilité</li>
+        <li>Un formulaire de contact ou un système de réservation en ligne</li>
+        <li>Des réponses aux questions fréquentes pour lever les freins</li>
+      </ul>
+      
+      <p>Ces éléments créent immédiatement un sentiment de confiance et diminuent le temps nécessaire pour convaincre un prospect. Un client rassuré est un client qui franchit plus facilement le pas.</p>
+      
+      <h2>4. Se démarquer de la concurrence</h2>
+      
+      <p>Malgré l'importance croissante du web, de nombreux indépendants n'ont toujours pas de site professionnel, ou se contentent d'une présence sommaire sur des plateformes tierces.</p>
+      
+      <p>Cette situation représente une opportunité exceptionnelle :</p>
+      <ul>
+        <li>Vous pouvez facilement vous démarquer avec un site de qualité dans votre secteur</li>
+        <li>Un site bien conçu vous positionne comme un professionnel sérieux et techniquement à jour</li>
+        <li>Vous contrôlez entièrement votre image et votre message, contrairement aux plateformes externes</li>
+        <li>Vous créez un actif numérique durable qui prend de la valeur avec le temps</li>
+      </ul>
+      
+      <p>Dans un marché où la différenciation est cruciale, votre site web peut devenir votre meilleur argument de vente et votre commercial le plus efficace.</p>
+      
+      <h2>Conclusion : un investissement rentable et nécessaire</h2>
+      
+      <p>En 2025, un site web n'est plus un luxe pour les indépendants, mais une nécessité. C'est un investissement qui rapporte quotidiennement, vous permet d'être trouvé par des clients qualifiés, et renforce votre image professionnelle.</p>
+      
+      <p>Contrairement aux idées reçues, créer un site web professionnel n'est plus nécessairement coûteux ou complexe. Des solutions adaptées aux indépendants permettent d'obtenir un site performant, optimisé pour le référencement local, et parfaitement aligné avec votre image de marque.</p>
+      
+      <p>Chez Atypik Code, je crée des sites sur mesure pour les indépendants à des prix accessibles. Chaque projet est pensé pour maximiser votre visibilité locale et transformer les visiteurs en clients.</p>
+      
+      <p>Vous souhaitez discuter de votre projet de site web ? <a href="/services#booking" class="text-blue-400 hover:underline">Réservez un appel gratuit de 30 minutes</a> et découvrons ensemble comment booster votre présence en ligne.</p>
     `,
   },
 ];

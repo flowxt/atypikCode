@@ -13,6 +13,17 @@ export const metadata = {
 // Données simulées des articles de blog
 const blogPosts = [
   {
+    id: 6,
+    title:
+      "Pourquoi les indépendants ont besoin d'un site web professionnel en 2025",
+    excerpt:
+      "Découvrez pourquoi posséder un site web est devenu indispensable pour les artisans, thérapeutes et autres indépendants qui veulent se démarquer et attirer des clients locaux.",
+    date: "12 avril 2025",
+    image: "/image/artisan.jpg",
+    category: "Stratégie Web",
+    slug: "pourquoi-site-web-independants-2025",
+  },
+  {
     id: 5,
     title:
       "Pourquoi un site vitrine est indispensable pour votre activité en 2025",
