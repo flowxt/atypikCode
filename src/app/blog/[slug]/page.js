@@ -562,9 +562,9 @@ export default function App({ Component, pageProps }) {
         <li>Un site bien référencé vous place directement devant des clients qualifiés de votre région</li>
       </ul>
       
-      <div class="bg-blue-700 p-4 rounded-lg my-6">
-        <p class="font-bold">À savoir :</p>
-        <p>70% des consommateurs consultent Google avant de contacter un professionnel, et 88% font confiance aux avis en ligne autant qu'aux recommandations personnelles.</p>
+      <div class="bg-blue-600/20 p-4 border border-blue-500/30 rounded-lg my-6">
+        <p class="font-bold text-blue-100">À savoir :</p>
+        <p class="text-gray-300">70% des consommateurs consultent Google avant de contacter un professionnel, et 88% font confiance aux avis en ligne autant qu'aux recommandations personnelles.</p>
       </div>
       
       <h2>3. Rassurer avec du contenu professionnel</h2>
