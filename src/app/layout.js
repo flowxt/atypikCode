@@ -17,7 +17,7 @@ export const metadata = {
   description:
     "Développeur web freelance en Haute-Savoie spécialisé dans la création de sites web professionnels, landing pages et applications React / Next.js. Transformation digitale pour entreprises et particuliers.",
   keywords:
-    "développeur web, création site internet, landing page, développeur freelance, Haute-Savoie, React, Next.js, développement web, site responsive, SEO",
+    "développeur web Annecy, création site internet Haute-Savoie, landing page optimisée, refonte site web, expert React Next.js, site e-commerce Annemasse, développement web Thonon, webdesign Chamonix, site responsive, applications web sur mesure, SEO local, agence digitale Haute-Savoie, site vitrine professionnel, intégration WordPress",
   metadataBase: new URL("https://www.atypikcode.fr"),
   alternates: {
     canonical: "/",
