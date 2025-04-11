@@ -1,10 +1,46 @@
 "use client"
 
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+  const sliderRef = useRef(null);
+  
+  // Gestion du swipe
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+  
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+  
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 75) {
+      // Swipe gauche - témoignage suivant
+      handleNext();
+    }
+    
+    if (touchStart - touchEnd < -75) {
+      // Swipe droite - témoignage précédent
+      handlePrev();
+    }
+  };
+  
+  const handleNext = () => {
+    if (activeIndex < testimonials.length - 1) {
+      setActiveIndex(activeIndex + 1);
+    }
+  };
+  
+  const handlePrev = () => {
+    if (activeIndex > 0) {
+      setActiveIndex(activeIndex - 1);
+    }
+  };
   
   const testimonials = [
     {
@@ -53,7 +89,14 @@ export default function Testimonials() {
       </motion.div>
       
       <div className="max-w-4xl mx-auto mb-16">
-        <div className="relative overflow-hidden" style={{ minHeight: '250px' }}>
+        <div 
+          ref={sliderRef}
+          className="relative overflow-hidden" 
+          style={{ minHeight: '250px' }}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           <div 
             className="transition-all duration-500 ease-in-out flex"
             style={{ transform: `translateX(-${activeIndex * 100}%)` }}
