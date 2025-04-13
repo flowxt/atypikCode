@@ -13,6 +13,17 @@ export const metadata = {
 // Données simulées des articles de blog
 const blogPosts = [
   {
+    id: 7,
+    title:
+      "Pourquoi votre site Wix ne vous apporte pas de clients (et comment y remédier)",
+    excerpt:
+      "Découvrez pourquoi de nombreux artisans et indépendants n'obtiennent pas de résultats avec leur site Wix et comment un site professionnel optimisé peut transformer votre visibilité en ligne.",
+    date: "15 avril 2025",
+    image: "/image/wix.png",
+    category: "SEO",
+    slug: "limites-wix-pourquoi-investir-site-professionnel",
+  },
+  {
     id: 6,
     title:
       "Pourquoi les indépendants ont besoin d'un site web professionnel en 2025",
