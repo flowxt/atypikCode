@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "Création de sites web professionnels et landing pages en Haute-Savoie. SEO et design responsive. Solutions sur mesure pour entreprises.",
   keywords:
-    "développement web Haute-Savoie, création site internet, landing page, site vitrine, application web, SEO, site responsive, Annecy",
+    "développement web Haute-Savoie, création site internet, landing page, site vitrine, application web, SEO, site responsive, Annecy, haute-savoie",
   alternates: {
     canonical: "https://www.atypikcode.fr/services",
   },
