@@ -47,7 +47,7 @@ export default function ServicesOverview() {
   ]
   
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-900/0 to-gray-900/50">
+    <section className="py-24 mt-24 md:mt-32 bg-gradient-to-b from-gray-900/0 to-gray-900/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2 
@@ -55,9 +55,9 @@ export default function ServicesOverview() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl font-bold mb-6"
+            className="text-5xl md:text-6xl font-bold mb-6"
           >
-            Nos <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">packs</span>
+            <span className="text-white">Nos</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">packs</span>
           </motion.h2>
           
           <motion.p 
