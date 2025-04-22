@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { BlogHero } from "@/components/blog/BlogHero";
 
 export const metadata = {
   title: "Blog | Conseils et Astuces en Développement Web | Atypik Code",
@@ -89,51 +90,54 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <main className="container mx-auto px-4 py-24">
-      <div className="max-w-5xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 mb-4 pb-4">
-          Blog
-        </h1>
+    <main className="bg-gray-950">
+      <BlogHero />
 
-        <p className="text-xl text-gray-300 mb-16">
-          Découvrez mes articles et conseils sur le développement web, les
-          technologies et les bonnes pratiques.
-        </p>
+      {/* Section de contenu avec fond différent et superposition pour séparer nettement du hero */}
+      <div className="relative bg-gradient-to-b from-gray-950 to-black mt-[-50px] pt-24 pb-24">
+        {/* Effet de séparation */}
+        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black/0 to-gray-950"></div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {blogPosts.map((post) => (
-            <div key={post.id} className="relative">
-              <Link
-                href={`/blog/${post.slug}`}
-                className="absolute inset-0 z-10"
-                aria-label={`Lire l'article : ${post.title}`}
-              />
-              <article className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all duration-300 shadow-lg overflow-hidden h-full flex flex-col group">
-                <div className="relative w-full h-56">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
-                    style={{ objectFit: "cover" }}
-                    className="transition-transform duration-500 hover:scale-105"
+        <div className="container mx-auto px-4 pt-20 md:pt-28">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              {blogPosts.map((post) => (
+                <div key={post.id} className="relative">
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="absolute inset-0 z-10"
+                    aria-label={`Lire l'article : ${post.title}`}
                   />
+                  <article className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all duration-300 shadow-lg overflow-hidden h-full flex flex-col group">
+                    <div className="relative w-full h-56">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        style={{ objectFit: "cover" }}
+                        className="transition-transform duration-500 hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-6 flex-grow">
+                      <span className="inline-block px-3 py-1 rounded-full bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 text-sm font-medium text-purple-300 mb-3">
+                        {post.category}
+                      </span>
+                      <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
+                      <p className="text-gray-400 mb-4">{post.excerpt}</p>
+                      <div className="flex justify-between items-center mt-auto pt-4 border-t border-white/5">
+                        <span className="text-gray-500 text-sm">
+                          {post.date}
+                        </span>
+                        <span className="text-purple-400 font-medium group-hover:underline group-hover:translate-x-1 inline-block transition-all duration-200">
+                          Lire l&apos;article →
+                        </span>
+                      </div>
+                    </div>
+                  </article>
                 </div>
-                <div className="p-6 flex-grow">
-                  <span className="inline-block px-3 py-1 rounded-full bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 text-sm font-medium text-purple-300 mb-3">
-                    {post.category}
-                  </span>
-                  <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
-                  <p className="text-gray-400 mb-4">{post.excerpt}</p>
-                  <div className="flex justify-between items-center mt-auto pt-4 border-t border-white/5">
-                    <span className="text-gray-500 text-sm">{post.date}</span>
-                    <span className="text-purple-400 font-medium group-hover:underline group-hover:translate-x-1 inline-block transition-all duration-200">
-                      Lire l&apos;article →
-                    </span>
-                  </div>
-                </div>
-              </article>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </main>

@@ -2,6 +2,7 @@ import ServiceDetail from "@/components/services/ServiceDetail";
 import ProcessSteps from "@/components/services/ProcessSteps";
 import CTA from "@/components/global/CTA";
 import BookingCalendar from "@/components/services/BookingCalendar";
+import { ServicesHero } from "@/components/services/ServicesHero";
 
 export const metadata = {
   title:
@@ -167,20 +168,16 @@ const services = [
 
 export default function Services() {
   return (
-    <main className="py-32">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
-              Des Solutions Web Qui Génèrent des Résultats
-            </span>
-          </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Votre site web doit être bien plus qu&apos;une simple présence en
-            ligne - il doit être votre meilleur commercial, travaillant pour
-            vous 24h/24.
-          </p>
-          <div className="bg-gradient-to-br from-gray-800/70 to-gray-900/70 p-6 rounded-xl border border-white/10 max-w-2xl mx-auto">
+    <main className="bg-gray-950">
+      <ServicesHero />
+
+      {/* Section de contenu avec fond différent et superposition pour séparer nettement du hero */}
+      <div className="relative bg-gradient-to-b from-gray-950 to-black mt-[-50px] pt-24 pb-24">
+        {/* Effet de séparation */}
+        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black/0 to-gray-950"></div>
+
+        <div className="max-w-6xl mx-auto px-6 pt-20 md:pt-28">
+          <div className="bg-gradient-to-br from-gray-800/70 to-gray-900/70 p-6 rounded-xl border border-white/10 max-w-2xl mx-auto mb-16">
             <p className="text-white">
               Chaque formule inclut une{" "}
               <strong className="text-purple-300">
@@ -193,48 +190,49 @@ export default function Services() {
               être visible par vos clients potentiels.
             </p>
           </div>
-        </div>
 
-        <div className="space-y-32">
-          {services.map((service) => (
-            <div key={service.id} id={service.id}>
-              <ServiceDetail service={service} />
-              <div className="mt-16">
-                <ProcessSteps steps={service.processSteps} />
+          <div className="space-y-32">
+            {services.map((service) => (
+              <div key={service.id} id={service.id}>
+                <ServiceDetail service={service} />
+                <div className="mt-16">
+                  <ProcessSteps steps={service.processSteps} />
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-
-        <div id="booking" className="mt-32">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Discutons de votre projet
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
-              Réservez un appel découverte gratuit de 30 minutes pour parler de
-              vos objectifs et recevoir des conseils personnalisés
-            </p>
-            <div className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 p-5 rounded-xl border border-purple-500/20 max-w-2xl mx-auto">
-              <p className="text-white text-sm">
-                Pendant cet appel, nous évaluerons vos besoins, discuterons des
-                solutions possibles et vous recevrez des recommandations
-                concrètes - même si vous décidez de ne pas travailler avec moi.
-              </p>
-            </div>
+            ))}
           </div>
 
-          {/* Calendly intégré via un composant client */}
-          <BookingCalendar />
-        </div>
+          <div id="booking" className="mt-32">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Discutons de votre projet
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
+                Réservez un appel découverte gratuit de 30 minutes pour parler
+                de vos objectifs et recevoir des conseils personnalisés
+              </p>
+              <div className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 p-5 rounded-xl border border-purple-500/20 max-w-2xl mx-auto">
+                <p className="text-white text-sm">
+                  Pendant cet appel, nous évaluerons vos besoins, discuterons
+                  des solutions possibles et vous recevrez des recommandations
+                  concrètes - même si vous décidez de ne pas travailler avec
+                  moi.
+                </p>
+              </div>
+            </div>
 
-        <div className="mt-32">
-          <CTA
-            title="Des questions supplémentaires ?"
-            description="N'hésitez pas à me contacter directement pour discuter de votre projet."
-            buttonText="Contact"
-            buttonLink="/contact"
-          />
+            {/* Calendly intégré via un composant client */}
+            <BookingCalendar />
+          </div>
+
+          <div className="mt-32">
+            <CTA
+              title="Des questions supplémentaires ?"
+              description="N'hésitez pas à me contacter directement pour discuter de votre projet."
+              buttonText="Contact"
+              buttonLink="/contact"
+            />
+          </div>
         </div>
       </div>
     </main>

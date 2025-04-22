@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import CTA from "@/components/global/CTA";
 import InformatiquePack from "@/components/informatique/InformatiquePack";
 import BookingCalendar from "@/components/services/BookingCalendar";
+import { InformatiqueHero } from "@/components/informatique/InformatiqueHero";
 
 export const metadata = {
   title: "Services Informatiques | Configuration et Assistance | Atypik Code",
@@ -94,65 +95,53 @@ const informatiquePacks = [
 
 export default function InformatiquePage() {
   return (
-    <main className="py-32">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
-              Services Informatiques
-            </span>
-          </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Assistance et solutions personnalisées pour vos appareils
-            informatiques
-          </p>
-          <div className="bg-gradient-to-br from-gray-800/70 to-gray-900/70 p-6 rounded-xl border border-white/10 max-w-2xl mx-auto">
-            <p className="text-white">
-              Que vous soyez particulier ou professionnel, je vous accompagne
-              dans l&apos;installation, la configuration et l&apos;optimisation
-              de vos équipements informatiques. Disponible à{" "}
-              <strong className="text-purple-300">domicile</strong> ou en{" "}
-              <strong className="text-purple-300">télémaintenance</strong>.
-            </p>
+    <main className="bg-gray-950">
+      <InformatiqueHero />
+
+      {/* Section de contenu avec fond différent et superposition pour séparer nettement du hero */}
+      <div className="relative bg-gradient-to-b from-gray-950 to-black mt-[-50px] pt-24 pb-24">
+        {/* Effet de séparation */}
+        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black/0 to-gray-950"></div>
+
+        <div className="max-w-6xl mx-auto px-6 pt-20 md:pt-28">
+          <div className="space-y-24">
+            {informatiquePacks.map((pack) => (
+              <div key={pack.id} id={pack.id} className="scroll-mt-32">
+                <InformatiquePack pack={pack} />
+              </div>
+            ))}
           </div>
-        </div>
 
-        <div className="space-y-24">
-          {informatiquePacks.map((pack) => (
-            <div key={pack.id} id={pack.id} className="scroll-mt-32">
-              <InformatiquePack pack={pack} />
-            </div>
-          ))}
-        </div>
-
-        <div id="booking" className="mt-32">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Besoin d&apos;assistance informatique ?
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
-              Réservez un appel gratuit pour discuter de vos besoins et obtenir
-              un devis personnalisé
-            </p>
-            <div className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 p-5 rounded-xl border border-purple-500/20 max-w-2xl mx-auto">
-              <p className="text-white text-sm">
-                Après notre échange, je vous proposerai une solution adaptée à
-                vos besoins spécifiques et à votre budget. Intervention possible
-                en Haute-Savoie ou à distance selon le type de prestation.
+          <div id="booking" className="mt-32">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Besoin d&apos;assistance informatique ?
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
+                Réservez un appel gratuit pour discuter de vos besoins et
+                obtenir un devis personnalisé
               </p>
+              <div className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 p-5 rounded-xl border border-purple-500/20 max-w-2xl mx-auto">
+                <p className="text-white text-sm">
+                  Après notre échange, je vous proposerai une solution adaptée à
+                  vos besoins spécifiques et à votre budget. Intervention
+                  possible en Haute-Savoie ou à distance selon le type de
+                  prestation.
+                </p>
+              </div>
             </div>
+
+            <BookingCalendar />
           </div>
 
-          <BookingCalendar />
-        </div>
-
-        <div className="mt-32">
-          <CTA
-            title="D'autres questions ?"
-            description="N'hésitez pas à me contacter pour tout renseignement complémentaire."
-            buttonText="Contact"
-            buttonLink="/contact"
-          />
+          <div className="mt-32">
+            <CTA
+              title="D'autres questions ?"
+              description="N'hésitez pas à me contacter pour tout renseignement complémentaire."
+              buttonText="Contact"
+              buttonLink="/contact"
+            />
+          </div>
         </div>
       </div>
     </main>
