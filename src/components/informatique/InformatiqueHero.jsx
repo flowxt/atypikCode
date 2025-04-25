@@ -8,7 +8,7 @@ export function InformatiqueHero() {
     <div className="h-[70vh] w-full bg-black flex flex-col items-center justify-center overflow-hidden">
       {/* Conteneur principal avec z-index pour placer le texte au-dessus de l'effet */}
       <div className="relative z-20 text-center max-w-5xl px-4">
-        <h1 className="md:text-7xl text-4xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 pb-4">
+        <h1 className="md:text-7xl text-4xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 pb-4 pt-20">
           Services Informatiques
         </h1>
         
