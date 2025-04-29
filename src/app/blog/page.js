@@ -14,6 +14,16 @@ export const metadata = {
 // Données simulées des articles de blog
 const blogPosts = [
   {
+    id: 8,
+    title: "Comment créer une landing page qui convertit en 2025",
+    excerpt:
+      "Découvrez les techniques et stratégies essentielles pour concevoir des landing pages performantes qui transforment vos visiteurs en clients fidèles.",
+    date: "18 avril 2025",
+    image: "/image/myeasyplan.png",
+    category: "Conversion",
+    slug: "creer-landing-page-conversion",
+  },
+  {
     id: 7,
     title:
       "Pourquoi votre site Wix ne vous apporte pas de clients (et comment y remédier)",

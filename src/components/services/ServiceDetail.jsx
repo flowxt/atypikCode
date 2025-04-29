@@ -94,9 +94,9 @@ export default function ServiceDetail({ service }) {
           
           <div className="p-6 mt-6 bg-gradient-to-br from-gray-900/80 to-gray-800/80 rounded-xl border border-white/5 relative z-10">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-                À partir de {service.priceFrom}€
-              </p>
+            <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
+              À partir de {service.priceFrom}€
+            </p>
               <a 
                 href="#booking" 
                 className="inline-block px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg font-medium text-white text-center hover:from-purple-600 hover:to-blue-600 transition duration-300 relative z-20"

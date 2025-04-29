@@ -37,28 +37,28 @@ export default function Hero() {
           <p className="text-gray-300">
             Gagnez en visibilité avec un site web clé en main adapté à votre métier et 
             <span className="text-purple-300 font-medium"> transformez les visiteurs en clients</span>.
-          </p>
+        </p>
         </div>
         
         <div className="flex flex-col sm:flex-row gap-5">
           <Link href="/services">
-            <motion.button 
-              whileHover={{ scale: 1.03, boxShadow: "0 0 15px rgba(139, 92, 246, 0.5)" }}
-              whileTap={{ scale: 0.98 }}
-              className="px-8 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold shadow-lg shadow-purple-600/20"
-            >
-              Découvrir mes services
-            </motion.button>
+          <motion.button 
+            whileHover={{ scale: 1.03, boxShadow: "0 0 15px rgba(139, 92, 246, 0.5)" }}
+            whileTap={{ scale: 0.98 }}
+            className="px-8 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold shadow-lg shadow-purple-600/20"
+          >
+            Découvrir mes services
+          </motion.button>
           </Link>
           
           <Link href="/services#booking">
-            <motion.button 
-              whileHover={{ scale: 1.03, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
-              whileTap={{ scale: 0.98 }}
-              className="px-8 py-4 rounded-xl border border-white/20 hover:bg-white/5 text-white font-semibold backdrop-blur-sm transition-all"
-            >
-              Réserver un appel gratuit
-            </motion.button>
+          <motion.button 
+            whileHover={{ scale: 1.03, backgroundColor: "rgba(255, 255, 255, 0.1)" }}
+            whileTap={{ scale: 0.98 }}
+            className="px-8 py-4 rounded-xl border border-white/20 hover:bg-white/5 text-white font-semibold backdrop-blur-sm transition-all"
+          >
+            Réserver un appel gratuit
+          </motion.button>
           </Link>
         </div>
       </motion.div>

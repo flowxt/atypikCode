@@ -33,7 +33,7 @@ export default function Home() {
                       src="/image/florian-dev.png"
                       alt="Florian, développeur web et fondateur d'AtypikCode"
                       fill
-                      className="object-cover"
+                      className="object-cover rounded-xl"
                     />
                   </div>
                 </div>

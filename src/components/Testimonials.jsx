@@ -101,52 +101,52 @@ export default function Testimonials() {
             className="transition-all duration-500 ease-in-out flex"
             style={{ transform: `translateX(-${activeIndex * 100}%)` }}
           >
-            {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial, index) => (
               <div 
-                key={index}
+              key={index}
                 className="w-full flex-shrink-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 md:p-10 rounded-2xl border border-white/10 shadow-xl"
                 style={{ minWidth: '100%' }}
-              >
-                <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
-                  <div className="shrink-0">
-                    <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${testimonial.color} flex items-center justify-center text-white text-xl font-bold shadow-lg`}>
-                      {testimonial.avatar}
-                    </div>
+            >
+              <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
+                <div className="shrink-0">
+                  <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${testimonial.color} flex items-center justify-center text-white text-xl font-bold shadow-lg`}>
+                    {testimonial.avatar}
                   </div>
+                </div>
+                
+                <div>
+                  <svg className="w-10 h-10 text-purple-600/20 mb-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
+                  
+                  <p className="text-gray-200 text-lg mb-6 italic leading-relaxed">
+                    "{testimonial.text}"
+                  </p>
                   
                   <div>
-                    <svg className="w-10 h-10 text-purple-600/20 mb-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                    </svg>
-                    
-                    <p className="text-gray-200 text-lg mb-6 italic leading-relaxed">
-                      "{testimonial.text}"
-                    </p>
-                    
-                    <div>
-                      <h4 className="text-white font-bold text-lg">{testimonial.name}</h4>
-                      <p className="text-gray-400">{testimonial.role}, {testimonial.company}</p>
-                    </div>
+                    <h4 className="text-white font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-400">{testimonial.role}, {testimonial.company}</p>
                   </div>
                 </div>
               </div>
-            ))}
+              </div>
+          ))}
           </div>
         </div>
-        
-        <div className="flex justify-center mt-10 space-x-3">
-          {testimonials.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                activeIndex === index 
-                  ? 'bg-purple-500 w-8' 
-                  : 'bg-gray-600 hover:bg-gray-500'
-              }`}
-              aria-label={`Voir témoignage ${index + 1}`}
-            />
-          ))}
+          
+          <div className="flex justify-center mt-10 space-x-3">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveIndex(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  activeIndex === index 
+                    ? 'bg-purple-500 w-8' 
+                    : 'bg-gray-600 hover:bg-gray-500'
+                }`}
+                aria-label={`Voir témoignage ${index + 1}`}
+              />
+            ))}
         </div>
       </div>
       
