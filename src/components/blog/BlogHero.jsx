@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function BlogHero() {
   return (
-    <div className="h-[50vh] w-full bg-black flex flex-col items-center justify-center overflow-hidden">
+    <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden">
       {/* Conteneur principal avec z-index pour placer le texte au-dessus de l'effet */}
       <div className="relative z-20 text-center max-w-5xl px-4">
         <h1 className="md:text-7xl text-4xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 pb-4">
