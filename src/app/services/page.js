@@ -22,11 +22,11 @@ const services = [
   {
     id: "pack-essentiel",
     title: "Pack Essentiel",
-    description: "Site vitrine pour démarrer votre présence en ligne",
-    price: "À partir de 600€",
+    description: "Landing page pour démarrer votre présence en ligne",
+    price: "À partir de 800€",
     idealFor: "Artisans et petites entreprises",
     keyPoints: [
-      "Site vitrine 1-3 pages",
+      "Landing page",
       "Référencement local optimisé",
       "Formulaire de contact",
       "Responsive (mobile, tablette, PC)",
@@ -39,10 +39,10 @@ const services = [
     id: "pack-professionnel",
     title: "Pack Professionnel",
     description: "Site complet pour développer votre clientèle",
-    price: "À partir de 1200€",
+    price: "À partir de 1500€",
     idealFor: "PME et entreprises établies",
     keyPoints: [
-      "Site multi-pages (5-8 pages)",
+      "Site multi-pages (3-8 pages)",
       "Système de devis en ligne",
       "Témoignages clients",
       "SEO complet et analytics",
@@ -55,7 +55,7 @@ const services = [
     id: "pack-premium",
     title: "Pack Premium",
     description: "Solution digitale complète pour maximiser votre impact",
-    price: "À partir de 2500€",
+    price: "À partir de 2300€",
     idealFor: "Entreprises en croissance",
     keyPoints: [
       "Site premium avec fonctionnalités avancées",
