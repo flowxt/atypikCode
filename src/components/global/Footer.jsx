@@ -20,6 +20,7 @@ export default function Footer() {
               <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Applications React/Next.js</a></li>
               <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Optimisation SEO</a></li>
               <li><a href="/artisans" className="text-gray-400 hover:text-purple-400 transition-colors">Sites pour artisans</a></li>
+              <li><a href="/bien-etre" className="text-gray-400 hover:text-purple-400 transition-colors">Sites bien-être & thérapies</a></li>
             </ul>
           </div>
           
@@ -31,6 +32,7 @@ export default function Footer() {
               <li><a href="/blog" className="text-gray-400 hover:text-purple-400 transition-colors">Blog</a></li>
               <li><a href="/contact" className="text-gray-400 hover:text-purple-400 transition-colors">Contact</a></li>
               <li><a href="/artisans" className="text-gray-400 hover:text-purple-400 transition-colors">Artisans</a></li>
+              <li><a href="/bien-etre" className="text-gray-400 hover:text-purple-400 transition-colors">Bien-être</a></li>
             </ul>
             
             <div className="flex gap-4">
