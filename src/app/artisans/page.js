@@ -22,10 +22,10 @@ export default function ArtisansLandingPage() {
             src="/image/artisan.jpg"
             alt="Artisan au travail"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-90"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-gray-950/70 to-gray-950"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-950/60 to-gray-950"></div>
         </div>
 
         <div className="container mx-auto px-6 z-10 relative">
@@ -303,51 +303,118 @@ export default function ArtisansLandingPage() {
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Un tarif unique et transparent
+            Des tarifs clairs et transparents
           </h2>
 
-          <div className="max-w-2xl mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10">
-            <div className="text-center">
-              <div className="inline-block rounded-full bg-gradient-to-r from-purple-600 to-pink-600 px-5 py-1 text-sm font-medium mb-6">
-                OFFRE SPÉCIALE ARTISANS
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Formule Landing Page */}
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 h-full flex flex-col">
+              <div className="text-center">
+                <div className="inline-block rounded-full bg-gradient-to-r from-purple-600 to-pink-600 px-5 py-1 text-sm font-medium mb-6">
+                  FORMULE LANDING PAGE
+                </div>
+                <div className="flex items-center justify-center mb-2">
+                  <span className="text-5xl font-bold">800€</span>
+                  <span className="text-lg text-gray-400 ml-2">TTC</span>
+                </div>
+                <p className="text-gray-400 mb-8">
+                  + 19€/mois pour l&apos;hébergement et maintenance
+                </p>
+
+                <div className="h-px w-full bg-gray-700 my-8"></div>
+
+                <ul className="space-y-4 text-left mb-8">
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2">✓</span>
+                    <span>Landing page professionnelle</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2">✓</span>
+                    <span>Formulaire de contact optimisé</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2">✓</span>
+                    <span>Référencement local</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2">✓</span>
+                    <span>Livraison en 1 semaine</span>
+                  </li>
+                </ul>
+
+                <div className="mt-auto">
+                  <a
+                    href="#contact"
+                    className="inline-block w-full py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity text-center relative z-10"
+                  >
+                    Demander ma landing page
+                  </a>
+                </div>
               </div>
-              <div className="flex items-center justify-center mb-2">
-                <span className="text-5xl font-bold">800€</span>
-                <span className="text-lg text-gray-400 ml-2">TTC</span>
+            </div>
+
+            {/* Formule Site Vitrine */}
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 h-full flex flex-col relative overflow-hidden">
+              <div className="absolute top-8 right-0 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold px-8 py-1 uppercase transform rotate-45 translate-x-6">
+                Recommandé
               </div>
-              <p className="text-gray-400 mb-8">
-                + 19€/mois pour l&apos;hébergement et maintenance
-              </p>
+              <div className="text-center">
+                <div className="inline-block rounded-full bg-gradient-to-r from-amber-500 to-orange-500 px-5 py-1 text-sm font-medium mb-6">
+                  FORMULE SITE VITRINE
+                </div>
+                <div className="flex items-center justify-center mb-2">
+                  <span className="text-5xl font-bold">1600€</span>
+                  <span className="text-lg text-gray-400 ml-2">TTC</span>
+                </div>
+                <p className="text-gray-400 mb-8">
+                  + 49€/mois pour l&apos;hébergement et maintenance
+                </p>
 
-              <div className="h-px w-full bg-gray-700 my-8"></div>
+                <div className="h-px w-full bg-gray-700 my-8"></div>
 
-              <ul className="space-y-4 text-left mb-8">
-                <li className="flex items-start">
-                  <span className="text-green-400 mr-2">✓</span>
-                  <span>Site complet livré en 2 semaines</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-400 mr-2">✓</span>
-                  <span>Nom de domaine offert la première année</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-400 mr-2">✓</span>
-                  <span>Assistance à la rédaction de contenu</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-400 mr-2">✓</span>
-                  <span>Aucun frais caché ou surprise</span>
-                </li>
-              </ul>
+                <ul className="space-y-4 text-left mb-8">
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2">✓</span>
+                    <span>Site complet (3-6 pages)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2">✓</span>
+                    <span>Galerie de réalisations</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2">✓</span>
+                    <span>Système de devis en ligne</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2">✓</span>
+                    <span>SEO complet pour être trouvé dans votre zone</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2">✓</span>
+                    <span>Assistance prioritaire</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2">✓</span>
+                    <span>Livraison en 2 semaines</span>
+                  </li>
+                </ul>
 
-              <a
-                href="#contact"
-                className="inline-block w-full py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity text-center relative z-10"
-              >
-                Demander mon site pro
-              </a>
+                <div className="mt-auto">
+                  <a
+                    href="#contact"
+                    className="inline-block w-full py-4 px-8 bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity text-center relative z-10"
+                  >
+                    Demander mon site vitrine
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
+
+          <p className="text-center text-gray-400 mt-8 max-w-3xl mx-auto">
+            Tous les prix sont TTC. Nom de domaine offert la première année.
+            Aucun frais caché ou surprise. Paiement en plusieurs fois possible.
+          </p>
         </div>
       </section>
 
