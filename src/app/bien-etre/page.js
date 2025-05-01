@@ -526,7 +526,7 @@ export default function BienEtreLandingPage() {
           </div>
         </div>
       </section>
-
+      {/* build ok */}
       {/* [7] Formulaire de contact */}
       <section id="contact" className="py-20 bg-black">
         <div className="container mx-auto px-6">
