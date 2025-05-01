@@ -265,9 +265,9 @@ export default function BienEtreLandingPage() {
                 </a>
               </h3>
               <p className="text-xl text-gray-300 mb-3">
-                Site créé pour Kristel, médium et énergéticienne. Design élégant
-                et apaisant qui reflète l&apos;univers spirituel de sa pratique,
-                avec un système de prise de rendez-vous intégré.
+                Site créé pour Kristelle, médium et énergéticienne. Design
+                élégant et apaisant qui reflète l&apos;univers spirituel de sa
+                pratique, avec un système de prise de rendez-vous intégré.
               </p>
               <p className="text-xl text-gray-300 mb-6">
                 <a
@@ -519,7 +519,7 @@ export default function BienEtreLandingPage() {
                 <span className="font-bold">KF</span>
               </div>
               <div>
-                <p className="font-bold">Kristel Feron</p>
+                <p className="font-bold">Kristelle Feron</p>
                 <p className="text-gray-400">Kris La Voix des Anges</p>
               </div>
             </div>
