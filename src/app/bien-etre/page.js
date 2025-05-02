@@ -29,6 +29,16 @@ export default function BienEtreLandingPage() {
           gtag('config', 'AW-17045327166');
         `}
       </Script>
+      <Script id="google-ads-conversion" strategy="afterInteractive">
+        {`
+          window.handleFormSubmitSuccess = function() {
+            gtag('event', 'ads_conversion_Envoi_de_formulaire_pou_1', {
+              // <event_parameters>
+            });
+            console.log("Google Ads conversion event triggered");
+          }
+        `}
+      </Script>
       <main className="bg-gray-950 relative">
         {/* [1] Hero Section */}
         <section className="relative h-screen max-h-[800px] flex items-center overflow-hidden">
