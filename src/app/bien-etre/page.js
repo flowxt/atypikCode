@@ -526,8 +526,241 @@ export default function BienEtreLandingPage() {
           </div>
         </div>
       </section>
-      {/* build ok */}
-      {/* [7] Formulaire de contact */}
+
+      {/* [7] FAQ */}
+      <section className="py-20 bg-black">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Questions fréquemment posées
+          </h2>
+
+          <div className="max-w-4xl mx-auto divide-y divide-gray-700">
+            {/* Question 1 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>
+                  Vais-je être visible sur Google grâce à votre site ?
+                </span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                Absolument ! Je mets en place une stratégie de référencement
+                local spécialement conçue pour les thérapeutes et praticiens
+                bien-être. Votre site sera optimisé pour les recherches dans
+                votre zone géographique et pour vos spécialités (sophrologie,
+                massage, énergétique...). Les personnes qui recherchent vos
+                soins à proximité vous trouveront facilement. J&apos;optimise
+                également votre présence sur Google Maps et votre fiche Google
+                My Business pour maximiser votre visibilité locale.
+              </p>
+            </details>
+
+            {/* Question 2 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>
+                  Comment le design de mon site reflètera-t-il l&apos;univers du
+                  bien-être ?
+                </span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                L&apos;ambiance visuelle de votre site sera spécialement conçue
+                pour évoquer la sérénité, la douceur et le bien-être.
+                J&apos;utilise une palette de couleurs apaisantes (tons doux,
+                indigo, violet...), des typographies élégantes et fluides, et
+                des images évocatrices qui transmettent immédiatement la
+                sensation de calme que vos clients recherchent. Chaque élément
+                du design est pensé pour refléter votre approche thérapeutique
+                et créer un environnement numérique qui résonne avec les valeurs
+                de votre pratique.
+              </p>
+            </details>
+
+            {/* Question 3 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>
+                  Est-ce que mes clients pourront prendre rendez-vous
+                  directement sur le site ?
+                </span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                Oui, dans la formule site vitrine, j&apos;intègre un système de
+                prise de rendez-vous en ligne intuitif et élégant. Vos clients
+                pourront voir vos disponibilités en temps réel et réserver leur
+                séance en quelques clics, même depuis leur mobile. Vous recevrez
+                une notification instantanée et les rendez-vous seront
+                automatiquement synchronisés avec votre agenda. Ce système vous
+                permet de réduire les tâches administratives et de vous
+                concentrer pleinement sur vos soins et vos clients.
+              </p>
+            </details>
+
+            {/* Question 4 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>
+                  Comment allez-vous présenter mes différents soins et
+                  techniques ?
+                </span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                Pour chacun de vos soins ou techniques, je crée une présentation
+                à la fois informative et inspirante. Je prends le temps de
+                comprendre les spécificités de vos pratiques pour les expliquer
+                avec clarté. Chaque soin est présenté avec une description des
+                bienfaits, du déroulement de la séance et des problématiques
+                qu&apos;il adresse. J&apos;utilise un langage accessible qui
+                rassure les personnes qui découvrent ces pratiques, tout en
+                démontrant votre expertise. Des visuels soigneusement
+                sélectionnés accompagnent ces descriptions pour créer une
+                expérience immersive.
+              </p>
+            </details>
+
+            {/* Question 5 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>
+                  Aurai-je besoin de compétences techniques pour gérer mon site
+                  ?
+                </span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                Absolument pas ! Je conçois votre site pour qu&apos;il soit
+                complètement autonome et sans tracas pour vous. Je m&apos;occupe
+                de tous les aspects techniques : hébergement, sécurité, mises à
+                jour et maintenance. Dans le forfait mensuel, tout est inclus
+                pour que votre site reste performant et sécurisé. Si vous
+                souhaitez faire des modifications simples de contenu, je vous
+                fournis un accès avec une interface intuitive. Et bien sûr, je
+                reste disponible pour vous accompagner ou effectuer les mises à
+                jour plus importantes à votre place.
+              </p>
+            </details>
+
+            {/* Question 6 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>
+                  Est-ce que ce site m&apos;aidera vraiment à développer ma
+                  clientèle ?
+                </span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                Les résultats parlent d&apos;eux-mêmes ! Mes clients praticiens
+                bien-être constatent en moyenne une augmentation de 30% de
+                nouvelles demandes dans les 3 mois suivant le lancement de leur
+                site. Dans un domaine où la confiance est essentielle, avoir une
+                présence en ligne professionnelle et rassurante fait toute la
+                différence. Votre site devient un puissant outil pour présenter
+                votre approche, partager vos valeurs et créer un premier lien
+                avec vos futurs clients. De plus, il renforce votre crédibilité
+                auprès de tous, y compris ceux qui vous découvrent par le
+                bouche-à-oreille et viennent vérifier votre professionnalisme en
+                ligne.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* [8] Formulaire de contact */}
       <section id="contact" className="py-20 bg-black">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">

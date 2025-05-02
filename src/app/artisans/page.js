@@ -455,7 +455,230 @@ export default function ArtisansLandingPage() {
         </div>
       </section>
 
-      {/* [7] Formulaire de contact */}
+      {/* [7] FAQ */}
+      <section className="py-20 bg-black">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Questions fréquemment posées
+          </h2>
+
+          <div className="max-w-4xl mx-auto divide-y divide-gray-700">
+            {/* Question 1 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>
+                  Vais-je être visible sur Google grâce à votre site ?
+                </span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                Absolument ! Je mets en place une stratégie de référencement
+                local spécialement conçue pour les artisans. Votre site sera
+                optimisé pour les recherches dans votre zone d&apos;intervention
+                (commune, département) et pour vos services spécifiques. Les
+                clients qui cherchent un artisan comme vous dans votre secteur
+                vous trouveront facilement. De plus, je crée une fiche Google
+                Business et optimise vos informations de contact pour maximiser
+                votre visibilité locale.
+              </p>
+            </details>
+
+            {/* Question 2 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>Combien de temps faut-il pour créer mon site ?</span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                Je comprends que votre temps est précieux. C&apos;est pourquoi
+                j&apos;ai optimisé mon processus : votre landing page sera prête
+                en 1 semaine, et votre site vitrine complet en 2 semaines
+                seulement après notre échange initial. Je m&apos;occupe de tout
+                (design, contenu, optimisation) pour que vous puissiez rester
+                concentré sur votre métier pendant que je crée votre présence en
+                ligne professionnelle.
+              </p>
+            </details>
+
+            {/* Question 3 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>
+                  Comment allez-vous présenter mon métier d&apos;artisan ?
+                </span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                Votre savoir-faire mérite d&apos;être mis en valeur
+                correctement. Je prends le temps de comprendre les spécificités
+                de votre métier (plombier, électricien, menuisier, etc.) pour
+                créer un contenu authentique qui parle directement à vos
+                clients. Nous mettrons en avant vos réalisations avec des photos
+                professionnelles, présenterons clairement vos services, et
+                soulignerons ce qui vous différencie de la concurrence.
+                L&apos;objectif est de transmettre votre expertise et votre
+                sérieux dès la première visite.
+              </p>
+            </details>
+
+            {/* Question 4 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>
+                  Pourrai-je recevoir des demandes de devis directement depuis
+                  le site ?
+                </span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                C&apos;est précisément l&apos;un des objectifs principaux ! Je
+                crée un formulaire de contact optimisé spécifiquement pour les
+                demandes de devis. Vos clients potentiels pourront facilement
+                vous contacter en précisant leur projet, et vous recevrez ces
+                demandes directement par email. Le formulaire est conçu pour
+                recueillir toutes les informations dont vous avez besoin pour
+                évaluer la demande avant même le premier appel, vous faisant
+                gagner un temps précieux.
+              </p>
+            </details>
+
+            {/* Question 5 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>
+                  Aurai-je besoin de gérer la maintenance technique du site ?
+                </span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                Absolument pas ! Je m&apos;occupe de tous les aspects techniques
+                : hébergement, sécurité, mises à jour et maintenance. Vous avez
+                déjà un métier exigeant, le but est de vous simplifier la vie,
+                pas de vous ajouter des tâches techniques. Dans le forfait
+                mensuel, tout est inclus pour que votre site reste performant,
+                sécurisé et à jour. Vous pouvez vous concentrer sur votre
+                travail d&apos;artisan, je m&apos;occupe de votre présence en
+                ligne.
+              </p>
+            </details>
+
+            {/* Question 6 */}
+            <details className="group py-4">
+              <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
+                <span>
+                  Est-ce que ce sera vraiment rentable pour mon entreprise
+                  artisanale ?
+                </span>
+                <span className="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </span>
+              </summary>
+              <p className="text-gray-300 mt-4 ml-6 group-open:animate-fadeIn">
+                Le retour sur investissement est généralement très rapide pour
+                mes clients artisans. Un seul nouveau chantier obtenu grâce au
+                site peut souvent couvrir l&apos;investissement initial. Mes
+                clients artisans reçoivent en moyenne 3 à 5 demandes qualifiées
+                par semaine via leur site. Avec un taux de conversion de 30-40%
+                en devis signés, votre site devient rapidement un canal
+                d&apos;acquisition client rentable. De plus, avoir un site
+                professionnel renforce votre crédibilité auprès de tous vos
+                prospects, même ceux qui vous découvrent par d&apos;autres
+                canaux.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* [8] Formulaire de contact */}
       <section id="contact" className="py-20 bg-black">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
