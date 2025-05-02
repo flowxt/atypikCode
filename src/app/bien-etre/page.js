@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import BienEtreContactForm from "@/components/bien-etre/BienEtreContactForm";
-import Script from "next/script";
 
 export const metadata = {
   title: "Site Web pour Thérapeutes & Praticiens Bien-être | Atypik Code",
@@ -17,28 +16,6 @@ export const metadata = {
 export default function BienEtreLandingPage() {
   return (
     <>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=AW-17045327166"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-17045327166');
-        `}
-      </Script>
-      <Script id="google-ads-conversion" strategy="afterInteractive">
-        {`
-          window.handleFormSubmitSuccess = function() {
-            gtag('event', 'ads_conversion_Envoi_de_formulaire_pou_1', {
-              // <event_parameters>
-            });
-            console.log("Google Ads conversion event triggered");
-          }
-        `}
-      </Script>
       <main className="bg-gray-950 relative">
         {/* [1] Hero Section */}
         <section className="relative h-screen max-h-[800px] flex items-center overflow-hidden">

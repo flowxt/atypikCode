@@ -54,9 +54,13 @@ Message: ${messageRef.current.value || 'Aucun message supplémentaire'}
         
         setSubmitStatus('success')
         
-        // Déclencher l'événement de conversion Google Ads
-        if (typeof window !== 'undefined' && window.handleFormSubmitSuccess) {
-          window.handleFormSubmitSuccess();
+        // Déclencher l'événement de conversion Google Ads via GTM
+        if (typeof window !== 'undefined' && window.dataLayer) {
+          window.dataLayer.push({
+            'event': 'formSubmission',
+            'formType': 'bien-etre'
+          });
+          console.log("GTM event pushed: formSubmission (bien-être)");
         }
       } else {
         console.error('Erreur lors de l\'envoi:', await response.text())
