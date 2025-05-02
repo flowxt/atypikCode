@@ -39,7 +39,7 @@ const services = [
     id: "pack-professionnel",
     title: "Pack Professionnel",
     description: "Site complet pour développer votre clientèle",
-    price: "À partir de 1500€",
+    price: "À partir de 1600€",
     idealFor: "PME et entreprises établies",
     keyPoints: [
       "Site multi-pages (3-8 pages)",
