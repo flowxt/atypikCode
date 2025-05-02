@@ -53,6 +53,11 @@ Message: ${messageRef.current.value || 'Aucun message supplémentaire'}
         messageRef.current.value = ''
         
         setSubmitStatus('success')
+        
+        // Déclencher l'événement de conversion Google Ads
+        if (typeof window !== 'undefined' && window.handleArtisanFormSubmitSuccess) {
+          window.handleArtisanFormSubmitSuccess();
+        }
       } else {
         console.error('Erreur lors de l\'envoi:', await response.text())
         setSubmitStatus('error')
