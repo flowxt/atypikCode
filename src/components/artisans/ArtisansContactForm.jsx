@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 export default function ArtisansContactForm() {
   const nameRef = useRef(null)
@@ -12,6 +12,25 @@ export default function ArtisansContactForm() {
   
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState(null)
+  
+  // Ajouter le script gtag pour la conversion Ads
+  useEffect(() => {
+    // Définir la fonction gtagSendEvent dans window pour qu'elle soit accessible globalement
+    window.gtagSendEvent = function(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      if (typeof gtag === 'function') {
+        gtag('event', 'ads_conversion_Envoi_de_formulaire_pou_1', {
+          'event_callback': callback,
+          'event_timeout': 2000,
+        });
+      }
+      return false;
+    };
+  }, []);
   
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -53,6 +72,11 @@ Message: ${messageRef.current.value || 'Aucun message supplémentaire'}
         messageRef.current.value = ''
         
         setSubmitStatus('success')
+        
+        // Déclencher l'événement de conversion Google Ads
+        if (typeof window.gtagSendEvent === 'function') {
+          window.gtagSendEvent();
+        }
         
         // Déclencher l'événement de conversion Google Ads via GTM
         if (typeof window !== 'undefined' && window.dataLayer) {
