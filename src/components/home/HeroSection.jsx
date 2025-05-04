@@ -8,8 +8,8 @@ export function HeroSection() {
     <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden">
       {/* Conteneur principal avec z-index pour placer le texte au-dessus de l'effet */}
       <div className="relative z-20 text-center max-w-5xl px-4">
-        <h1 className="md:text-7xl text-4xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 pb-4">
-          Atypik Code
+        <h1 className="md:text-7xl text-4xl lg:text-8xl font-bold text-white pb-4">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-700">Atypik</span> Code
         </h1>
         
         {/* Traits animés entre le titre et le sous-titre */}
