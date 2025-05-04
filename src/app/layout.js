@@ -75,6 +75,39 @@ export default function RootLayout({ children }) {
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-M4V33FHZ');`}
       </Script>
+
+      {/* Google Ads Tag */}
+      <Script id="google-ads-tag" strategy="afterInteractive">
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-17045327166');
+        `}
+      </Script>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17045327166"
+        strategy="afterInteractive"
+      />
+
+      {/* Script pour le suivi de conversion */}
+      <Script id="google-ads-conversion" strategy="afterInteractive">
+        {`
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17045327166/cfgqCOv1pMEaEL6a7L8_',
+            'event_callback': callback
+          });
+          return false;
+        }
+        `}
+      </Script>
       <body
         className={`${inter.className} bg-[#0A0A0F] text-white min-h-screen`}
       >

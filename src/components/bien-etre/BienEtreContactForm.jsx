@@ -54,6 +54,19 @@ Message: ${messageRef.current.value || 'Aucun message supplémentaire'}
         
         setSubmitStatus('success')
         
+        // Déclencher l'événement de conversion Google Ads
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+          console.log("Déclenchement de la conversion Google Ads");
+          window.gtag('event', 'conversion', {
+            'send_to': 'AW-17045327166/cfgqCOv1pMEaEL6a7L8_',
+            'event_callback': function() {
+              console.log("Callback de conversion Google Ads exécuté");
+            }
+          });
+        } else {
+          console.error("La fonction gtag n'est pas disponible");
+        }
+        
         // Déclencher l'événement de conversion Google Ads via GTM
         if (typeof window !== 'undefined' && window.dataLayer) {
           window.dataLayer.push({
@@ -207,6 +220,7 @@ Message: ${messageRef.current.value || 'Aucun message supplémentaire'}
             type="submit"
             disabled={isSubmitting}
             className="w-full py-4 px-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity relative z-10 disabled:opacity-70 disabled:cursor-not-allowed"
+            onClick={() => gtag_report_conversion()}
           >
             {isSubmitting ? (
               <span className="flex items-center justify-center">

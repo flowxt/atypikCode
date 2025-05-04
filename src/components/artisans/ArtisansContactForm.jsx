@@ -58,7 +58,7 @@ Message: ${messageRef.current.value || 'Aucun message supplémentaire'}
         if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
           console.log("Déclenchement de la conversion Google Ads");
           window.gtag('event', 'conversion', {
-            'send_to': 'AW-11431184124/ads_conversion_Envoi_de_formulaire_pou_1',
+            'send_to': 'AW-17045327166/cfgqCOv1pMEaEL6a7L8_',
             'event_callback': function() {
               console.log("Callback de conversion Google Ads exécuté");
             }
@@ -220,6 +220,7 @@ Message: ${messageRef.current.value || 'Aucun message supplémentaire'}
             type="submit"
             disabled={isSubmitting}
             className="w-full py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity relative z-10 disabled:opacity-70 disabled:cursor-not-allowed"
+            onClick={() => gtag_report_conversion()}
           >
             {isSubmitting ? (
               <span className="flex items-center justify-center">
