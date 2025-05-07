@@ -39,12 +39,20 @@ export default function ArtisansLandingPage() {
                 Artisan du bâtiment ou de la rénovation ? Offrez-vous un site
                 rapide, clair et pensé pour vos clients.
               </p>
-              <a
-                href="#contact"
-                className="inline-block py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity relative z-20"
-              >
-                Demander mon site pro
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="#contact"
+                  className="inline-block py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity relative z-20"
+                >
+                  Obtenir mon devis gratuit
+                </a>
+                <a
+                  href="#tarifs"
+                  className="inline-block py-4 px-8 bg-white/10 backdrop-blur-sm rounded-lg font-medium text-lg hover:bg-white/20 transition-all relative z-20"
+                >
+                  Voir les tarifs
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -63,6 +71,20 @@ export default function ArtisansLandingPage() {
                 Je crée pour vous un site web optimisé, rapide et sans prise de
                 tête qui met en valeur votre savoir-faire.
               </p>
+              <a
+                href="#contact"
+                className="inline-block mt-8 py-3 px-6 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium hover:opacity-90 transition-opacity"
+              >
+                Démarrer mon projet maintenant
+              </a>
+            </div>
+            <div className="text-center mt-12">
+              <a
+                href="#contact"
+                className="inline-block py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity"
+              >
+                Obtenir mon site comme celui-ci
+              </a>
             </div>
           </div>
         </section>
@@ -306,7 +328,7 @@ export default function ArtisansLandingPage() {
         </section>
 
         {/* [5] Tarifs clairs */}
-        <section className="py-20 bg-gray-900">
+        <section id="tarifs" className="py-20 bg-gray-900">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
               Des tarifs clairs et transparents
@@ -314,8 +336,8 @@ export default function ArtisansLandingPage() {
 
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {/* Formule Landing Page */}
-              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 h-full flex flex-col">
-                <div className="text-center">
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 flex flex-col">
+                <div className="text-center flex-grow">
                   <div className="inline-block rounded-full bg-gradient-to-r from-purple-600 to-pink-600 px-5 py-1 text-sm font-medium mb-6">
                     FORMULE LANDING PAGE
                   </div>
@@ -347,24 +369,24 @@ export default function ArtisansLandingPage() {
                       <span>Livraison en 1 semaine</span>
                     </li>
                   </ul>
+                </div>
 
-                  <div className="mt-auto">
-                    <a
-                      href="#contact"
-                      className="inline-block w-full py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity text-center relative z-10"
-                    >
-                      Demander ma landing page
-                    </a>
-                  </div>
+                <div className="mt-auto">
+                  <a
+                    href="#contact"
+                    className="inline-block w-full py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity text-center relative z-10"
+                  >
+                    Demander ma landing page
+                  </a>
                 </div>
               </div>
 
               {/* Formule Site Vitrine */}
-              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 h-full flex flex-col relative overflow-hidden">
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 flex flex-col relative overflow-hidden">
                 <div className="absolute top-8 right-0 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold px-8 py-1 uppercase transform rotate-45 translate-x-6">
                   Recommandé
                 </div>
-                <div className="text-center">
+                <div className="text-center flex-grow">
                   <div className="inline-block rounded-full bg-gradient-to-r from-amber-500 to-orange-500 px-5 py-1 text-sm font-medium mb-6">
                     FORMULE SITE VITRINE
                   </div>
@@ -404,15 +426,15 @@ export default function ArtisansLandingPage() {
                       <span>Livraison en 2 semaines</span>
                     </li>
                   </ul>
+                </div>
 
-                  <div className="mt-auto">
-                    <a
-                      href="#contact"
-                      className="inline-block w-full py-4 px-8 bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity text-center relative z-10"
-                    >
-                      Demander mon site vitrine
-                    </a>
-                  </div>
+                <div className="mt-auto">
+                  <a
+                    href="#contact"
+                    className="inline-block w-full py-4 px-8 bg-gradient-to-r from-amber-500 to-orange-500 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity text-center relative z-10"
+                  >
+                    Demander mon site vitrine
+                  </a>
                 </div>
               </div>
             </div>
@@ -422,6 +444,14 @@ export default function ArtisansLandingPage() {
               Aucun frais caché ou surprise. Paiement en plusieurs fois
               possible.
             </p>
+            <div className="text-center mt-8">
+              <a
+                href="#contact"
+                className="inline-block py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity"
+              >
+                Obtenir mon devis personnalisé
+              </a>
+            </div>
           </div>
         </section>
 
