@@ -19,7 +19,7 @@ export default function BienEtreLandingPage() {
     <>
       <main className="bg-gray-950 relative">
         {/* [1] Hero Section */}
-        <section className="relative min-h-screen flex items-center overflow-hidden">
+        <section className="relative min-h-screen flex items-center overflow-hidden pt-20 md:pt-0">
           <div className="absolute inset-0 pointer-events-none">
             <Image
               src="/image/medium.jpg"
