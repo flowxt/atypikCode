@@ -18,45 +18,110 @@ export default function BienEtreLandingPage() {
     <>
       <main className="bg-gray-950 relative">
         {/* [1] Hero Section */}
-        <section className="relative h-screen max-h-[800px] flex items-center overflow-hidden">
+        <section className="relative min-h-screen flex items-center overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
             <Image
               src="/image/medium.jpg"
               alt="Pratique bien-être"
               fill
-              className="object-cover opacity-90"
+              className="object-cover opacity-90 transform scale-105 transition-transform duration-7000 ease-in-out hover:scale-110"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-gray-950/40 to-gray-950"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-950/80 via-gray-950/60 to-gray-950/80"></div>
           </div>
 
           <div className="container mx-auto px-6 z-10 relative">
             <div className="max-w-3xl">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white leading-tight">
-                Un site qui reflète votre énergie
+              <div className="inline-block bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-full px-4 py-1 mb-6 border border-purple-500/30">
+                <span className="text-purple-300 font-medium">
+                  Solution clé en main pour thérapeutes
+                </span>
+              </div>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
+                Un site qui reflète votre{" "}
+                <span className="bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">
+                  énergie
+                </span>
               </h1>
-              <p className="text-xl md:text-2xl text-gray-300 mb-8">
-                Sophrologue, énergéticienne, praticien bien-être ? Ayez enfin un
-                site doux, professionnel et qui vous ressemble.
+              <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl">
+                Sophrologue, énergéticienne, praticien bien-être ? Offrez-vous
+                un site doux, professionnel et qui vous ressemble. Déjà plus de
+                10 thérapeutes satisfaits.
               </p>
-              <a
-                href="#contact"
-                className="inline-block py-4 px-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity relative z-20"
-              >
-                Réserver mon appel gratuit
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="#contact"
+                  className="inline-block py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-all hover:scale-105 relative z-20 group"
+                >
+                  <span className="relative z-10">
+                    Réserver mon appel gratuit
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </a>
+                <a
+                  href="#tarifs"
+                  className="inline-block py-4 px-8 bg-white/10 backdrop-blur-sm rounded-lg font-medium text-lg hover:bg-white/20 transition-all hover:scale-105 relative z-20"
+                >
+                  Voir les tarifs
+                </a>
+              </div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-8 mt-12">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-white mb-1">10+</div>
+                  <div className="text-sm text-gray-400">
+                    Thérapeutes satisfaits
+                  </div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-white mb-1">
+                    2 semaines
+                  </div>
+                  <div className="text-sm text-gray-400">Délai moyen</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-white mb-1">100%</div>
+                  <div className="text-sm text-gray-400">
+                    Satisfaction client
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg
+              className="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
+            </svg>
           </div>
         </section>
 
         {/* [2] Présentation */}
-        <section className="py-20 bg-gradient-to-b from-gray-950 to-black">
-          <div className="container mx-auto px-6">
+        <section className="py-20 bg-gradient-to-b from-gray-950 to-black relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent"></div>
+          <div className="container mx-auto px-6 relative">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <div className="inline-block bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-full px-4 py-1 mb-6 border border-purple-500/30">
+                <span className="text-purple-300 font-medium">
+                  Une approche sur mesure
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
                 Un site apaisant, rassurant, qui vous ressemble
               </h2>
-              <p className="text-xl text-gray-300">
+              <p className="text-xl text-gray-300 leading-relaxed">
                 Dans l&apos;univers du bien-être et des médecines douces, la
                 confiance est essentielle. Votre site web doit transmettre cette
                 même énergie apaisante que vous offrez à vos clients. Je crée
@@ -69,15 +134,23 @@ export default function BienEtreLandingPage() {
         </section>
 
         {/* [3] Ce que vous obtenez */}
-        <section className="py-20 bg-gray-900">
-          <div className="container mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Ce que je vous propose
-            </h2>
+        <section className="py-20 bg-gray-900 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent"></div>
+          <div className="container mx-auto px-6 relative">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-full px-4 py-1 mb-6 border border-purple-500/30">
+                <span className="text-purple-300 font-medium">
+                  Fonctionnalités incluses
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
+                Ce que je vous propose
+              </h2>
+            </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all">
-                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center mb-6">
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-purple-500/50 transition-all group hover:scale-105">
+                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8 text-white"
@@ -93,15 +166,17 @@ export default function BienEtreLandingPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2">Design apaisant</h3>
+                <h3 className="text-xl font-bold mb-4 text-white">
+                  Design apaisant
+                </h3>
                 <p className="text-gray-300">
                   Couleurs douces, typographie élégante et mise en page zen qui
                   transmet votre philosophie
                 </p>
               </div>
 
-              <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all">
-                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center mb-6">
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-purple-500/50 transition-all group hover:scale-105">
+                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8 text-white"
@@ -117,15 +192,17 @@ export default function BienEtreLandingPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2">Prise de rendez-vous</h3>
+                <h3 className="text-xl font-bold mb-4 text-white">
+                  Prise de rendez-vous
+                </h3>
                 <p className="text-gray-300">
                   Système intégré pour que vos clients puissent réserver
                   facilement des séances
                 </p>
               </div>
 
-              <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all">
-                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center mb-6">
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-purple-500/50 transition-all group hover:scale-105">
+                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8 text-white"
@@ -141,7 +218,7 @@ export default function BienEtreLandingPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2">
+                <h3 className="text-xl font-bold mb-4 text-white">
                   100% compatible mobile
                 </h3>
                 <p className="text-gray-300">
@@ -150,8 +227,8 @@ export default function BienEtreLandingPage() {
                 </p>
               </div>
 
-              <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all">
-                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center mb-6">
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-purple-500/50 transition-all group hover:scale-105">
+                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8 text-white"
@@ -167,7 +244,7 @@ export default function BienEtreLandingPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2">
+                <h3 className="text-xl font-bold mb-4 text-white">
                   Référencement optimisé
                 </h3>
                 <p className="text-gray-300">
@@ -176,8 +253,8 @@ export default function BienEtreLandingPage() {
                 </p>
               </div>
 
-              <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all">
-                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center mb-6">
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-purple-500/50 transition-all group hover:scale-105">
+                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8 text-white"
@@ -193,15 +270,17 @@ export default function BienEtreLandingPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2">Rapide et performant</h3>
+                <h3 className="text-xl font-bold mb-4 text-white">
+                  Rapide et performant
+                </h3>
                 <p className="text-gray-300">
                   Chargement instantané pour une expérience utilisateur zen,
                   sans frustration
                 </p>
               </div>
 
-              <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all">
-                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center mb-6">
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-purple-500/50 transition-all group hover:scale-105">
+                <div className="h-16 w-16 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-8 w-8 text-white"
@@ -217,7 +296,7 @@ export default function BienEtreLandingPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2">
+                <h3 className="text-xl font-bold mb-4 text-white">
                   Présentation des soins
                 </h3>
                 <p className="text-gray-300">
@@ -230,20 +309,29 @@ export default function BienEtreLandingPage() {
         </section>
 
         {/* [4] Exemples de réalisations */}
-        <section className="py-20 bg-gradient-to-b from-black to-gray-900">
-          <div className="container mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Elles m&apos;ont fait confiance
-            </h2>
+        <section className="py-20 bg-gradient-to-b from-black to-gray-900 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent"></div>
+          <div className="container mx-auto px-6 relative">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-full px-4 py-1 mb-6 border border-purple-500/30">
+                <span className="text-purple-300 font-medium">
+                  Réalisations récentes
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
+                Elles m&apos;ont fait confiance
+              </h2>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
-              <div className="relative h-[400px] rounded-xl overflow-hidden shadow-2xl shadow-purple-500/20 border border-gray-800">
+              <div className="relative h-[400px] rounded-xl overflow-hidden shadow-2xl shadow-purple-500/20 border border-gray-800 group hover:scale-[1.02] transition-transform">
                 <Image
                   src="/image/site-vitrine.png"
                   alt="Site web Kris La Voix des Anges"
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-110 transition-transform duration-7000"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
 
               <div>
@@ -252,12 +340,12 @@ export default function BienEtreLandingPage() {
                     href="https://krislavoixdesanges.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline flex items-center"
+                    className="hover:underline flex items-center group"
                   >
                     Kris La Voix des Anges
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4 ml-2"
+                      className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -289,16 +377,16 @@ export default function BienEtreLandingPage() {
                   d&apos;élargir sa zone d&apos;influence.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full text-sm border border-gray-700">
                     Design spirituel
                   </span>
-                  <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full text-sm border border-gray-700">
                     Prise de RDV
                   </span>
-                  <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full text-sm border border-gray-700">
                     Présentation soins
                   </span>
-                  <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full text-sm border border-gray-700">
                     Témoignages clients
                   </span>
                 </div>
@@ -306,13 +394,14 @@ export default function BienEtreLandingPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-10 items-center">
-              <div className="relative h-[400px] rounded-xl overflow-hidden shadow-2xl shadow-purple-500/20 border border-gray-800 md:order-2">
+              <div className="relative h-[400px] rounded-xl overflow-hidden shadow-2xl shadow-purple-500/20 border border-gray-800 group hover:scale-[1.02] transition-transform md:order-2">
                 <Image
                   src="/image/landing.png"
                   alt="Site web Harmonie et Sens"
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-110 transition-transform duration-7000"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
 
               <div className="md:order-1">
@@ -321,12 +410,12 @@ export default function BienEtreLandingPage() {
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline flex items-center"
+                    className="hover:underline flex items-center group"
                   >
                     Harmonie et Sens 74
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4 ml-2"
+                      className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -358,16 +447,16 @@ export default function BienEtreLandingPage() {
                   attirer une nouvelle clientèle.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full text-sm border border-gray-700">
                     Ambiance zen
                   </span>
-                  <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full text-sm border border-gray-700">
                     Galerie soins
                   </span>
-                  <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full text-sm border border-gray-700">
                     Formulaire contact
                   </span>
-                  <span className="px-3 py-1 bg-gray-800 rounded-full text-sm">
+                  <span className="px-3 py-1 bg-gray-800/50 backdrop-blur-sm rounded-full text-sm border border-gray-700">
                     Blog bien-être
                   </span>
                 </div>
@@ -377,21 +466,34 @@ export default function BienEtreLandingPage() {
         </section>
 
         {/* [5] Tarifs clairs */}
-        <section className="py-20 bg-gray-900">
-          <div className="container mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Des tarifs clairs et transparents
-            </h2>
+        <section
+          id="tarifs"
+          className="py-20 bg-gray-900 relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent"></div>
+          <div className="container mx-auto px-6 relative">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-full px-4 py-1 mb-6 border border-purple-500/30">
+                <span className="text-purple-300 font-medium">
+                  Tarifs transparents
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
+                Des tarifs clairs et transparents
+              </h2>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {/* Formule Landing Page */}
-              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 h-full flex flex-col">
-                <div className="text-center">
-                  <div className="inline-block rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 px-5 py-1 text-sm font-medium mb-6">
+              <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 h-full flex flex-col group hover:scale-[1.02] transition-all">
+                <div className="text-center flex flex-col h-full">
+                  <div className="inline-block rounded-full bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm px-5 py-1 text-sm font-medium mb-6 border border-purple-500/30">
                     FORMULE LANDING PAGE
                   </div>
                   <div className="flex items-center justify-center mb-2">
-                    <span className="text-5xl font-bold">800€</span>
+                    <span className="text-5xl font-bold bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
+                      800€
+                    </span>
                     <span className="text-lg text-gray-400 ml-2">TTC</span>
                   </div>
                   <p className="text-gray-400 mb-8">
@@ -400,7 +502,7 @@ export default function BienEtreLandingPage() {
 
                   <div className="h-px w-full bg-gray-700 my-8"></div>
 
-                  <ul className="space-y-4 text-left mb-8">
+                  <ul className="space-y-4 text-left mb-8 flex-grow">
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
                       <span>Landing page professionnelle</span>
@@ -422,25 +524,30 @@ export default function BienEtreLandingPage() {
                   <div className="mt-auto">
                     <a
                       href="#contact"
-                      className="inline-block w-full py-4 px-8 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity text-center relative z-10"
+                      className="inline-block w-full py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-all hover:scale-105 text-center relative z-10 group"
                     >
-                      Demander ma landing page
+                      <span className="relative z-10">
+                        Demander ma landing page
+                      </span>
+                      <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     </a>
                   </div>
                 </div>
               </div>
 
               {/* Formule Site Vitrine */}
-              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 h-full flex flex-col relative overflow-hidden">
-                <div className="absolute top-8 right-0 bg-gradient-to-r from-indigo-500 to-purple-700 text-white text-xs font-bold px-8 py-1 uppercase transform rotate-45 translate-x-6">
+              <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 h-full flex flex-col relative overflow-hidden group hover:scale-[1.02] transition-all">
+                <div className="absolute top-8 right-0 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs font-bold px-8 py-1 uppercase transform rotate-45 translate-x-6">
                   Recommandé
                 </div>
-                <div className="text-center">
-                  <div className="inline-block rounded-full bg-gradient-to-r from-indigo-500 to-purple-700 px-5 py-1 text-sm font-medium mb-6">
+                <div className="text-center flex flex-col h-full">
+                  <div className="inline-block rounded-full bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm px-5 py-1 text-sm font-medium mb-6 border border-purple-500/30">
                     FORMULE SITE VITRINE
                   </div>
                   <div className="flex items-center justify-center mb-2">
-                    <span className="text-5xl font-bold">1600€</span>
+                    <span className="text-5xl font-bold bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
+                      1600€
+                    </span>
                     <span className="text-lg text-gray-400 ml-2">TTC</span>
                   </div>
                   <p className="text-gray-400 mb-8">
@@ -449,7 +556,7 @@ export default function BienEtreLandingPage() {
 
                   <div className="h-px w-full bg-gray-700 my-8"></div>
 
-                  <ul className="space-y-4 text-left mb-8">
+                  <ul className="space-y-4 text-left mb-8 flex-grow">
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
                       <span>Site complet (3-6 pages)</span>
@@ -479,9 +586,12 @@ export default function BienEtreLandingPage() {
                   <div className="mt-auto">
                     <a
                       href="#contact"
-                      className="inline-block w-full py-4 px-8 bg-gradient-to-r from-indigo-500 to-purple-700 rounded-lg font-medium text-lg hover:opacity-90 transition-opacity text-center relative z-10"
+                      className="inline-block w-full py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-all hover:scale-105 text-center relative z-10 group"
                     >
-                      Demander mon site vitrine
+                      <span className="relative z-10">
+                        Demander mon site vitrine
+                      </span>
+                      <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     </a>
                   </div>
                 </div>
@@ -497,22 +607,30 @@ export default function BienEtreLandingPage() {
         </section>
 
         {/* [6] Avis client */}
-        <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
-          <div className="container mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Elles en parlent mieux que moi
-            </h2>
+        <section className="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent"></div>
+          <div className="container mx-auto px-6 relative">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-full px-4 py-1 mb-6 border border-purple-500/30">
+                <span className="text-purple-300 font-medium">
+                  Témoignages clients
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
+                Elles en parlent mieux que moi
+              </h2>
+            </div>
 
-            <div className="max-w-3xl mx-auto bg-gray-800/50 p-8 rounded-xl border border-gray-700">
+            <div className="max-w-3xl mx-auto bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl border border-gray-700 group hover:scale-[1.02] transition-all">
               <svg
-                className="h-12 w-12 text-purple-500 mb-6"
+                className="h-12 w-12 text-purple-500 mb-6 group-hover:scale-110 transition-transform"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
 
-              <p className="text-xl italic mb-6">
+              <p className="text-xl italic mb-6 text-gray-300">
                 &quot;Florian a réalisé notre site et nous sommes RAVIS 🤩 Le
                 site est fluide, beau et accessible à tous. Naturellement les
                 performances sont à la hauteur de celui-ci. Florian est à
@@ -522,11 +640,11 @@ export default function BienEtreLandingPage() {
               </p>
 
               <div className="flex items-center">
-                <div className="h-12 w-12 rounded-full bg-purple-600 flex items-center justify-center mr-4">
-                  <span className="font-bold">KF</span>
+                <div className="h-12 w-12 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                  <span className="font-bold text-white">KF</span>
                 </div>
                 <div>
-                  <p className="font-bold">Kristelle Feron</p>
+                  <p className="font-bold text-white">Kristelle Feron</p>
                   <p className="text-gray-400">Kris La Voix des Anges</p>
                 </div>
               </div>
@@ -535,20 +653,28 @@ export default function BienEtreLandingPage() {
         </section>
 
         {/* [7] FAQ */}
-        <section className="py-20 bg-black">
-          <div className="container mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-              Questions fréquemment posées
-            </h2>
+        <section className="py-20 bg-black relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent"></div>
+          <div className="container mx-auto px-6 relative">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-full px-4 py-1 mb-6 border border-purple-500/30">
+                <span className="text-purple-300 font-medium">
+                  Questions fréquentes
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
+                Questions fréquemment posées
+              </h2>
+            </div>
 
             <div className="max-w-4xl mx-auto divide-y divide-gray-700">
               {/* Question 1 */}
               <details className="group py-4">
                 <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
-                  <span>
+                  <span className="text-white group-hover:text-purple-400 transition-colors">
                     Vais-je être visible sur Google grâce à votre site ?
                   </span>
-                  <span className="transition group-open:rotate-180">
+                  <span className="transition group-open:rotate-180 text-purple-400">
                     <svg
                       fill="none"
                       height="24"
@@ -580,11 +706,11 @@ export default function BienEtreLandingPage() {
               {/* Question 2 */}
               <details className="group py-4">
                 <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
-                  <span>
+                  <span className="text-white group-hover:text-purple-400 transition-colors">
                     Comment le design de mon site reflètera-t-il l&apos;univers
                     du bien-être ?
                   </span>
-                  <span className="transition group-open:rotate-180">
+                  <span className="transition group-open:rotate-180 text-purple-400">
                     <svg
                       fill="none"
                       height="24"
@@ -617,11 +743,11 @@ export default function BienEtreLandingPage() {
               {/* Question 3 */}
               <details className="group py-4">
                 <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
-                  <span>
+                  <span className="text-white group-hover:text-purple-400 transition-colors">
                     Est-ce que mes clients pourront prendre rendez-vous
                     directement sur le site ?
                   </span>
-                  <span className="transition group-open:rotate-180">
+                  <span className="transition group-open:rotate-180 text-purple-400">
                     <svg
                       fill="none"
                       height="24"
@@ -654,11 +780,11 @@ export default function BienEtreLandingPage() {
               {/* Question 4 */}
               <details className="group py-4">
                 <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
-                  <span>
+                  <span className="text-white group-hover:text-purple-400 transition-colors">
                     Comment allez-vous présenter mes différents soins et
                     techniques ?
                   </span>
-                  <span className="transition group-open:rotate-180">
+                  <span className="transition group-open:rotate-180 text-purple-400">
                     <svg
                       fill="none"
                       height="24"
@@ -692,11 +818,11 @@ export default function BienEtreLandingPage() {
               {/* Question 5 */}
               <details className="group py-4">
                 <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
-                  <span>
+                  <span className="text-white group-hover:text-purple-400 transition-colors">
                     Aurai-je besoin de compétences techniques pour gérer mon
                     site ?
                   </span>
-                  <span className="transition group-open:rotate-180">
+                  <span className="transition group-open:rotate-180 text-purple-400">
                     <svg
                       fill="none"
                       height="24"
@@ -730,11 +856,11 @@ export default function BienEtreLandingPage() {
               {/* Question 6 */}
               <details className="group py-4">
                 <summary className="flex justify-between items-center font-semibold text-xl cursor-pointer list-none">
-                  <span>
+                  <span className="text-white group-hover:text-purple-400 transition-colors">
                     Est-ce que ce site m&apos;aidera vraiment à développer ma
                     clientèle ?
                   </span>
-                  <span className="transition group-open:rotate-180">
+                  <span className="transition group-open:rotate-180 text-purple-400">
                     <svg
                       fill="none"
                       height="24"
@@ -770,18 +896,31 @@ export default function BienEtreLandingPage() {
         </section>
 
         {/* [8] Formulaire de contact */}
-        <section id="contact" className="py-20 bg-black">
-          <div className="container mx-auto px-6">
+        <section
+          id="contact"
+          className="py-20 bg-black relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent"></div>
+          <div className="container mx-auto px-6 relative">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-                Réserver mon appel découverte
-              </h2>
-              <p className="text-xl text-gray-300 mb-12 text-center">
-                Remplissez ce formulaire pour être rappelé gratuitement et sans
-                engagement
-              </p>
+              <div className="text-center mb-12">
+                <div className="inline-block bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-full px-4 py-1 mb-6 border border-purple-500/30">
+                  <span className="text-purple-300 font-medium">
+                    Contactez-moi
+                  </span>
+                </div>
+                <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
+                  Réserver mon appel découverte
+                </h2>
+                <p className="text-xl text-gray-300">
+                  Remplissez ce formulaire pour être rappelé gratuitement et
+                  sans engagement
+                </p>
+              </div>
 
-              <BienEtreContactForm />
+              <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
+                <BienEtreContactForm />
+              </div>
 
               <p className="text-gray-400 text-sm mt-6 text-center">
                 En soumettant ce formulaire, vous acceptez d&apos;être contacté
