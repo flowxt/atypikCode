@@ -133,6 +133,28 @@ export default function MobileMenu() {
             className="fixed inset-0 top-0 left-0 right-0 bottom-0 bg-gray-900/95 backdrop-blur-sm z-[100] md:hidden overflow-y-auto"
             style={{ position: 'fixed', height: '100vh', width: '100vw' }}
           >
+            {/* Bouton de fermeture */}
+            <button 
+              onClick={() => setIsOpen(false)}
+              className="absolute top-6 right-6 text-white hover:text-purple-400 transition-colors"
+              aria-label="Fermer le menu"
+            >
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                className="h-8 w-8" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M6 18L18 6M6 6l12 12" 
+                />
+              </svg>
+            </button>
+
             <div className="flex flex-col min-h-screen justify-start items-center pt-24 pb-16 px-8">
               <nav className="flex flex-col items-center gap-8 w-full">
                 {navLinks.map((link, index) => (
