@@ -829,11 +829,11 @@ export default function ArtisansLandingPage() {
                 <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 hover:border-purple-500/30 transition-all group">
                   <div className="flex items-center mb-4">
                     <div className="h-12 w-12 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
-                      <span className="text-sm font-bold text-white">JD</span>
+                      <span className="text-sm font-bold text-white">PG</span>
                     </div>
                     <div>
-                      <p className="font-bold">Jean Dupont</p>
-                      <p className="text-sm text-gray-400">Plombier</p>
+                      <p className="font-bold">Patrice Guffon</p>
+                      <p className="text-sm text-gray-400">Artisan</p>
                     </div>
                   </div>
                   <p className="text-gray-300 italic">
@@ -845,11 +845,11 @@ export default function ArtisansLandingPage() {
                 <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 hover:border-purple-500/30 transition-all group">
                   <div className="flex items-center mb-4">
                     <div className="h-12 w-12 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
-                      <span className="text-sm font-bold text-white">ML</span>
+                      <span className="text-sm font-bold text-white">SL</span>
                     </div>
                     <div>
-                      <p className="font-bold">Marie Laurent</p>
-                      <p className="text-sm text-gray-400">Électricienne</p>
+                      <p className="font-bold">Stéphanie L.</p>
+                      <p className="text-sm text-gray-400">Artisan</p>
                     </div>
                   </div>
                   <p className="text-gray-300 italic">
