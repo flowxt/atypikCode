@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ArtisansContactForm from "@/components/artisans/ArtisansContactForm";
+import ImageModal from "@/components/ImageModal";
 
 export const metadata = {
   title: "Site Web pour Artisans | Solution Clé en Main | Atypik Code",
@@ -366,6 +367,56 @@ export default function ArtisansLandingPage() {
                   Contenu adapté à votre activité: plombier, électricien,
                   menuisier...
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Stats Réelles */}
+        <section className="py-20 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+          </div>
+
+          <div className="container mx-auto px-6 relative">
+            <div className="text-center mb-12">
+              <div className="inline-block bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-full px-4 py-1 mb-6 border border-purple-500/30">
+                <span className="text-purple-300 font-medium">
+                  Résultats concrets
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
+                Des résultats qui parlent d&apos;eux-mêmes
+              </h2>
+              <p className="text-xl text-gray-300 mb-8">
+                Voici les statistiques réelles de mes sites sur les 30 derniers
+                jours
+              </p>
+              <p className="text-2xl font-bold text-purple-400 mb-12">
+                Plus de 500 visiteurs uniques sur 30j et un taux de rebond
+                inférieur à 45% sur mes sites
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-purple-500/30 transition-all group">
+                <h3 className="text-xl font-bold mb-4 text-purple-400">
+                  Atypik Code
+                </h3>
+                <ImageModal
+                  src="/image/stat_atypik.png"
+                  alt="Statistiques Atypik Code"
+                />
+              </div>
+
+              <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-purple-500/30 transition-all group">
+                <h3 className="text-xl font-bold mb-4 text-purple-400">
+                  Kris La Voix des Anges
+                </h3>
+                <ImageModal
+                  src="/image/stat_kris.png"
+                  alt="Statistiques Kris La Voix des Anges"
+                />
               </div>
             </div>
           </div>
