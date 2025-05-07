@@ -393,8 +393,7 @@ export default function ArtisansLandingPage() {
                 jours
               </p>
               <p className="text-2xl font-bold text-purple-400 mb-12">
-                Plus de 500 visiteurs uniques sur 30j et un taux de rebond
-                inférieur à 45% sur mes sites
+                Plus de 500 visiteurs uniques sur 30 jours
               </p>
             </div>
 
