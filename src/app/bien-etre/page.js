@@ -19,7 +19,7 @@ export default function BienEtreLandingPage() {
     <>
       <main className="bg-gray-950 relative">
         {/* [1] Hero Section */}
-        <section className="relative min-h-screen flex items-center overflow-hidden pt-20 md:pt-0">
+        <section className="relative min-h-[calc(100vh-5rem)] md:min-h-screen flex items-center overflow-hidden pt-20 md:pt-0">
           <div className="absolute inset-0 pointer-events-none">
             <Image
               src="/image/medium.jpg"
@@ -98,7 +98,7 @@ export default function BienEtreLandingPage() {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <svg
               className="w-6 h-6 text-white"
               fill="none"
