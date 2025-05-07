@@ -67,22 +67,28 @@ export default function BienEtreLandingPage() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-8 mt-12">
+              <div className="grid grid-cols-3 gap-4 mt-12">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-1">10+</div>
-                  <div className="text-sm text-gray-400">
+                  <div className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text mb-2">
+                    10+
+                  </div>
+                  <div className="text-sm md:text-base text-gray-400">
                     Thérapeutes satisfaits
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-1">
+                  <div className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text mb-2">
                     2 semaines
                   </div>
-                  <div className="text-sm text-gray-400">Délai moyen</div>
+                  <div className="text-sm md:text-base text-gray-400">
+                    Délai moyen
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-1">100%</div>
-                  <div className="text-sm text-gray-400">
+                  <div className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text mb-2">
+                    100%
+                  </div>
+                  <div className="text-sm md:text-base text-gray-400">
                     Satisfaction client
                   </div>
                 </div>
