@@ -69,7 +69,7 @@ export default function BienEtreLandingPage() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 mt-12">
                 <div className="text-center">
-                  <div className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text mb-2">
+                  <div className="text-xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text mb-2">
                     10+
                   </div>
                   <div className="text-sm md:text-base text-gray-400">
@@ -77,7 +77,7 @@ export default function BienEtreLandingPage() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text mb-2">
+                  <div className="text-xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text mb-2">
                     2 semaines
                   </div>
                   <div className="text-sm md:text-base text-gray-400">
@@ -85,7 +85,7 @@ export default function BienEtreLandingPage() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text mb-2">
+                  <div className="text-xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text mb-2">
                     100%
                   </div>
                   <div className="text-sm md:text-base text-gray-400">
