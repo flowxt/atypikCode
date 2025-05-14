@@ -548,7 +548,7 @@ export default function BienEtreLandingPage() {
                   </div>
                   <div className="flex items-center justify-center mb-2">
                     <span className="text-5xl font-bold bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
-                      800€
+                      600€
                     </span>
                     <span className="text-lg text-gray-400 ml-2">TTC</span>
                   </div>
@@ -602,12 +602,12 @@ export default function BienEtreLandingPage() {
                   </div>
                   <div className="flex items-center justify-center mb-2">
                     <span className="text-5xl font-bold bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
-                      1600€
+                      1200€
                     </span>
                     <span className="text-lg text-gray-400 ml-2">TTC</span>
                   </div>
                   <p className="text-gray-400 mb-8">
-                    + 49€/mois pour l&apos;hébergement et maintenance
+                    + 29€/mois pour l&apos;hébergement et maintenance
                   </p>
 
                   <div className="h-px w-full bg-gray-700 my-8"></div>
