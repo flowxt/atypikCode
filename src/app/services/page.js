@@ -9,9 +9,9 @@ export const metadata = {
   title:
     "Développement Web en Haute-Savoie | Sites & Landing Pages | Atypik Code",
   description:
-    "Création de sites web professionnels et landing pages en Haute-Savoie. SEO et design responsive. Solutions sur mesure pour entreprises.",
+    "Création de sites web professionnels et landing pages en Haute-Savoie pour entreprises et professionnels. SEO et design responsive. Solutions sur mesure.",
   keywords:
-    "développement web Haute-Savoie, création site internet, landing page, site vitrine, application web, SEO, site responsive, Annecy, haute-savoie",
+    "développement web Haute-Savoie, création site internet entreprise, landing page, site vitrine, application web, SEO, site responsive, Annecy, haute-savoie",
   alternates: {
     canonical: "https://www.atypikcode.fr/services",
   },
@@ -23,8 +23,8 @@ const services = [
     id: "pack-essentiel",
     title: "Pack Essentiel",
     description: "Landing page pour démarrer votre présence en ligne",
-    price: "À partir de 600€",
-    idealFor: "Artisans et petites entreprises",
+    price: "À partir de 800€",
+    idealFor: "Entreprises et professionnels",
     keyPoints: [
       "Landing page",
       "Référencement local optimisé",
@@ -86,7 +86,7 @@ export default function Services() {
               <strong className="text-purple-300"> optimisation SEO</strong> et
               <strong className="text-purple-300">
                 {" "}
-                expérience adaptée à votre activité
+                expérience adaptée à votre secteur d&apos;activité
               </strong>
             </p>
           </div>

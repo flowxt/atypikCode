@@ -8,9 +8,9 @@ import Link from "next/link";
 export const metadata = {
   title: "Services Informatiques | Configuration et Assistance | Atypik Code",
   description:
-    "Assistance informatique personnalisée, configuration de PC et Mac, synchronisation d'appareils Apple et assemblage de PC sur mesure. Solutions adaptées aux particuliers et professionnels.",
+    "Assistance informatique personnalisée, configuration de PC et Mac, synchronisation d'appareils Apple et assemblage de PC sur mesure en Haute-Savoie. Solutions adaptées aux particuliers et professionnels.",
   keywords:
-    "assistance informatique, configuration PC, synchronisation Apple, assemblage PC sur mesure, dépannage informatique, Haute-Savoie, installation logiciels",
+    "assistance informatique Haute-Savoie, configuration PC, synchronisation Apple, assemblage PC sur mesure, dépannage informatique, Annecy, installation logiciels",
 };
 
 // Données simplifiées des packs de services informatiques
