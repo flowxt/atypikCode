@@ -5,15 +5,17 @@ import Testimonials from "@/components/Testimonials";
 import SocialProof from "@/components/home/SocialProof";
 
 export const metadata = {
-  title: "Site Web Professionnel qui Génère des Clients | AtypikCode Annecy",
+  title:
+    "Développement Web La Roche-sur-Foron | Création Site Internet Haute-Savoie - Atypik Code",
   description:
-    "Créateur de sites web pour entreprises et professionnels en Haute-Savoie. Landing pages optimisées SEO qui transforment vos visiteurs en clients. Devis gratuit.",
+    "Expert développement web à La Roche-sur-Foron. Création sites internet modernes avec Next.js, React, Framer Motion. Landing pages qui convertissent. Devis gratuit 24h.",
   keywords:
-    "site web entreprise, landing page optimisée, développeur web Annecy, site internet professionnel, création site vitrine, référencement local Haute-Savoie, conversion client, développeur freelance",
+    "développement web la roche-sur-foron, création site internet la-roche-sur-foron, site web haute-savoie, framer motion, next.js développeur, landing page conversion, site internet la-roche-sur-foron, développeur web annecy, realisation site web la-roche-sur-foron",
   openGraph: {
-    title: "Site Web qui Génère des Clients | AtypikCode",
+    title:
+      "Développement Web La Roche-sur-Foron | Sites Internet Modernes - Atypik Code",
     description:
-      "Transformez vos visiteurs en clients avec un site web professionnel optimisé. Spécialiste des entreprises et professionnels en Haute-Savoie.",
+      "Développeur web spécialisé Next.js à La Roche-sur-Foron. Sites internet performants avec animations Framer Motion pour entreprises Haute-Savoie.",
     type: "website",
     locale: "fr_FR",
     images: [
@@ -21,15 +23,15 @@ export const metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "AtypikCode - Sites web professionnels",
+        alt: "Atypik Code - Développement web La Roche-sur-Foron",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Site Web qui Génère des Clients | AtypikCode",
+    title: "Développement Web La Roche-sur-Foron | Atypik Code",
     description:
-      "Créateur de sites web pour entreprises et professionnels. Optimisés pour la conversion.",
+      "Expert développement web moderne avec Next.js et Framer Motion en Haute-Savoie.",
   },
   alternates: {
     canonical: "https://www.atypikcode.fr",
