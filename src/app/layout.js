@@ -65,6 +65,98 @@ export const metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "AtypikCode",
+  url: "https://www.atypikcode.fr",
+  logo: "https://www.atypikcode.fr/logo.png",
+  description:
+    "Développeur web freelance spécialisé dans la création de sites web pour entreprises et professionnels en Haute-Savoie",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "FR",
+    addressRegion: "Haute-Savoie",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+33",
+    contactType: "customer service",
+    availableLanguage: "French",
+  },
+  sameAs: ["https://www.linkedin.com/in/florian-atypikcode"],
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "AtypikCode",
+  image: "https://www.atypikcode.fr/logo.png",
+  description:
+    "Création de sites web professionnels pour entreprises et professionnels",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "FR",
+    addressRegion: "Haute-Savoie",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 45.8992,
+    longitude: 6.1294,
+  },
+  url: "https://www.atypikcode.fr",
+  telephone: "+33",
+  priceRange: "€€",
+  openingHours: "Mo-Fr 09:00-18:00",
+  serviceArea: {
+    "@type": "Place",
+    name: "Haute-Savoie, France",
+  },
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Développement de sites web professionnels",
+  description:
+    "Création de sites web optimisés SEO, landing pages et applications web pour entreprises et professionnels",
+  provider: {
+    "@type": "Organization",
+    name: "AtypikCode",
+  },
+  areaServed: {
+    "@type": "Place",
+    name: "Haute-Savoie, France",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Services web",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Landing Page",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Site Vitrine",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Application Web",
+        },
+      },
+    ],
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
@@ -108,6 +200,30 @@ export default function RootLayout({ children }) {
         }
         `}
       </Script>
+
+      {/* Schema.org structured data */}
+      <Script
+        id="schema-organization"
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
+        {JSON.stringify(organizationSchema)}
+      </Script>
+      <Script
+        id="schema-local-business"
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
+        {JSON.stringify(localBusinessSchema)}
+      </Script>
+      <Script
+        id="schema-service"
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
+        {JSON.stringify(serviceSchema)}
+      </Script>
+
       <body
         className={`${inter.className} bg-[#0A0A0F] text-white min-h-screen`}
       >
