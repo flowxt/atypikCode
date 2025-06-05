@@ -1,8 +1,8 @@
 import { HeroSection } from "@/components/home/HeroSection";
 import ServicesOverview from "@/components/services/ServicesOverview";
 import CTA from "@/components/global/CTA";
-import Testimonials from "@/components/Testimonials";
 import SocialProof from "@/components/home/SocialProof";
+import FAQ from "@/components/home/FAQ";
 
 export const metadata = {
   title:
@@ -49,15 +49,15 @@ export default function Home() {
       {/* Services focus */}
       <ServicesOverview />
 
-      {/* Témoignages pour la confiance */}
-      <Testimonials />
+      {/* FAQ pour lever les objections */}
+      <FAQ />
 
       {/* CTA final */}
       <div className="container mx-auto px-4 my-16">
         <CTA
-          title="Prêt pour un site qui génère des clients ?"
-          description="Réservez un appel gratuit et sans engagement de 30 minutes"
-          buttonText="Réserver mon appel"
+          title="Prêt à tripler vos clients ?"
+          description="Plus que 7 places disponibles ce mois. Saisissez cette opportunité avant qu'il ne soit trop tard."
+          buttonText="OBTENIR MON DEVIS GRATUIT"
           buttonLink="/contact"
         />
       </div>
