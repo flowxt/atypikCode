@@ -56,7 +56,7 @@ export default function Home() {
       <div className="container mx-auto px-4 my-16">
         <CTA
           title="Prêt à tripler vos clients ?"
-          description="Plus que 7 places disponibles ce mois. Saisissez cette opportunité avant qu'il ne soit trop tard."
+          description="Contactez-nous pour discuter de votre projet et obtenir un devis personnalisé."
           buttonText="OBTENIR MON DEVIS GRATUIT"
           buttonLink="/contact"
         />

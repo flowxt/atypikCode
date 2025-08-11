@@ -9,7 +9,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: "💰 Combien coûte réellement un site web qui convertit ?",
-      answer: "Mes tarifs sont transparents : à partir de 640€ pour une landing page (au lieu de 800€) et 1280€ pour un site complet (au lieu de 1600€). C'est 3 à 5 fois moins cher qu'une agence traditionnelle, avec des résultats souvent meilleurs. L'investissement se rembourse généralement en 2-3 mois grâce aux nouveaux clients générés.",
+      answer: "Mes tarifs sont transparents : 750€ pour une landing page, 1600€ pour un site vitrine complet et à partir de 2200€ pour un site e-commerce. C'est un investissement rentable qui se rembourse généralement en 2-3 mois grâce aux nouveaux clients générés.",
       highlight: "Remboursé en 2-3 mois"
     },
     {

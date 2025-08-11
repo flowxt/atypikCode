@@ -96,7 +96,7 @@ export default function Services() {
           
           <div className="flex items-end justify-between mt-auto pt-4 border-t border-white/10">
             <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              À partir de 800€
+              750€
             </p>
             <div className="group-hover:translate-x-0 translate-x-10 transition-all duration-300 opacity-0 group-hover:opacity-100">
               <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -182,7 +182,7 @@ export default function Services() {
           
           <div className="flex items-end justify-between mt-auto pt-4 border-t border-white/10">
             <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-              À partir de 1200€
+              1600€
             </p>
             <div className="group-hover:translate-x-0 translate-x-10 transition-all duration-300 opacity-0 group-hover:opacity-100">
               <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -251,7 +251,7 @@ export default function Services() {
             
             <div className="flex items-end justify-between mt-auto pt-4 border-t border-white/10">
               <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-400">
-                À partir de 1800€
+                À partir de 2200€
               </p>
               <div className="group-hover:translate-x-0 translate-x-10 transition-all duration-300 opacity-0 group-hover:opacity-100">
                 <svg className="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

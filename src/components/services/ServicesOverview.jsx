@@ -17,8 +17,7 @@ export default function ServicesOverview() {
       ),
       title: 'Landing Page',
       subtitle: 'Parfait pour commencer',
-      price: 'À partir de 640€',
-      originalPrice: '800€',
+      price: '750€',
       description: 'Une page unique optimisée qui transforme vos visiteurs en clients. Idéal pour tester le marché.',
       features: [
         'Page unique ultra-performante',
@@ -42,8 +41,7 @@ export default function ServicesOverview() {
       ),
       title: 'Site Complet',
       subtitle: 'Pour dominer votre marché',
-      price: 'À partir de 1280€',
-      originalPrice: '1600€',
+      price: '1600€',
       description: 'Site web professionnel multi-pages qui établit votre autorité et génère des leads en continu.',
       features: [
         'Site multi-pages professionnel',
@@ -57,6 +55,30 @@ export default function ServicesOverview() {
       buttonText: 'Obtenir mon devis',
       resultsText: '+500% de visibilité en 3 mois',
       badge: 'PLUS POPULAIRE'
+    },
+    {
+      id: 'e-commerce',
+      icon: (
+        <svg className="w-20 h-20 text-purple-400 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5-6m0 0h15M9 19.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM20.5 19.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path>
+        </svg>
+      ),
+      title: 'Site E-commerce',
+      subtitle: 'Pour vendre en ligne',
+      price: 'À partir de 2200€',
+      description: 'Boutique en ligne complète avec gestion des commandes, paiements sécurisés et tableau de bord.',
+      features: [
+        'Boutique en ligne complète',
+        'Paiements sécurisés intégrés',
+        'Gestion des stocks et commandes',
+        'Tableau de bord administrateur',
+        'Optimisation SEO e-commerce'
+      ],
+      popular: false,
+      link: '/contact',
+      buttonText: 'Démarrer ma boutique',
+      resultsText: 'Ventes en ligne dès le premier mois',
+      badge: 'VENTE EN LIGNE'
     }
   ]
   
@@ -95,11 +117,11 @@ export default function ServicesOverview() {
             <svg className="w-5 h-5 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            <span className="text-green-300 font-medium">Résultats garantis • Livraison garantie</span>
+            <span className="text-green-300 font-medium">Qualité garantie • Accompagnement personnalisé</span>
           </motion.div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <motion.div
               key={service.id}
@@ -140,12 +162,6 @@ export default function ServicesOverview() {
                       <span className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
                         {service.price}
                       </span>
-                      <span className="text-xl text-gray-400 line-through">
-                        {service.originalPrice}
-                      </span>
-                    </div>
-                    <div className="text-sm text-green-400 font-medium">
-                      🔥 Économisez {parseInt(service.originalPrice) - parseInt(service.price.replace(/[^0-9]/g, ''))}€ aujourd'hui
                     </div>
                   </div>
 
@@ -191,43 +207,7 @@ export default function ServicesOverview() {
           ))}
         </div>
         
-        {/* Section urgence */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center mt-16"
-        >
-          <div className="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              ⏰ Offre limitée - 7 places restantes
-            </h3>
-            <p className="text-gray-300 mb-6">
-              Cette promotion se termine le 01 septembre. Après cette date, les prix reviennent à la normale.
-            </p>
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-400">
-              <div className="flex items-center">
-                <svg className="w-4 h-4 text-green-400 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                Sans engagement
-              </div>
-              <div className="flex items-center">
-                <svg className="w-4 h-4 text-blue-400 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                Devis en 24h
-              </div>
-              <div className="flex items-center">
-                <svg className="w-4 h-4 text-purple-400 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                </svg>
-                Résultats garantis
-              </div>
-            </div>
-          </div>
-        </motion.div>
+
       </div>
     </section>
   )

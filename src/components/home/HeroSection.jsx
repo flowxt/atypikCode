@@ -9,18 +9,7 @@ export function HeroSection() {
       {/* Conteneur principal avec z-index pour placer le texte au-dessus de l'effet */}
       <div className="relative z-20 text-center max-w-6xl px-4 pt-20 md:pt-0">
         
-        {/* Badge d'urgence en haut avec marge mobile */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="inline-flex items-center bg-gradient-to-r from-red-500/20 to-orange-500/20 px-4 md:px-6 py-2 md:py-3 rounded-full border border-red-500/30 mb-6 md:mb-8 mt-4 md:mt-0"
-        >
-          <div className="w-2 h-2 bg-red-500 rounded-full mr-2 md:mr-3 animate-pulse"></div>
-          <span className="text-xs md:text-sm font-medium text-red-300 text-center leading-tight">
-            🔥 OFFRE LIMITÉE : -20% jusqu&apos;au 01 septembre
-          </span>
-        </motion.div>
+
 
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +17,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-3xl md:text-6xl lg:text-7xl font-bold text-white pb-4 md:pb-6 leading-tight"
         >
-          Votre site web qui <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-700">triple</span> vos clients
+          Votre site web <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-700">professionnel</span> sur mesure
         </motion.h1>
         
         <motion.p 
@@ -37,7 +26,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 md:mb-8 max-w-4xl mx-auto font-medium px-2"
         >
-          Fini les sites invisibles ! Je crée des sites web qui transforment vos visiteurs en clients payants.
+          Je crée des sites web élégants et performants qui valorisent votre activité et attirent de nouveaux clients.
         </motion.p>
 
         {/* Preuves sociales plus fortes - adaptées mobile */}
@@ -85,9 +74,7 @@ export function HeroSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
               </svg>
             </span>
-            <div className="absolute -top-1 -right-1 md:-top-2 md:-right-2 bg-red-500 text-white text-xs px-1.5 py-0.5 md:px-2 md:py-1 rounded-full animate-pulse">
-              -20%
-            </div>
+
           </Link>
           
           <Link 
@@ -98,7 +85,7 @@ export function HeroSection() {
           </Link>
         </motion.div>
 
-        {/* Garantie et urgence - adaptée mobile */}
+        {/* Garanties professionnelles */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -117,11 +104,11 @@ export function HeroSection() {
             </svg>
             Réponse sous 24h
           </div>
-          <div className="flex items-center text-red-400">
+          <div className="flex items-center text-purple-400">
             <svg className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            7 places restantes
+            Accompagnement personnalisé
           </div>
         </motion.div>
       </div>

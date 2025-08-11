@@ -16,23 +16,10 @@ export default function CTA({ title, description, buttonText, buttonLink }) {
       <div className="absolute -top-40 -left-40 w-80 h-80 bg-purple-500/30 rounded-full filter blur-3xl animate-pulse"></div>
       <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-blue-500/30 rounded-full filter blur-3xl animate-pulse delay-75"></div>
       
-      {/* Badge d'urgence */}
-      <div className="absolute top-6 right-6 bg-gradient-to-r from-red-500 to-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse">
-        🔥 OFFRE LIMITÉE
-      </div>
+
       
       <div className="relative text-center">
-        {/* Compteur d'urgence */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="inline-flex items-center bg-gradient-to-r from-red-500/20 to-orange-500/20 px-6 py-3 rounded-full border border-red-500/30 mb-8"
-        >
-          <div className="w-3 h-3 bg-red-500 rounded-full mr-3 animate-pulse"></div>
-          <span className="text-red-300 font-bold">⏰ Plus que 7 places disponibles ce mois-ci</span>
-        </motion.div>
+
 
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
@@ -91,10 +78,7 @@ export default function CTA({ title, description, buttonText, buttonLink }) {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mb-8 relative inline-block"
         >
-          {/* Badge promo visible et bien positionné */}
-          <div className="absolute -top-3 -right-3 bg-red-500 text-white text-sm px-3 py-1 rounded-full animate-bounce font-bold z-10 shadow-lg">
-            -20%
-          </div>
+
           
           <Link href={buttonLink || "/contact"}>
             <motion.button 
@@ -106,7 +90,7 @@ export default function CTA({ title, description, buttonText, buttonLink }) {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
               <span className="relative flex items-center justify-center">
-                🚀 {buttonText || "OBTENIR MON DEVIS GRATUIT"}
+                {buttonText || "Obtenir mon devis gratuit"}
                 <svg className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                 </svg>

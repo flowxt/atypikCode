@@ -92,10 +92,7 @@ export default function Navbar() {
                 </svg>
               </Link>
               
-              {/* Badge -20% séparé et bien positionné */}
-              <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse">
-                -20%
-              </div>
+
             </div>
           </motion.div>
           

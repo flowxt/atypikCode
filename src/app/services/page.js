@@ -7,9 +7,9 @@ import Image from "next/image";
 
 export const metadata = {
   title:
-    "Sites Web Qui Convertissent | -20% jusqu'au 01 Septembre | Atypik Code",
+    "Sites Web Qui Convertissent | Atypik Code",
   description:
-    "Création de sites web à haute conversion en Haute-Savoie. Landing pages 640€ au lieu de 800€. Sites complets 1280€ au lieu de 1600€. 7 places restantes.",
+    "Création de sites web à haute conversion en Haute-Savoie. Landing pages 750€, Sites complets 1600€, E-commerce à partir de 2200€.",
   keywords:
     "site web conversion, landing page Haute-Savoie, création site internet, développeur web Annecy, site qui génère clients, augmenter chiffre affaires",
   alternates: {
@@ -17,15 +17,14 @@ export const metadata = {
   },
 };
 
-// Services orientés conversion avec urgence
+// Services orientés conversion
 const services = [
   {
     id: "landing-page",
     title: "Landing Page Ultra-Convertissante",
     description: "Votre page qui transforme les visiteurs en clients",
     priceOriginal: "800€",
-    price: "640€",
-    economy: "160€ d'économie",
+    price: "750€",
     idealFor: "Entrepreneurs qui veulent générer rapidement des leads",
     results: "+300% de conversions moyennes",
     keyPoints: [
@@ -47,8 +46,7 @@ const services = [
     title: "Site Complet Machine à Clients",
     description: "Votre arsenal digital pour dominer votre marché",
     priceOriginal: "1600€",
-    price: "1280€",
-    economy: "320€ d'économie",
+    price: "1600€",
     idealFor: "Entreprises sérieuses qui veulent exploser leur CA",
     results: "+500% de visibilité Google",
     keyPoints: [
@@ -77,15 +75,7 @@ export default function Services() {
         <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black/0 to-gray-950"></div>
 
         <div className="max-w-6xl mx-auto px-6 pt-16">
-          {/* Badge d'urgence */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center bg-gradient-to-r from-red-500/20 to-orange-500/20 px-6 py-3 rounded-full border border-red-500/30 mb-6">
-              <div className="w-3 h-3 bg-red-500 rounded-full mr-3 animate-pulse"></div>
-              <span className="text-red-300 font-bold">
-                🔥 OFFRE LIMITÉE -20% jusqu&apos;au 01 septembre • Plus que 7
-                places
-              </span>
-            </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
               Choisissez votre
@@ -181,13 +171,9 @@ export default function Services() {
                       <span className="text-lg text-gray-400 line-through">
                         {service.priceOriginal}
                       </span>
-                      <span className="bg-green-500/20 text-green-300 px-2 py-1 rounded-full text-sm font-medium">
-                        {service.economy}
-                      </span>
+
                     </div>
-                    <p className="text-green-400 font-medium text-sm">
-                      💰 {service.economy} - Offre limitée !
-                    </p>
+
                   </div>
 
                   <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-4 rounded-xl border border-blue-500/20 mb-4">
@@ -226,36 +212,13 @@ export default function Services() {
                     href="#booking"
                     className="block w-full text-center py-4 px-6 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl font-bold text-lg hover:opacity-90 transition-all hover:scale-105 shadow-lg shadow-purple-500/25"
                   >
-                    🚀 Réserver maintenant (-20%)
+                    🚀 Réserver maintenant
                   </Link>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Section urgence */}
-          <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-2xl p-8 mb-20 text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              ⚠️ Attention : Places limitées !
-            </h3>
-            <p className="text-lg text-gray-200 mb-6">
-              Je ne prends que{" "}
-              <strong className="text-red-300">
-                7 nouveaux projets par mois
-              </strong>{" "}
-              pour garantir la qualité.
-              <br />
-              <span className="text-orange-300">
-                Plus que 3 places disponibles en septembre.
-              </span>
-            </p>
-            <div className="flex justify-center items-center gap-4 text-sm text-gray-300">
-              <span>✅ Kristelle F. - Réservé</span>
-              <span>✅ Céline L. - Réservé</span>
-              <span>✅ Laurie P. - Réservé</span>
-              <span>⏳ Votre place ?</span>
-            </div>
-          </div>
 
           {/* Section réservation */}
           <div id="booking" className="mt-20">

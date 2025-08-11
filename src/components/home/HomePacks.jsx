@@ -81,28 +81,28 @@ export default function HomePacks() {
   const packs = [
     {
       id: "pack-essentiel",
-      title: "Pack Essentiel",
-      price: "À partir de 800€",
-      description: "Idéal pour les artisans et autoentrepreneurs en démarrage",
+      title: "Landing Page",
+      price: "750€",
+      description: "Idéal pour tester le marché et générer des leads rapidement",
       features: [
-        "Site vitrine 1-3 pages",
-        "Formulaire de contact",
-        "Optimisation mobile",
-        "Référencement local"
+        "Page unique ultra-performante",
+        "Formulaire de contact intelligent",
+        "Optimisation SEO complète",
+        "Design responsive premium"
       ],
       highlight: "Visibilité locale garantie",
       link: "/services#pack-essentiel",
     },
     {
       id: "pack-professionnel",
-      title: "Pack Professionnel",
-      price: "À partir de 1500€",
-      description: "Pour les PME et indépendants établis",
+      title: "Site Vitrine",
+      price: "1600€",
+      description: "Pour les entreprises qui veulent une présence web complète",
       features: [
-        "Site multi-pages complet",
-        "Système de prise de rendez-vous",
-        "Galerie photo et témoignages",
-        "Optimisation SEO avancée"
+        "Site multi-pages professionnel",
+        "Blog intégré pour le SEO",
+        "Système de rendez-vous automatisé",
+        "Analytics et suivi avancés"
       ],
       highlight: "Le plus populaire",
       isPopular: true,
@@ -110,14 +110,14 @@ export default function HomePacks() {
     },
     {
       id: "pack-premium",
-      title: "Pack Premium",
-      price: "À partir de 2800€",
-      description: "Solution complète pour entreprises en croissance",
+      title: "Site E-commerce",
+      price: "À partir de 2200€",
+      description: "Pour vendre vos produits en ligne efficacement",
       features: [
-        "Site web premium personnalisé",
-        "Blog intégré avec plan éditorial",
-        "Fonctionnalités sur mesure",
-        "Accompagnement mensuel"
+        "Boutique en ligne complète",
+        "Paiements sécurisés intégrés",
+        "Gestion des stocks et commandes",
+        "Tableau de bord administrateur"
       ],
       highlight: "Génération de leads maximale",
       link: "/services#pack-premium",
