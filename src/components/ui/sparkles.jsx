@@ -40,7 +40,7 @@ export const SparklesCore = (props) => {
 
   const generatedId = useId();
   return (
-    <motion.div animate={controls} className={cn("opacity-0", className)}>
+    <motion.div animate={controls} className={cn("opacity-0 pointer-events-none", className)}>
       {init && (
         <Particles
           id={id || generatedId}
@@ -61,7 +61,7 @@ export const SparklesCore = (props) => {
             interactivity: {
               events: {
                 onClick: {
-                  enable: true,
+                  enable: false,
                   mode: "push",
                 },
                 onHover: {

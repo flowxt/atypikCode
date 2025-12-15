@@ -3,84 +3,10 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-// Composants d'illustration pour chaque pack
-export const PackIllustration = ({ type }) => {
-  if (type === "pack-essentiel") {
-    return (
-      <div className="pack-illustration mb-6">
-        <svg className="w-full h-44" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="60" y="40" width="80" height="80" rx="4" fill="url(#gradientEssentiel)" />
-          <path d="M70 60H130M70 80H110" stroke="white" strokeWidth="2" opacity="0.7" />
-          <rect x="150" y="50" width="30" height="60" rx="4" fill="#6d28d9" opacity="0.8" />
-          <path d="M90 100C90 100 95 95 105 95C115 95 120 100 120 100" stroke="white" strokeWidth="1.5" opacity="0.9" />
-          <circle cx="40" cy="65" r="15" fill="#8b5cf6" opacity="0.7" />
-          <path d="M35 65L40 70L45 60" stroke="white" strokeWidth="1.5" />
-          <defs>
-            <linearGradient id="gradientEssentiel" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#8b5cf6" />
-              <stop offset="1" stopColor="#3b82f6" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <p className="text-center text-sm text-purple-300 mt-1">Présence web essentielle</p>
-      </div>
-    )
-  }
-  
-  if (type === "pack-professionnel") {
-    return (
-      <div className="pack-illustration mb-6">
-        <svg className="w-full h-44" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="40" y="30" width="120" height="90" rx="6" fill="url(#gradientPro)" />
-          <path d="M60 50H140M60 70H120M60 90H100" stroke="white" strokeWidth="2" opacity="0.7" />
-          <circle cx="150" cy="100" r="20" fill="#ec4899" opacity="0.8" />
-          <path d="M145 100L150 105L155 95" stroke="white" strokeWidth="2" />
-          <circle cx="50" cy="110" r="15" fill="#8b5cf6" opacity="0.8" />
-          <rect x="150" y="40" width="30" height="40" rx="4" fill="#3b82f6" opacity="0.8" />
-          <path d="M80 110C80 110 90 100 110 100C130 100 140 110 140 110" stroke="white" strokeWidth="1.5" opacity="0.9" />
-          <defs>
-            <linearGradient id="gradientPro" x1="0" y1="0" x2="150" y2="150" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#9333ea" />
-              <stop offset="1" stopColor="#2563eb" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <p className="text-center text-sm text-purple-300 mt-1">Site complet avec conversions</p>
-      </div>
-    )
-  }
-  
-  if (type === "pack-premium") {
-    return (
-      <div className="pack-illustration mb-6">
-        <svg className="w-full h-44" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="30" y="20" width="140" height="100" rx="8" fill="url(#gradientPremium)" />
-          <path d="M50 40H150M50 60H140M50 80H120M50 100H90" stroke="white" strokeWidth="2" opacity="0.7" />
-          <circle cx="160" cy="40" r="15" fill="#f472b6" opacity="0.8" className="animate-pulse" />
-          <rect x="30" y="110" width="30" height="25" rx="4" fill="#4f46e5" opacity="0.8" />
-          <rect x="140" y="70" width="40" height="30" rx="6" fill="#7c3aed" opacity="0.8" />
-          <path d="M150 85 L160 80 L170 85" stroke="white" strokeWidth="1.5" />
-          <path d="M70 115C70 115 85 105 110 105C135 105 150 115 150 115" stroke="white" strokeWidth="1.5" opacity="0.9" />
-          <defs>
-            <linearGradient id="gradientPremium" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#7c3aed" />
-              <stop offset="0.5" stopColor="#6366f1" />
-              <stop offset="1" stopColor="#2dd4bf" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <p className="text-center text-sm text-purple-300 mt-1">Solution digitale complète</p>
-      </div>
-    )
-  }
-  
-  return null;
-}
-
 export default function HomePacks() {
   const packs = [
     {
-      id: "pack-essentiel",
+      id: "landing-page",
       title: "Landing Page",
       price: "750€",
       description: "Idéal pour tester le marché et générer des leads rapidement",
@@ -90,11 +16,10 @@ export default function HomePacks() {
         "Optimisation SEO complète",
         "Design responsive premium"
       ],
-      highlight: "Visibilité locale garantie",
-      link: "/services#pack-essentiel",
+      link: "/services",
     },
     {
-      id: "pack-professionnel",
+      id: "site-vitrine",
       title: "Site Vitrine",
       price: "1600€",
       description: "Pour les entreprises qui veulent une présence web complète",
@@ -104,12 +29,11 @@ export default function HomePacks() {
         "Système de rendez-vous automatisé",
         "Analytics et suivi avancés"
       ],
-      highlight: "Le plus populaire",
       isPopular: true,
-      link: "/services#pack-professionnel",
+      link: "/services",
     },
     {
-      id: "pack-premium",
+      id: "e-commerce",
       title: "Site E-commerce",
       price: "À partir de 2200€",
       description: "Pour vendre vos produits en ligne efficacement",
@@ -119,112 +43,119 @@ export default function HomePacks() {
         "Gestion des stocks et commandes",
         "Tableau de bord administrateur"
       ],
-      highlight: "Génération de leads maximale",
-      link: "/services#pack-premium",
+      link: "/services",
     },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900/30 to-gray-900/80">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-14">
+    <section className="py-24 bg-black">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-purple-400 font-medium mb-4 tracking-wide uppercase text-sm"
+          >
+            Tarifs
+          </motion.p>
+          
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-bold mb-4"
+            transition={{ delay: 0.1 }}
+            className="text-3xl md:text-4xl font-bold text-white mb-4"
           >
-            Des formules adaptées à <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">vos besoins</span>
+            Des formules claires et transparentes
           </motion.h2>
+          
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg text-gray-300 max-w-2xl mx-auto"
+            transition={{ delay: 0.2 }}
+            className="text-lg text-gray-400 max-w-2xl mx-auto"
           >
-            Choisissez le pack qui correspond à votre activité et vos objectifs. Tous nos packs incluent un design personnalisé et une optimisation SEO.
+            Choisissez le pack qui correspond à votre activité. Design personnalisé et optimisation SEO inclus.
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+        {/* Grid */}
+        <div className="grid md:grid-cols-3 gap-6">
           {packs.map((pack, index) => (
             <motion.div
               key={pack.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`relative ${pack.isPopular ? 'md:-mt-4 md:-mb-4 z-10' : ''}`}
+              transition={{ delay: index * 0.1 }}
+              className={`relative ${pack.isPopular ? 'md:-mt-4 md:-mb-4' : ''}`}
             >
-              <div className={`h-full bg-gradient-to-br from-gray-800/60 to-gray-900/60 rounded-2xl border ${pack.isPopular ? 'border-purple-500/30' : 'border-white/10'} overflow-hidden shadow-lg ${pack.isPopular ? 'shadow-purple-500/20' : ''}`}>
+              <div className={`h-full bg-gradient-to-b from-gray-900 to-gray-950 rounded-2xl border ${pack.isPopular ? 'border-purple-500/30' : 'border-white/5'} overflow-hidden`}>
                 {pack.isPopular && (
-                  <div className="bg-gradient-to-r from-purple-500 to-blue-500 py-1.5 text-center">
-                    <span className="text-white text-sm font-medium">Le plus adapté pour votre activité</span>
+                  <div className="bg-gradient-to-r from-purple-500 to-blue-500 py-2 text-center">
+                    <span className="text-white text-sm font-medium">Recommandé</span>
                   </div>
                 )}
                 
                 <div className="p-8">
-                  <div className="mb-4">
-                    <span className="inline-block px-3 py-1 rounded-full bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 text-sm font-medium text-purple-300">
-                      {pack.highlight}
-                    </span>
+                  {/* Title & Price */}
+                  <div className="mb-6">
+                    <h3 className="text-xl font-bold text-white mb-2">{pack.title}</h3>
+                    <p className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
+                      {pack.price}
+                    </p>
                   </div>
                   
-                  <h3 className="text-2xl font-bold mb-2">{pack.title}</h3>
-                  <p className="text-gray-400 mb-5">{pack.description}</p>
+                  {/* Description */}
+                  <p className="text-gray-400 text-sm mb-6">{pack.description}</p>
                   
-                  {/* Illustration SVG pour chaque pack */}
-                  <PackIllustration type={pack.id} />
-                  
-                  <p className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-6">
-                    {pack.price}
-                  </p>
-                  
+                  {/* Features */}
                   <ul className="space-y-3 mb-8">
                     {pack.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-3">
-                        <span className="text-purple-400 text-lg mt-0.5">✓</span>
+                      <li key={featureIndex} className="flex items-start gap-3 text-sm">
+                        <svg className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
                         <span className="text-gray-300">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   
-                  <div className="mt-auto">
-                    <Link href={pack.link}>
-                      <motion.button
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        className={`w-full py-3 rounded-lg font-medium transition-all ${
-                          pack.isPopular
-                            ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600'
-                            : 'bg-gradient-to-r from-gray-700/40 to-gray-800/40 border border-white/10 text-white hover:bg-white/10'
-                        }`}
-                      >
-                        Voir les détails
-                      </motion.button>
-                    </Link>
-                  </div>
+                  {/* CTA */}
+                  <Link href={pack.link}>
+                    <button className={`w-full py-3 rounded-full font-medium text-sm transition-all ${
+                      pack.isPopular
+                        ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:opacity-90'
+                        : 'bg-white/5 text-white border border-white/10 hover:bg-white/10'
+                    }`}>
+                      En savoir plus
+                    </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
         
-        <div className="text-center mt-12">
-          <p className="text-gray-400 mb-4">Besoin d'une solution sur mesure ?</p>
-          <Link href="/services#booking">
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="px-6 py-3 bg-transparent border border-purple-500/30 rounded-lg font-medium text-purple-400 hover:bg-purple-500/10 transition-all"
-            >
+        {/* Note */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="text-center mt-12"
+        >
+          <p className="text-gray-500 text-sm mb-4">Besoin d&apos;une solution sur mesure ?</p>
+          <Link href="/contact">
+            <button className="px-6 py-3 rounded-full bg-transparent border border-white/10 text-white text-sm font-medium hover:bg-white/5 transition-all">
               Discutons de votre projet
-            </motion.button>
+            </button>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
-} 
+}
