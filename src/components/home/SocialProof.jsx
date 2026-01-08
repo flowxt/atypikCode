@@ -53,7 +53,7 @@ export default function SocialProof() {
   const mainTestimonials = testimonials.slice(0, 3);
 
   return (
-    <section className="py-24 bg-gradient-to-b from-black to-gray-950">
+    <section className="py-24 bg-gradient-to-b from-black to-gray-950 relative z-10">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">

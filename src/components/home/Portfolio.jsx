@@ -69,7 +69,7 @@ export default function Portfolio() {
   ]
 
   return (
-    <section id="portfolio" className="py-24 bg-gradient-to-b from-gray-950 to-black">
+    <section id="portfolio" className="py-24 bg-gradient-to-b from-gray-950 to-black relative z-10">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">

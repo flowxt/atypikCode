@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-950 to-black">
+    <section className="py-24 bg-gradient-to-b from-gray-950 to-black relative z-10">
       <div className="max-w-5xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           

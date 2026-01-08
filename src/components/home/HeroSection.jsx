@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden relative">
       {/* Effet de particules en arrière-plan */}
-      <div className="w-full h-full absolute inset-0 pointer-events-none">
+      <div className="w-full h-full absolute inset-0 pointer-events-none z-0">
         <SparklesCore
           background="transparent"
           minSize={0.4}

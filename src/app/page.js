@@ -50,7 +50,7 @@ export default function Home() {
       <FAQ />
       
       {/* CTA final */}
-      <div className="max-w-4xl mx-auto px-6 py-24">
+      <div className="max-w-4xl mx-auto px-6 py-24 relative z-10">
         <CTA
           title="Votre activité mérite un site d'exception."
           description="Ne laissez pas un site lent ou daté freiner votre croissance. Discutons de votre projet."
