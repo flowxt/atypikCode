@@ -165,7 +165,7 @@ export default function HomePacks() {
         >
           <p className="text-gray-500 text-sm">
             <span className="text-purple-400">💡</span> Peur de gérer votre site seul ? 
-            Je propose un <span className="text-gray-300">forfait maintenance</span> (25-50€/mois) 
+            Je propose un <span className="text-gray-300">forfait maintenance</span> (50-150€/mois) 
             pour que vous gardiez l&apos;esprit tranquille.
           </p>
         </motion.div>

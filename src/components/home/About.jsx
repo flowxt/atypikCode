@@ -78,7 +78,7 @@ export default function About() {
               {/* Photo */}
               <div className="relative z-10 rounded-2xl overflow-hidden border border-white/10">
                 <Image
-                  src="/image/flo-sansfond.png"
+                  src="/image/flo.PNG"
                   alt="Florian - Développeur web expert Next.js"
                   width={400}
                   height={400}

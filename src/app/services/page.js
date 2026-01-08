@@ -146,7 +146,7 @@ export default function Services() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
               <span className="text-gray-300 text-sm">
-                Frais d&apos;hébergement et maintenance : <span className="text-white font-medium">25 à 50€/mois</span> selon les options
+                Frais d&apos;hébergement et maintenance : <span className="text-white font-medium">50 à 150€/mois</span> selon les options
               </span>
             </div>
           </div>
