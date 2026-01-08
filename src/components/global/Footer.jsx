@@ -7,7 +7,7 @@ export default function Footer() {
             <h2 className="text-2xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
               Atypik Code
             </h2>
-            <p className="text-gray-400 mb-4">Création de sites web et landing pages professionnels en Haute-Savoie. Expert développeur React et Next.js.</p>
+            <p className="text-gray-400 mb-4">Sites web ultra-performants en Next.js. Conçus pour Google et la conversion.</p>
             <p className="text-gray-400">74800 Haute-Savoie, France</p>
             <p className="text-gray-400 mb-4">Email: <a href="mailto:floriandev74@gmail.com" className="hover:text-purple-400 transition-colors">floriandev74@gmail.com</a></p>
           </div>
@@ -15,12 +15,10 @@ export default function Footer() {
           <div className="md:w-1/3">
             <h3 className="text-xl font-semibold mb-4 text-white">Services</h3>
             <ul className="space-y-2">
-              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Création de sites web</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Landing pages</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Applications React/Next.js</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Landing Page</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Site Business</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">E-commerce & Apps</a></li>
               <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Optimisation SEO</a></li>
-              <li><a href="/artisans" className="text-gray-400 hover:text-purple-400 transition-colors">Sites pour artisans</a></li>
-              <li><a href="/bien-etre" className="text-gray-400 hover:text-purple-400 transition-colors">Sites bien-être & thérapies</a></li>
             </ul>
           </div>
           
@@ -31,8 +29,6 @@ export default function Footer() {
               <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Services</a></li>
               <li><a href="/blog" className="text-gray-400 hover:text-purple-400 transition-colors">Blog</a></li>
               <li><a href="/contact" className="text-gray-400 hover:text-purple-400 transition-colors">Contact</a></li>
-              <li><a href="/artisans" className="text-gray-400 hover:text-purple-400 transition-colors">Artisans</a></li>
-              <li><a href="/bien-etre" className="text-gray-400 hover:text-purple-400 transition-colors">Bien-être</a></li>
             </ul>
             
             <div className="flex gap-4">

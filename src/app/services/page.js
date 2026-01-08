@@ -3,11 +3,11 @@ import BookingCalendar from "@/components/services/BookingCalendar";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Services | Création de Sites Web - Atypik Code",
+  title: "Services | Sites Web Ultra-Performants - Atypik Code",
   description:
-    "Création de sites web professionnels en Haute-Savoie. Landing page 750€, Site vitrine 1600€, E-commerce à partir de 2200€. Devis gratuit.",
+    "Création de sites web Next.js ultra-rapides. Landing page à partir de 950€, Site Business 1900€, E-commerce sur devis. Devis gratuit en 24h.",
   keywords:
-    "création site web, landing page, site vitrine, e-commerce, développeur web haute-savoie",
+    "création site web next.js, landing page performante, site vitrine professionnel, e-commerce, développeur web haute-savoie",
   alternates: {
     canonical: "https://www.atypikcode.fr/services",
   },
@@ -16,44 +16,52 @@ export const metadata = {
 const services = [
   {
     id: "landing-page",
-    title: "Landing Page",
-    price: "750€",
-    description: "Une page unique optimisée pour convertir vos visiteurs en clients.",
+    title: "L'Essentiel",
+    subtitle: "Landing Page",
+    price: "À partir de 950€",
+    description: "Idéal pour lancer une offre ou capturer des leads. Une page unique optimisée pour la conversion.",
     features: [
-      "Design sur mesure",
-      "Formulaire de contact",
-      "Optimisation SEO",
-      "Responsive mobile",
-      "Livraison en 7 jours"
+      "Page unique optimisée conversion",
+      "Design sur-mesure Next.js",
+      "Responsive mobile parfait",
+      "Optimisation SEO de base",
+      "Formulaire de contact intégré",
+      "Hébergement inclus 1 an"
     ],
     color: "from-violet-500 to-purple-600"
   },
   {
-    id: "site-vitrine",
-    title: "Site Vitrine",
-    price: "1600€",
-    description: "Un site professionnel multi-pages pour établir votre présence en ligne.",
+    id: "site-business",
+    title: "Site Business",
+    subtitle: "Vitrine complète",
+    price: "À partir de 1 900€",
+    description: "Une présence complète pour asseoir votre crédibilité et convertir vos visiteurs.",
     features: [
-      "Site multi-pages",
-      "Blog intégré",
-      "Optimisation SEO avancée",
-      "Responsive toutes tailles",
-      "Livraison en 2-3 semaines"
+      "Jusqu'à 5 pages sur-mesure",
+      "Technologie Next.js ultra-rapide",
+      "Design premium personnalisé",
+      "Référencement SEO avancé",
+      "Formulaire + intégrations",
+      "Hébergement inclus 1 an",
+      "Analytics & suivi conversions"
     ],
     popular: true,
     color: "from-blue-500 to-cyan-500"
   },
   {
-    id: "e-commerce",
-    title: "E-commerce",
-    price: "À partir de 2200€",
-    description: "Une boutique en ligne complète pour vendre vos produits.",
+    id: "sur-mesure",
+    title: "Sur Mesure",
+    subtitle: "E-commerce & Apps",
+    price: "Sur devis",
+    description: "Pour les projets ambitieux qui veulent se démarquer avec une solution 100% personnalisée.",
     features: [
-      "Boutique complète",
-      "Paiements sécurisés",
-      "Gestion des stocks",
-      "Tableau de bord",
-      "Livraison en 3-4 semaines"
+      "Solution e-commerce complète",
+      "Application web sur-mesure",
+      "Fonctionnalités avancées",
+      "Performance maximale",
+      "Accompagnement dédié",
+      "Architecture scalable",
+      "Support prioritaire"
     ],
     color: "from-emerald-500 to-teal-600"
   }
@@ -69,11 +77,11 @@ export default function Services() {
             Services
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Des sites web qui vous ressemblent
+            Des sites conçus pour convertir
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Choisissez la formule adaptée à votre projet. 
-            Chaque site est unique et conçu spécifiquement pour votre activité.
+            Technologie Next.js — la même que Netflix ou Uber — pour un site 
+            plus rapide et mieux référencé que celui de vos concurrents.
           </p>
         </div>
       </section>
@@ -91,13 +99,14 @@ export default function Services() {
               >
                 {service.popular && (
                   <div className="bg-gradient-to-r from-blue-500 to-cyan-500 py-2 text-center">
-                    <span className="text-white text-sm font-medium">Recommandé</span>
+                    <span className="text-white text-sm font-medium">Le plus choisi</span>
                   </div>
                 )}
                 
                 <div className="p-8">
+                  <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">{service.subtitle}</p>
                   <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-                  <div className={`text-3xl font-bold bg-gradient-to-r ${service.color} bg-clip-text text-transparent mb-4`}>
+                  <div className={`text-2xl font-bold bg-gradient-to-r ${service.color} bg-clip-text text-transparent mb-4`}>
                     {service.price}
                   </div>
                   
@@ -155,7 +164,7 @@ export default function Services() {
               Prenez rendez-vous
             </h2>
             <p className="text-lg text-gray-400 max-w-xl mx-auto">
-              Un appel de 30 minutes pour discuter de votre projet et définir vos besoins.
+              Un appel de 30 minutes pour discuter de votre projet. Réponse garantie sous 24h.
             </p>
           </div>
 
@@ -168,7 +177,7 @@ export default function Services() {
         <div className="max-w-4xl mx-auto">
           <CTA
             title="Une question ?"
-            description="Je réponds à toutes vos questions par email ou WhatsApp."
+            description="Je réponds à toutes vos questions par email ou WhatsApp sous 24h."
             buttonText="Me contacter"
             buttonLink="/contact"
           />

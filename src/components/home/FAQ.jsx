@@ -7,8 +7,8 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "Combien coûte un site web ?",
-      answer: "Mes tarifs sont clairs : 750€ pour une landing page, 1600€ pour un site vitrine et à partir de 2200€ pour un e-commerce. À cela s'ajoutent des frais mensuels de 25 à 50€ pour l'hébergement et la maintenance."
+      question: "Combien coûte un site web performant ?",
+      answer: "Mes tarifs reflètent la qualité Next.js : à partir de 950€ pour une landing page, 1 900€ pour un site business complet, et sur devis pour les projets e-commerce ou sur-mesure. À cela s'ajoutent des frais mensuels de 25 à 50€ pour l'hébergement et la maintenance."
     },
     {
       question: "Quels sont les délais de livraison ?",

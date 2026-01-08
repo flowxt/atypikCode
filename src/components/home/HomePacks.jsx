@@ -1,51 +1,61 @@
 "use client"
 
-import Link from 'next/link'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function HomePacks() {
   const packs = [
     {
-      id: "landing-page",
-      title: "Landing Page",
-      price: "750€",
-      description: "Idéal pour tester le marché et générer des leads rapidement",
+      id: 'landing-conversion',
+      name: "L'Essentiel",
+      subtitle: "Landing Page",
+      description: "Idéal pour lancer une offre ou capturer des leads.",
+      price: "À partir de 950€",
       features: [
-        "Page unique ultra-performante",
-        "Formulaire de contact intelligent",
-        "Optimisation SEO complète",
-        "Design responsive premium"
+        "Page unique optimisée conversion",
+        "Design sur-mesure Next.js",
+        "Responsive mobile parfait",
+        "Optimisation SEO de base",
+        "Formulaire de contact intégré",
+        "Hébergement inclus 1 an"
       ],
-      link: "/services",
+      popular: false
     },
     {
-      id: "site-vitrine",
-      title: "Site Vitrine",
-      price: "1600€",
-      description: "Pour les entreprises qui veulent une présence web complète",
+      id: 'site-business',
+      name: "Site Business",
+      subtitle: "Vitrine complète",
+      description: "Une présence complète pour asseoir votre crédibilité.",
+      price: "À partir de 1 900€",
       features: [
-        "Site multi-pages professionnel",
-        "Blog intégré pour le SEO",
-        "Système de rendez-vous automatisé",
-        "Analytics et suivi avancés"
+        "Jusqu'à 5 pages sur-mesure",
+        "Technologie Next.js ultra-rapide",
+        "Design premium personnalisé",
+        "Référencement SEO avancé",
+        "Formulaire + intégrations",
+        "Hébergement inclus 1 an",
+        "Analytics & suivi des conversions"
       ],
-      isPopular: true,
-      link: "/services",
+      popular: true
     },
     {
-      id: "e-commerce",
-      title: "Site E-commerce",
-      price: "À partir de 2200€",
-      description: "Pour vendre vos produits en ligne efficacement",
+      id: 'sur-mesure',
+      name: "Sur Mesure",
+      subtitle: "E-commerce & Apps",
+      description: "Pour les projets ambitieux qui veulent se démarquer.",
+      price: "Sur devis",
       features: [
-        "Boutique en ligne complète",
-        "Paiements sécurisés intégrés",
-        "Gestion des stocks et commandes",
-        "Tableau de bord administrateur"
+        "Solution e-commerce complète",
+        "Application web sur-mesure",
+        "Fonctionnalités avancées",
+        "Performance maximale",
+        "Accompagnement dédié",
+        "Architecture scalable",
+        "Support prioritaire"
       ],
-      link: "/services",
-    },
-  ];
+      popular: false
+    }
+  ]
 
   return (
     <section className="py-24 bg-black">
@@ -58,31 +68,31 @@ export default function HomePacks() {
             viewport={{ once: true }}
             className="text-purple-400 font-medium mb-4 tracking-wide uppercase text-sm"
           >
-            Tarifs
+            Offres
           </motion.p>
           
-          <motion.h2
+          <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-4xl font-bold text-white mb-4"
+            className="text-3xl md:text-4xl font-bold text-white mb-6"
           >
-            Des formules claires et transparentes
+            Des sites conçus pour convertir
           </motion.h2>
           
-          <motion.p
+          <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             className="text-lg text-gray-400 max-w-2xl mx-auto"
           >
-            Choisissez le pack qui correspond à votre activité. Design personnalisé et optimisation SEO inclus.
+            Chaque projet est unique. Choisissez la formule qui correspond à vos ambitions.
           </motion.p>
         </div>
-
-        {/* Grid */}
+        
+        {/* Grille des packs */}
         <div className="grid md:grid-cols-3 gap-6">
           {packs.map((pack, index) => (
             <motion.div
@@ -91,69 +101,73 @@ export default function HomePacks() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`relative ${pack.isPopular ? 'md:-mt-4 md:-mb-4' : ''}`}
+              className={`relative rounded-2xl p-8 ${
+                pack.popular 
+                  ? 'bg-gradient-to-b from-purple-900/30 to-gray-950 border-2 border-purple-500/30' 
+                  : 'bg-gradient-to-b from-gray-900 to-gray-950 border border-white/5'
+              } hover:border-white/10 transition-all`}
             >
-              <div className={`h-full bg-gradient-to-b from-gray-900 to-gray-950 rounded-2xl border ${pack.isPopular ? 'border-purple-500/30' : 'border-white/5'} overflow-hidden`}>
-                {pack.isPopular && (
-                  <div className="bg-gradient-to-r from-purple-500 to-blue-500 py-2 text-center">
-                    <span className="text-white text-sm font-medium">Recommandé</span>
-                  </div>
-                )}
-                
-                <div className="p-8">
-                  {/* Title & Price */}
-                  <div className="mb-6">
-                    <h3 className="text-xl font-bold text-white mb-2">{pack.title}</h3>
-                    <p className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-                      {pack.price}
-                    </p>
-                  </div>
-                  
-                  {/* Description */}
-                  <p className="text-gray-400 text-sm mb-6">{pack.description}</p>
-                  
-                  {/* Features */}
-                  <ul className="space-y-3 mb-8">
-                    {pack.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-3 text-sm">
-                        <svg className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span className="text-gray-300">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  {/* CTA */}
-                  <Link href={pack.link}>
-                    <button className={`w-full py-3 rounded-full font-medium text-sm transition-all ${
-                      pack.isPopular
-                        ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:opacity-90'
-                        : 'bg-white/5 text-white border border-white/10 hover:bg-white/10'
-                    }`}>
-                      En savoir plus
-                    </button>
-                  </Link>
+              {/* Badge populaire */}
+              {pack.popular && (
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-semibold px-4 py-1.5 rounded-full">
+                    Le plus choisi
+                  </span>
                 </div>
+              )}
+              
+              {/* Header du pack */}
+              <div className="mb-6">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">{pack.subtitle}</p>
+                <h3 className="text-2xl font-bold text-white mt-1">{pack.name}</h3>
+                <p className="text-gray-400 mt-2 text-sm">{pack.description}</p>
               </div>
+              
+              {/* Prix */}
+              <div className="mb-6 pb-6 border-b border-white/5">
+                <span className="text-3xl font-bold text-white">{pack.price}</span>
+              </div>
+              
+              {/* Features */}
+              <ul className="space-y-3 mb-8">
+                {pack.features.map((feature, i) => (
+                  <li key={i} className="flex items-start text-gray-400 text-sm">
+                    <svg className="w-5 h-5 text-purple-400 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              
+              {/* CTA */}
+              <Link
+                href="/contact"
+                className={`block w-full text-center py-3 rounded-full font-medium transition-all ${
+                  pack.popular
+                    ? 'bg-white text-black hover:bg-gray-100'
+                    : 'bg-white/5 text-white border border-white/10 hover:bg-white/10'
+                }`}
+              >
+                Demander un devis
+              </Link>
             </motion.div>
           ))}
         </div>
         
-        {/* Note */}
+        {/* Note maintenance */}
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
           className="text-center mt-12"
         >
-          <p className="text-gray-500 text-sm mb-4">Besoin d&apos;une solution sur mesure ?</p>
-          <Link href="/contact">
-            <button className="px-6 py-3 rounded-full bg-transparent border border-white/10 text-white text-sm font-medium hover:bg-white/5 transition-all">
-              Discutons de votre projet
-            </button>
-          </Link>
+          <p className="text-gray-500 text-sm">
+            <span className="text-purple-400">💡</span> Peur de gérer votre site seul ? 
+            Je propose un <span className="text-gray-300">forfait maintenance</span> (25-50€/mois) 
+            pour que vous gardiez l&apos;esprit tranquille.
+          </p>
         </motion.div>
       </div>
     </section>

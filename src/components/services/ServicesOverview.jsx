@@ -7,44 +7,47 @@ export default function ServicesOverview() {
   const services = [
     {
       id: 'landing-page',
-      title: 'Landing Page',
-      price: '750€',
-      description: 'Une page unique optimisée pour convertir vos visiteurs en clients.',
+      title: "L'Essentiel",
+      subtitle: 'Landing Page',
+      price: 'À partir de 950€',
+      description: 'Idéal pour lancer une offre ou capturer des leads.',
       features: [
-        'Design sur mesure',
-        'Formulaire de contact',
-        'Optimisation SEO',
-        'Responsive mobile',
+        'Page unique optimisée conversion',
+        'Design sur-mesure Next.js',
+        'Responsive mobile parfait',
+        'Optimisation SEO de base',
         'Livraison 7 jours'
       ],
       color: 'from-violet-500 to-purple-600'
     },
     {
-      id: 'site-vitrine',
-      title: 'Site Vitrine',
-      price: '1600€',
-      description: 'Un site professionnel multi-pages pour établir votre présence en ligne.',
+      id: 'site-business',
+      title: 'Site Business',
+      subtitle: 'Vitrine complète',
+      price: 'À partir de 1 900€',
+      description: 'Une présence complète pour asseoir votre crédibilité.',
       features: [
-        'Site multi-pages',
-        'Blog intégré',
-        'Système de RDV',
-        'Analytics avancés',
+        "Jusqu'à 5 pages sur-mesure",
+        'Technologie Next.js ultra-rapide',
+        'Référencement SEO avancé',
+        'Analytics & suivi conversions',
         'Livraison 2-3 semaines'
       ],
       popular: true,
       color: 'from-blue-500 to-cyan-500'
     },
     {
-      id: 'e-commerce',
-      title: 'E-commerce',
-      price: 'À partir de 2200€',
-      description: 'Une boutique en ligne complète pour vendre vos produits.',
+      id: 'sur-mesure',
+      title: 'Sur Mesure',
+      subtitle: 'E-commerce & Apps',
+      price: 'Sur devis',
+      description: 'Pour les projets ambitieux qui veulent se démarquer.',
       features: [
-        'Boutique complète',
-        'Paiements sécurisés',
-        'Gestion des stocks',
-        'Tableau de bord',
-        'SEO e-commerce'
+        'Solution e-commerce complète',
+        'Application web sur-mesure',
+        'Fonctionnalités avancées',
+        'Performance maximale',
+        'Support prioritaire'
       ],
       color: 'from-emerald-500 to-teal-600'
     }
@@ -61,7 +64,7 @@ export default function ServicesOverview() {
             viewport={{ once: true }}
             className="text-purple-400 font-medium mb-4 tracking-wide uppercase text-sm"
           >
-            Services
+            Offres
           </motion.p>
           
           <motion.h2 
@@ -69,9 +72,9 @@ export default function ServicesOverview() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl font-bold text-white mb-6"
+            className="text-3xl md:text-4xl font-bold text-white mb-6"
           >
-            Des solutions adaptées à vos besoins
+            Des sites conçus pour convertir
           </motion.h2>
           
           <motion.p 
@@ -81,8 +84,7 @@ export default function ServicesOverview() {
             transition={{ delay: 0.2 }}
             className="text-lg text-gray-400 max-w-2xl mx-auto"
           >
-            Choisissez la formule qui correspond le mieux à votre projet. 
-            Chaque site est unique et conçu spécifiquement pour votre activité.
+            Chaque projet est unique. Choisissez la formule qui correspond à vos ambitions.
           </motion.p>
         </div>
         
@@ -101,7 +103,7 @@ export default function ServicesOverview() {
               {service.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
                   <span className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-1 rounded-full text-xs font-semibold">
-                    Recommandé
+                    Le plus choisi
                   </span>
                 </div>
               )}
@@ -110,8 +112,9 @@ export default function ServicesOverview() {
                 
                 {/* Titre et prix */}
                 <div className="mb-6">
+                  <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">{service.subtitle}</p>
                   <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-                  <div className={`text-3xl font-bold bg-gradient-to-r ${service.color} bg-clip-text text-transparent`}>
+                  <div className={`text-2xl font-bold bg-gradient-to-r ${service.color} bg-clip-text text-transparent`}>
                     {service.price}
                   </div>
                 </div>
