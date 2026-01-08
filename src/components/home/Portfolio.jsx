@@ -13,8 +13,7 @@ export default function Portfolio() {
       description: "Site complet pour une thérapeute spécialisée TCA avec système de RDV et blog",
       url: "https://www.psy-tca-annecy.com",
       type: "Site Business",
-      image: "/image/portfolio/psy-tca.jpg",
-      color: "from-amber-500 to-orange-600"
+      image: "/image/portfolio/tca.png"
     },
     {
       id: 2,
@@ -23,8 +22,7 @@ export default function Portfolio() {
       description: "Site élégant pour une praticienne en soins énergétiques et guidance spirituelle",
       url: "https://www.krislavoixdesanges.com",
       type: "Site Business",
-      image: "/image/portfolio/kris-voix-anges.jpg",
-      color: "from-purple-500 to-violet-600"
+      image: "/image/portfolio/kris.png"
     },
     {
       id: 3,
@@ -33,8 +31,7 @@ export default function Portfolio() {
       description: "Site vitrine pour une agence immobilière avec présentation des biens",
       url: "https://www.ener-immo92.fr",
       type: "Site Vitrine",
-      image: "/image/portfolio/ener-immo.jpg",
-      color: "from-blue-500 to-cyan-600"
+      image: "/image/portfolio/immo.png"
     },
     {
       id: 4,
@@ -43,8 +40,7 @@ export default function Portfolio() {
       description: "Site moderne pour un spa avec présentation des soins et réservation",
       url: "https://www.serenityspanoemiesaddier.fr",
       type: "Site Business",
-      image: "/image/portfolio/serenity-spa.jpg",
-      color: "from-teal-500 to-emerald-600"
+      image: "/image/portfolio/spa.png"
     },
     {
       id: 5,
@@ -53,8 +49,7 @@ export default function Portfolio() {
       description: "Site élégant pour un institut de beauté haut de gamme",
       url: "https://www.glambeauty-pro.fr",
       type: "Site Vitrine",
-      image: "/image/portfolio/glam-beauty.jpg",
-      color: "from-pink-500 to-rose-600"
+      image: "/image/portfolio/glam.png"
     },
     {
       id: 6,
@@ -63,8 +58,7 @@ export default function Portfolio() {
       description: "Site professionnel pour une entreprise de sécurité privée en Suisse",
       url: "https://www.sar-security.ch",
       type: "Site Business",
-      image: "/image/portfolio/sar-security.jpg",
-      color: "from-slate-500 to-gray-700"
+      image: "/image/portfolio/sar.png"
     }
   ]
 
@@ -115,24 +109,23 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative bg-gradient-to-b from-gray-900 to-gray-950 rounded-2xl border border-white/5 overflow-hidden hover:border-white/20 transition-all duration-300"
+              className="group relative bg-gradient-to-b from-gray-900 to-gray-950 rounded-2xl border border-white/5 overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300"
             >
-              {/* Image placeholder avec gradient */}
-              <div className={`relative h-48 bg-gradient-to-br ${project.color} overflow-hidden`}>
+              {/* Image du projet */}
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  fill
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                />
                 {/* Overlay au hover */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                  <span className="text-white font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center gap-2">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 flex items-center justify-center">
+                  <span className="text-white font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                     Voir le site
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                     </svg>
-                  </span>
-                </div>
-                
-                {/* Initiales en filigrane */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl font-bold text-white/20">
-                    {project.name.split(' ').map(w => w[0]).join('').slice(0, 2)}
                   </span>
                 </div>
               </div>
