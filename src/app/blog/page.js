@@ -14,6 +14,16 @@ export const metadata = {
 // Données simulées des articles de blog
 const blogPosts = [
   {
+    id: 9,
+    title: "Développeur Web à La Roche-sur-Foron : Création de Sites Internet en Haute-Savoie",
+    excerpt:
+      "Vous cherchez un développeur web à La Roche-sur-Foron ? Découvrez mes services de création de sites internet professionnels pour les entreprises de Haute-Savoie.",
+    date: "19 janvier 2026",
+    image: "/image/landing.png",
+    category: "SEO Local",
+    slug: "developpeur-web-la-roche-sur-foron",
+  },
+  {
     id: 8,
     title: "Comment créer une landing page qui convertit en 2025",
     excerpt:

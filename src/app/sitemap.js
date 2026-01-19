@@ -27,6 +27,12 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/blog/developpeur-web-la-roche-sur-foron`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/blog/guide-complet-framer-motion`,
       lastModified: new Date(),
       changeFrequency: "monthly",
