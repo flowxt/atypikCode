@@ -460,7 +460,7 @@ export default function DeveloppeurWebLaRocheSurForon() {
           </section>
 
           {/* CTA final */}
-          <section className="text-center bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-2xl border border-purple-500/20 p-12">
+          <section className="relative z-10 text-center bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-2xl border border-purple-500/20 p-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Prêt à créer votre site web{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
@@ -481,10 +481,10 @@ export default function DeveloppeurWebLaRocheSurForon() {
                 📞 Appel découverte gratuit
               </Link>
               <a 
-                href="mailto:contact@atypikcode.fr"
+                href="mailto:floriandev74@gmail.com"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-purple-500 text-purple-400 rounded-full font-semibold hover:bg-purple-500/10 transition-all"
               >
-                ✉️ contact@atypikcode.fr
+                ✉️ floriandev74@gmail.com
               </a>
             </div>
 
@@ -504,7 +504,7 @@ export default function DeveloppeurWebLaRocheSurForon() {
                 "description": "Développeur web freelance à La Roche-sur-Foron. Création de sites internet professionnels en Haute-Savoie.",
                 "url": "https://www.atypikcode.fr",
                 "telephone": "",
-                "email": "contact@atypikcode.fr",
+                "email": "floriandev74@gmail.com",
                 "address": {
                   "@type": "PostalAddress",
                   "addressLocality": "La Roche-sur-Foron",

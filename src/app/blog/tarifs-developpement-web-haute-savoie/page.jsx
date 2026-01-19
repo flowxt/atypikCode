@@ -480,7 +480,7 @@ export default function TarifsDeveloppementWeb() {
                 📞 Appel découverte gratuit
               </Link>
               <a 
-                href="mailto:contact@atypikcode.fr" 
+                href="mailto:floriandev74@gmail.com" 
                 className="border border-purple-500 text-purple-400 py-4 px-8 rounded-full font-semibold hover:bg-purple-500/10 transition-all"
               >
                 ✉️ Email direct
