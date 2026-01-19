@@ -20,8 +20,8 @@ export default function TarifsDeveloppementWeb() {
       icon: "🚀",
       packages: [
         {
-          name: "Landing Essential",
-          price: "800€",
+          name: "Landing Page",
+          price: "À partir de 950€",
           features: [
             "1 page d'atterrissage responsive",
             "Design sur mesure",
@@ -35,7 +35,7 @@ export default function TarifsDeveloppementWeb() {
         },
         {
           name: "Landing Pro",
-          price: "1 200€",
+          price: "À partir de 950€",
           features: [
             "Landing page + page de remerciement",
             "Design premium avec animations",
@@ -56,8 +56,8 @@ export default function TarifsDeveloppementWeb() {
       icon: "🏢",
       packages: [
         {
-          name: "Site Essential",
-          price: "1 500€",
+          name: "Site Vitrine",
+          price: "À partir de 1 900€",
           features: [
             "5 pages responsive",
             "Design professionnel",
@@ -72,7 +72,7 @@ export default function TarifsDeveloppementWeb() {
         },
         {
           name: "Site Business",
-          price: "2 500€",
+          price: "Sur devis",
           features: [
             "10 pages responsive",
             "Design premium avec animations",
@@ -162,7 +162,7 @@ export default function TarifsDeveloppementWeb() {
     { service: "Hébergement web", price: "10€/mois", description: "Serveur haute performance" },
     { service: "Certificat SSL", price: "Gratuit", description: "Sécurisation HTTPS" },
     { service: "Emails professionnels", price: "5€/mois/adresse", description: "contact@votreentreprise.fr" },
-    { service: "Maintenance mensuelle", price: "150€/mois", description: "Mises à jour + sauvegarde + support" },
+    { service: "Maintenance mensuelle", price: "50 à 150€/mois", description: "Hébergement + mises à jour + sauvegarde + support" },
     { service: "Formation", price: "100€/heure", description: "Formation à la gestion de votre site" },
     { service: "Rédaction contenu", price: "80€/page", description: "Rédaction SEO professionnelle" },
     { service: "Photos professionnelles", price: "300€/demi-journée", description: "Shooting produits/équipe" }
@@ -191,7 +191,7 @@ export default function TarifsDeveloppementWeb() {
               <h3 className="text-green-400 font-bold mb-2">💡 Engagement qualité</h3>
               <p className="text-gray-300">
                 Tous nos prix incluent : design responsive, optimisation SEO, formation, 
-                6 mois de maintenance gratuite et support technique. Aucun frais caché !
+                support technique réactif. Aucun frais caché !
               </p>
             </div>
           </header>
@@ -434,8 +434,8 @@ export default function TarifsDeveloppementWeb() {
                   answer: "Oui ! Paiement en 3 fois sans frais : 40% au lancement, 40% à mi-parcours, 20% à la livraison. Pour les projets > 3000€, possibilité de paiement en 4 fois."
                 },
                 {
-                  question: "Que se passe-t-il après les 6 mois de maintenance gratuite ?",
-                  answer: "Après 6 mois, vous pouvez continuer avec un contrat de maintenance (150€/mois) ou gérer votre site en autonomie. La formation incluse vous permet d'être totalement autonome."
+                  question: "Proposez-vous un forfait maintenance ?",
+                  answer: "Oui ! Je propose des forfaits maintenance de 50 à 150€/mois selon les options. Cela inclut l'hébergement, les mises à jour, les sauvegardes et le support technique."
                 },
                 {
                   question: "Les révisions sont-elles vraiment incluses ?",

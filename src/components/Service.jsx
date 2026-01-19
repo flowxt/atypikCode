@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function Services() {
   return (
     <section className="relative z-10 py-32 px-6 md:px-16">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -22,9 +22,9 @@ export default function Services() {
           Je crée des expériences web interactives et élégantes, parfaitement adaptées à votre image de marque et optimisées pour atteindre vos objectifs commerciaux.
         </p>
       </motion.div>
-      
+
       <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -39,37 +39,37 @@ export default function Services() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
             </svg>
           </div>
-          
+
           <div className="bg-gray-900/70 p-6 rounded-xl border border-white/10 mb-6">
             <div className="text-center">
               <div className="relative w-full h-40 mb-4">
-                <Image 
-                  src="/image/landing.png" 
-                  alt="Landing Page" 
-                  fill 
+                <Image
+                  src="/image/landing.png"
+                  alt="Landing Page"
+                  fill
                   className="object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <p className="text-gray-400">Image illustrative</p>
             </div>
           </div>
-          
+
           <div className="flex-grow">
             <h3 className="text-2xl font-bold mb-4 group-hover:text-purple-300 transition-all">Création de Landing Page</h3>
             <p className="text-gray-300 mb-6">
-              Une page web élégante et performante conçue pour maximiser vos conversions. 
+              Une page web élégante et performante conçue pour maximiser vos conversions.
               Design unique adapté à votre identité visuelle et totalement optimisé pour transformer vos visiteurs en clients.
             </p>
-            
+
             <p className="text-gray-300 mb-6">
               La landing page est souvent le premier contact de vos prospects avec votre entreprise. Je crée des pages d'atterrissage qui captent l'attention, communiquent clairement votre proposition de valeur et incitent à l'action.
             </p>
-            
+
             <h4 className="text-lg font-semibold mb-3 text-white">Pourquoi investir dans une landing page ?</h4>
             <p className="text-gray-300 mb-6">
               Une landing page bien conçue peut dramatiquement améliorer votre taux de conversion, optimiser vos campagnes publicitaires et augmenter le retour sur investissement de vos actions marketing.
             </p>
-            
+
             <ul className="space-y-3 text-gray-300 mb-8">
               <li className="flex items-center gap-3">
                 <span className="text-purple-400 text-lg">✓</span>
@@ -93,10 +93,10 @@ export default function Services() {
               </li>
             </ul>
           </div>
-          
+
           <div className="flex items-end justify-between mt-auto pt-4 border-t border-white/10">
             <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              750€
+              À partir de 950€
             </p>
             <div className="group-hover:translate-x-0 translate-x-10 transition-all duration-300 opacity-0 group-hover:opacity-100">
               <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -105,8 +105,8 @@ export default function Services() {
             </div>
           </div>
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -121,37 +121,37 @@ export default function Services() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
           </div>
-          
+
           <div className="bg-gray-900/70 p-6 rounded-xl border border-white/10 mb-6">
             <div className="text-center">
               <div className="relative w-full h-40 mb-4">
-                <Image 
-                  src="/image/site-vitrine.png" 
-                  alt="Site Vitrine" 
-                  fill 
+                <Image
+                  src="/image/site-vitrine.png"
+                  alt="Site Vitrine"
+                  fill
                   className="object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <p className="text-gray-400">Image illustrative</p>
             </div>
           </div>
-          
+
           <div className="flex-grow">
             <h3 className="text-2xl font-bold mb-4 group-hover:text-blue-300 transition-all">Création de Site Web</h3>
             <p className="text-gray-300 mb-6">
-              Un site web complet et professionnel avec toutes les fonctionnalités nécessaires pour 
+              Un site web complet et professionnel avec toutes les fonctionnalités nécessaires pour
               valoriser votre activité et vous démarquer de la concurrence dans le monde digital.
             </p>
-            
+
             <p className="text-gray-300 mb-6">
               Votre site web est votre vitrine digitale 24h/24 et 7j/7. Je conçois des sites web qui ne sont pas seulement esthétiques, mais aussi stratégiques et fonctionnels, en prenant en compte vos objectifs commerciaux spécifiques.
             </p>
-            
+
             <h4 className="text-lg font-semibold mb-3 text-white">Une approche centrée sur les résultats</h4>
             <p className="text-gray-300 mb-6">
               Chaque élément de votre site est pensé pour contribuer à vos objectifs commerciaux : générer des leads, vendre en ligne, renforcer votre image de marque ou informer votre public.
             </p>
-            
+
             <ul className="space-y-3 text-gray-300 mb-8">
               <li className="flex items-center gap-3">
                 <span className="text-blue-400 text-lg">✓</span>
@@ -179,10 +179,10 @@ export default function Services() {
               </li>
             </ul>
           </div>
-          
+
           <div className="flex items-end justify-between mt-auto pt-4 border-t border-white/10">
             <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-              1600€
+              À partir de 1 900€
             </p>
             <div className="group-hover:translate-x-0 translate-x-10 transition-all duration-300 opacity-0 group-hover:opacity-100">
               <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -192,9 +192,9 @@ export default function Services() {
           </div>
         </motion.div>
       </div>
-      
+
       {/* Section Application Mobile */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -209,23 +209,23 @@ export default function Services() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
           </svg>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-10">
           <div className="flex-grow">
             <h3 className="text-2xl font-bold mb-4 group-hover:text-pink-300 transition-all">Développement d'Application</h3>
             <p className="text-gray-300 mb-6">
               Des applications web et mobiles performantes et intuitives qui offrent une expérience utilisateur exceptionnelle et répondent précisément aux besoins de votre activité.
             </p>
-            
+
             <p className="text-gray-300 mb-6">
               Je développe des applications qui se démarquent par leur ergonomie, leur rapidité et leur fiabilité, en utilisant les technologies les plus adaptées à votre projet.
             </p>
-            
+
             <h4 className="text-lg font-semibold mb-3 text-white">Solutions adaptées à vos besoins</h4>
             <p className="text-gray-300 mb-6">
               Que vous ayez besoin d'une application web progressive, d'une application native ou hybride, je vous propose une solution sur mesure qui correspond parfaitement à vos objectifs.
             </p>
-            
+
             <ul className="space-y-3 text-gray-300 mb-8">
               <li className="flex items-center gap-3">
                 <span className="text-pink-400 text-lg">✓</span>
@@ -248,10 +248,10 @@ export default function Services() {
                 <span>Maintenance et support continus</span>
               </li>
             </ul>
-            
+
             <div className="flex items-end justify-between mt-auto pt-4 border-t border-white/10">
               <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-400">
-                À partir de 2200€
+                Sur devis
               </p>
               <div className="group-hover:translate-x-0 translate-x-10 transition-all duration-300 opacity-0 group-hover:opacity-100">
                 <svg className="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -260,14 +260,14 @@ export default function Services() {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-gray-900/70 p-6 rounded-xl border border-white/10 h-full flex items-center justify-center">
             <div className="text-center">
               <div className="relative w-full h-60 mb-4">
-                <Image 
-                  src="/image/appli.jpg" 
-                  alt="Application Mobile" 
-                  fill 
+                <Image
+                  src="/image/appli.jpg"
+                  alt="Application Mobile"
+                  fill
                   className="object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

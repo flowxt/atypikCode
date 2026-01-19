@@ -46,7 +46,7 @@ export default function ArtisansLandingPage() {
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl">
                 Artisan du bâtiment ou de la rénovation ? Offrez-vous un site
-                rapide, clair et pensé pour vos clients. Déjà plus de 10
+                rapide, clair et pensé pour vos clients. Déjà plus de 20
                 artisans satisfaits.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -605,11 +605,11 @@ export default function ArtisansLandingPage() {
                     FORMULE LANDING PAGE
                   </div>
                   <div className="flex items-center justify-center mb-2">
-                    <span className="text-5xl font-bold">600€</span>
+                    <span className="text-5xl font-bold">950€</span>
                     <span className="text-lg text-gray-400 ml-2">TTC</span>
                   </div>
                   <p className="text-gray-400 mb-8">
-                    + 19€/mois pour l&apos;hébergement et maintenance
+                    + 50 à 150€/mois pour l&apos;hébergement et maintenance
                   </p>
 
                   <div className="h-px w-full bg-gray-700 my-8"></div>
@@ -665,11 +665,11 @@ export default function ArtisansLandingPage() {
                     FORMULE SITE VITRINE
                   </div>
                   <div className="flex items-center justify-center mb-2">
-                    <span className="text-5xl font-bold">1200€</span>
+                    <span className="text-5xl font-bold">1 900€</span>
                     <span className="text-lg text-gray-400 ml-2">TTC</span>
                   </div>
                   <p className="text-gray-400 mb-8">
-                    + 29€/mois pour l&apos;hébergement et maintenance
+                    + 50 à 150€/mois pour l&apos;hébergement et maintenance
                   </p>
 
                   <div className="h-px w-full bg-gray-700 my-8"></div>

@@ -183,7 +183,7 @@ export default function DeveloppeurWebLaRocheSurForon() {
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-4 mb-3">
                       <h3 className="text-2xl font-bold text-white">Landing Page</h3>
-                      <span className="text-purple-400 font-bold text-xl">À partir de 750€</span>
+                      <span className="text-purple-400 font-bold text-xl">À partir de 950€</span>
                     </div>
                     <p className="text-gray-300 mb-4">
                       Page d'atterrissage optimisée pour la conversion. Idéale pour lancer une offre, 
@@ -220,7 +220,7 @@ export default function DeveloppeurWebLaRocheSurForon() {
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-4 mb-3">
                       <h3 className="text-2xl font-bold text-white">Site Vitrine Professionnel</h3>
-                      <span className="text-purple-400 font-bold text-xl">À partir de 1 600€</span>
+                      <span className="text-purple-400 font-bold text-xl">À partir de 1 900€</span>
                       <span className="bg-purple-500/20 text-purple-300 text-sm px-3 py-1 rounded-full">Populaire</span>
                     </div>
                     <p className="text-gray-300 mb-4">
@@ -258,7 +258,7 @@ export default function DeveloppeurWebLaRocheSurForon() {
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-4 mb-3">
                       <h3 className="text-2xl font-bold text-white">Site E-commerce</h3>
-                      <span className="text-purple-400 font-bold text-xl">À partir de 2 200€</span>
+                      <span className="text-purple-400 font-bold text-xl">Sur devis</span>
                     </div>
                     <p className="text-gray-300 mb-4">
                       Boutique en ligne professionnelle pour vendre vos produits ou services. 

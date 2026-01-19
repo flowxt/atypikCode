@@ -47,7 +47,7 @@ export default function BienEtreLandingPage() {
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl">
                 Sophrologue, énergéticienne, praticien bien-être ? Offrez-vous
                 un site doux, professionnel et qui vous ressemble. Déjà plus de
-                10 thérapeutes satisfaits.
+                20 thérapeutes satisfaits.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -71,7 +71,7 @@ export default function BienEtreLandingPage() {
               <div className="grid grid-cols-3 gap-4 mt-12">
                 <div className="text-center">
                   <div className="text-xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text mb-2">
-                    10+
+                    20+
                   </div>
                   <div className="text-sm md:text-base text-gray-400">
                     Thérapeutes satisfaits
@@ -548,12 +548,12 @@ export default function BienEtreLandingPage() {
                   </div>
                   <div className="flex items-center justify-center mb-2">
                     <span className="text-5xl font-bold bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
-                      600€
+                      950€
                     </span>
                     <span className="text-lg text-gray-400 ml-2">TTC</span>
                   </div>
                   <p className="text-gray-400 mb-8">
-                    + 19€/mois pour l&apos;hébergement et maintenance
+                    + 50 à 150€/mois pour l&apos;hébergement et maintenance
                   </p>
 
                   <div className="h-px w-full bg-gray-700 my-8"></div>
@@ -602,12 +602,12 @@ export default function BienEtreLandingPage() {
                   </div>
                   <div className="flex items-center justify-center mb-2">
                     <span className="text-5xl font-bold bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
-                      1200€
+                      1 900€
                     </span>
                     <span className="text-lg text-gray-400 ml-2">TTC</span>
                   </div>
                   <p className="text-gray-400 mb-8">
-                    + 29€/mois pour l&apos;hébergement et maintenance
+                    + 50 à 150€/mois pour l&apos;hébergement et maintenance
                   </p>
 
                   <div className="h-px w-full bg-gray-700 my-8"></div>
