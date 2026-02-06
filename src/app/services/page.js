@@ -5,11 +5,16 @@ import Link from "next/link";
 export const metadata = {
   title: "Services | Sites Web Ultra-Performants - Atypik Code",
   description:
-    "Création de sites web Next.js ultra-rapides. Landing page à partir de 950€, Site Business 1900€, E-commerce sur devis. Devis gratuit en 24h.",
+    "Création de sites web Next.js ultra-rapides en Haute-Savoie. Landing page à partir de 950€, Site Business 1900€, E-commerce sur devis. Devis gratuit en 24h.",
   keywords:
-    "création site web next.js, landing page performante, site vitrine professionnel, e-commerce, développeur web haute-savoie",
+    "création site web next.js, landing page performante, site vitrine professionnel, e-commerce, développeur web haute-savoie, tarif site internet",
   alternates: {
     canonical: "https://www.atypikcode.fr/services",
+  },
+  openGraph: {
+    title: "Services | Sites Web Ultra-Performants - Atypik Code",
+    description: "Landing page 950€, Site Business 1900€, E-commerce sur devis. Devis gratuit en 24h.",
+    type: "website",
   },
 };
 

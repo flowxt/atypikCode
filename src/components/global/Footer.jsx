@@ -23,12 +23,15 @@ export default function Footer() {
           </div>
           
           <div className="md:w-1/3">
-            <h3 className="text-xl font-semibold mb-4 text-white">Liens rapides</h3>
+            <h3 className="text-xl font-semibold mb-4 text-white">Navigation</h3>
             <ul className="space-y-2 mb-6">
               <li><a href="/" className="text-gray-400 hover:text-purple-400 transition-colors">Accueil</a></li>
               <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Services</a></li>
+              <li><a href="/artisans" className="text-gray-400 hover:text-purple-400 transition-colors">Sites pour Artisans</a></li>
+              <li><a href="/bien-etre" className="text-gray-400 hover:text-purple-400 transition-colors">Sites Bien-être</a></li>
               <li><a href="/blog" className="text-gray-400 hover:text-purple-400 transition-colors">Blog</a></li>
               <li><a href="/contact" className="text-gray-400 hover:text-purple-400 transition-colors">Contact</a></li>
+              <li><a href="/developpement-web-la-roche-sur-foron" className="text-gray-400 hover:text-purple-400 transition-colors">Dev Web La Roche-sur-Foron</a></li>
             </ul>
             
             <div className="flex gap-4">
@@ -47,7 +50,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-10 pt-10 border-t border-white/5 text-center">
-          <p className="text-gray-500 mb-3">© 2025 <a href="https://www.atypikcode.fr" className="hover:text-purple-400">Atypik Code</a> - Tous droits réservés | <span className="hidden sm:inline">Développeur web freelance en</span> Haute-Savoie</p>
+          <p className="text-gray-500 mb-3">© {new Date().getFullYear()} <a href="https://www.atypikcode.fr" className="hover:text-purple-400">Atypik Code</a> - Tous droits réservés | <span className="hidden sm:inline">Développeur web freelance en</span> Haute-Savoie</p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <a href="https://portfolio-florian-rose.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm text-purple-400 hover:text-purple-300 transition-all">
               Voir mon portfolio

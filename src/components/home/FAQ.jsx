@@ -1,39 +1,51 @@
-"use client"
+const faqs = [
+  {
+    question: "Combien coûte un site web performant ?",
+    answer: "Mes tarifs reflètent la qualité Next.js : à partir de 950€ pour une landing page, 1 900€ pour un site business complet, et sur devis pour les projets e-commerce ou sur-mesure. À cela s'ajoutent des frais mensuels de 50 à 150€ pour l'hébergement et la maintenance selon les options choisies."
+  },
+  {
+    question: "Quels sont les délais de livraison ?",
+    answer: "Une landing page est livrée en 7 jours, un site vitrine en 2-3 semaines, et un e-commerce en 3-4 semaines. Je m'adapte aussi à vos urgences."
+  },
+  {
+    question: "Dois-je fournir le contenu ?",
+    answer: "Idéalement oui, vous connaissez votre activité mieux que personne. Mais je peux vous aider à structurer vos textes et vous conseiller sur les images."
+  },
+  {
+    question: "Le site sera-t-il optimisé pour Google ?",
+    answer: "Absolument ! Tous mes sites incluent une optimisation SEO : balises, vitesse, structure. Le référencement naturel fait partie de mon expertise."
+  },
+  {
+    question: "Pourrai-je modifier mon site ?",
+    answer: "Pour les modifications de contenu (textes, images), je vous montre comment faire. Pour les modifications techniques, je reste disponible."
+  },
+  {
+    question: "Comment se passe le paiement ?",
+    answer: "Je demande 30% à la commande pour démarrer, et le solde à la livraison. Possibilité de paiement en plusieurs fois pour les projets importants."
+  }
+];
 
-import { useState } from 'react'
+// Schema FAQPage pour Google (rich snippets FAQ)
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const faqs = [
-    {
-      question: "Combien coûte un site web performant ?",
-      answer: "Mes tarifs reflètent la qualité Next.js : à partir de 950€ pour une landing page, 1 900€ pour un site business complet, et sur devis pour les projets e-commerce ou sur-mesure. À cela s'ajoutent des frais mensuels de 50 à 150€ pour l'hébergement et la maintenance selon les options choisies."
-    },
-    {
-      question: "Quels sont les délais de livraison ?",
-      answer: "Une landing page est livrée en 7 jours, un site vitrine en 2-3 semaines, et un e-commerce en 3-4 semaines. Je m'adapte aussi à vos urgences."
-    },
-    {
-      question: "Dois-je fournir le contenu ?",
-      answer: "Idéalement oui, vous connaissez votre activité mieux que personne. Mais je peux vous aider à structurer vos textes et vous conseiller sur les images."
-    },
-    {
-      question: "Le site sera-t-il optimisé pour Google ?",
-      answer: "Absolument ! Tous mes sites incluent une optimisation SEO : balises, vitesse, structure. Le référencement naturel fait partie de mon expertise."
-    },
-    {
-      question: "Pourrai-je modifier mon site ?",
-      answer: "Pour les modifications de contenu (textes, images), je vous montre comment faire. Pour les modifications techniques, je reste disponible."
-    },
-    {
-      question: "Comment se passe le paiement ?",
-      answer: "Je demande 30% à la commande pour démarrer, et le solde à la livraison. Possibilité de paiement en plusieurs fois pour les projets importants."
-    }
-  ];
-
   return (
     <section className="py-24 bg-black relative z-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-3xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -50,55 +62,38 @@ export default function FAQ() {
           </p>
         </div>
 
-        {/* FAQ Items */}
+        {/* FAQ Items - rendu serveur avec <details> pour indexation Google */}
         <div className="space-y-3">
-          {faqs.map((faq, index) => {
-            const isOpen = openIndex === index;
-            
-            return (
-              <div
-                key={index}
-                className={`rounded-xl border transition-all duration-200 ${
-                  isOpen 
-                    ? 'border-purple-500/30 bg-gray-900' 
-                    : 'border-white/5 bg-gray-900/50 hover:border-white/10'
-                }`}
-              >
-                <button
-                  type="button"
-                  onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="w-full p-5 text-left flex justify-between items-center cursor-pointer relative z-20"
+          {faqs.map((faq, index) => (
+            <details
+              key={index}
+              className="rounded-xl border border-white/5 bg-gray-900/50 hover:border-white/10 transition-all duration-200 group open:border-purple-500/30 open:bg-gray-900"
+            >
+              <summary className="p-5 text-left flex justify-between items-center cursor-pointer list-none relative z-20">
+                <span className="text-base font-medium text-white pr-4">
+                  {faq.question}
+                </span>
+                <svg
+                  className="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200 group-open:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
                 >
-                  <span className="text-base font-medium text-white pr-4">
-                    {faq.question}
-                  </span>
-                  <svg
-                    className={`w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180' : ''
-                    }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-                
-                {isOpen && (
-                  <div className="px-5 pb-5">
-                    <p className="text-gray-400 text-sm leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </div>
-                )}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div className="px-5 pb-5">
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {faq.answer}
+                </p>
               </div>
-            );
-          })}
+            </details>
+          ))}
         </div>
 
         {/* Contact */}

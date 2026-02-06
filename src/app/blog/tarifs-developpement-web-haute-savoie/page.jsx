@@ -2,11 +2,14 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Tarifs Développement Web Haute-Savoie 2024 | Prix Sites Internet La Roche-sur-Foron',
+  title: 'Tarifs Développement Web Haute-Savoie 2025 | Prix Sites Internet La Roche-sur-Foron',
   description: 'Découvrez nos tarifs transparents pour le développement web en Haute-Savoie. Prix site vitrine, landing page, application à La Roche-sur-Foron. Devis gratuit.',
   keywords: 'tarifs développement web, prix site internet haute-savoie, coût création site web la roche-sur-foron, devis développeur web, tarif landing page',
+  alternates: {
+    canonical: 'https://www.atypikcode.fr/blog/tarifs-developpement-web-haute-savoie',
+  },
   openGraph: {
-    title: 'Tarifs Développement Web Haute-Savoie 2024 | Prix Transparents',
+    title: 'Tarifs Développement Web Haute-Savoie 2025 | Prix Transparents',
     description: 'Prix clairs et transparents pour votre projet web en Haute-Savoie. Du site vitrine à l\'application sur mesure.',
     type: 'article',
   },

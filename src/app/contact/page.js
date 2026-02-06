@@ -7,6 +7,9 @@ export const metadata = {
     "Contactez Florian Barjon, développeur web freelance en Haute-Savoie, pour discuter de votre projet de site web, landing page ou application. Demandez un devis gratuit.",
   keywords:
     "contact développeur web, devis site internet, freelance Haute-Savoie, création landing page, contact Atypik Code",
+  alternates: {
+    canonical: "https://www.atypikcode.fr/contact",
+  },
 };
 
 export default function ContactPage() {

@@ -6,11 +6,17 @@ import ImageModal from "@/components/ImageModal";
 export const metadata = {
   title: "Site Web pour Artisans | Solution Clé en Main | Atypik Code",
   description:
-    "Site web professionnel pour artisans du bâtiment et de la rénovation. Design moderne, sans tracas et adapté à votre métier.",
+    "Site web professionnel pour artisans du bâtiment et de la rénovation en Haute-Savoie. Design moderne, sans tracas et adapté à votre métier. À partir de 950€.",
   keywords:
     "site web artisan, site internet artisan, site artisan bâtiment, site internet plombier, site web électricien, site web maçon, site internet menuisier, Haute-Savoie, Annecy",
   alternates: {
     canonical: "https://www.atypikcode.fr/artisans",
+  },
+  openGraph: {
+    title: "Site Web pour Artisans | Solution Clé en Main",
+    description: "Site web professionnel pour artisans du bâtiment et de la rénovation. Design moderne, sans tracas et adapté à votre métier.",
+    type: "website",
+    images: [{ url: "/image/artisan.jpg", width: 1200, height: 630, alt: "Site web pour artisans - Atypik Code" }],
   },
 };
 

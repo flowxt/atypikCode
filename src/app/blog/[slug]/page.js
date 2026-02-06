@@ -1088,9 +1088,17 @@ export default function App({ Component, pageProps }) {
   },
 ];
 
+// Pré-génère les pages statiques pour tous les slugs connus
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 // Génère les métadonnées de la page dynamiquement
 export async function generateMetadata({ params }) {
-  const post = blogPosts.find((post) => post.slug === params.slug);
+  const { slug } = await params;
+  const post = blogPosts.find((post) => post.slug === slug);
 
   if (!post) {
     return {
@@ -1111,21 +1119,68 @@ export async function generateMetadata({ params }) {
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
+      images: [
+        {
+          url: post.image,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
     },
   };
 }
 
-export default function BlogPost({ params }) {
+export default async function BlogPost({ params }) {
+  const { slug } = await params;
   // Trouver l'article correspondant au slug
-  const post = blogPosts.find((post) => post.slug === params.slug);
+  const post = blogPosts.find((post) => post.slug === slug);
 
   // Si l'article n'existe pas, renvoyer une page 404
   if (!post) {
     notFound();
   }
 
+  // Schema Article pour le SEO
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    image: `https://www.atypikcode.fr${post.image}`,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Person",
+      name: "Florian Barjon",
+      url: "https://www.atypikcode.fr",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Atypik Code",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.atypikcode.fr/logo.png",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.atypikcode.fr/blog/${post.slug}`,
+    },
+  };
+
   return (
     <main className="container mx-auto px-4 py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <div className="max-w-4xl mx-auto">
         <Link
           href="/blog"

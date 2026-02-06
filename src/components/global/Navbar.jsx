@@ -25,10 +25,11 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [scrolled])
   
-  // Navigation simplifiée pour la conversion
+  // Navigation simplifiée pour la conversion + blog pour SEO
   const navLinks = [
     { text: 'Accueil', href: '/' },
     { text: 'Services', href: '/services' },
+    { text: 'Blog', href: '/blog' },
     { text: 'Contact', href: '/contact' },
   ]
   

@@ -54,6 +54,13 @@ export const metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   openGraph: {
     title: "Atypik Code | Développeur Web Premium en Haute-Savoie",
@@ -63,55 +70,102 @@ export const metadata = {
     siteName: "Atypik Code",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "/image/florian-dev.png",
+        width: 1200,
+        height: 630,
+        alt: "Atypik Code - Développeur Web en Haute-Savoie",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Atypik Code | Développeur Web Premium en Haute-Savoie",
+    description:
+      "Création de sites web professionnels et landing pages optimisés. Solutions digitales sur-mesure pour votre entreprise.",
+    images: ["/image/florian-dev.png"],
   },
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "AtypikCode",
+  name: "Atypik Code",
   url: "https://www.atypikcode.fr",
   logo: "https://www.atypikcode.fr/logo.png",
   description:
     "Développeur web freelance spécialisé dans la création de sites web pour entreprises et professionnels en Haute-Savoie",
+  founder: {
+    "@type": "Person",
+    name: "Florian Barjon",
+    jobTitle: "Développeur Web Freelance",
+  },
   address: {
     "@type": "PostalAddress",
-    addressCountry: "FR",
+    addressLocality: "La Roche-sur-Foron",
+    postalCode: "74800",
     addressRegion: "Haute-Savoie",
+    addressCountry: "FR",
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+33",
+    telephone: "+33683062632",
     contactType: "customer service",
     availableLanguage: "French",
+    areaServed: "FR",
   },
-  sameAs: ["https://www.linkedin.com/in/florian-atypikcode"],
+  sameAs: [
+    "https://www.linkedin.com/in/florian-barjon-497a27324/",
+    "https://github.com/flowxt",
+  ],
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "AtypikCode",
+  "@type": "ProfessionalService",
+  name: "Atypik Code",
   image: "https://www.atypikcode.fr/logo.png",
   description:
-    "Création de sites web professionnels pour entreprises et professionnels",
+    "Développeur web freelance - Création de sites web professionnels, landing pages et applications web en Haute-Savoie",
   address: {
     "@type": "PostalAddress",
-    addressCountry: "FR",
+    addressLocality: "La Roche-sur-Foron",
+    postalCode: "74800",
     addressRegion: "Haute-Savoie",
+    addressCountry: "FR",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 45.8992,
-    longitude: 6.1294,
+    latitude: 46.0667,
+    longitude: 6.3167,
   },
   url: "https://www.atypikcode.fr",
-  telephone: "+33",
+  telephone: "+33683062632",
+  email: "floriandev74@gmail.com",
   priceRange: "€€",
-  openingHours: "Mo-Fr 09:00-18:00",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+  ],
   serviceArea: {
-    "@type": "Place",
-    name: "Haute-Savoie, France",
+    "@type": "GeoCircle",
+    geoMidpoint: {
+      "@type": "GeoCoordinates",
+      latitude: 46.0667,
+      longitude: 6.3167,
+    },
+    geoRadius: "50000",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    reviewCount: "20",
+    bestRating: "5",
   },
 };
 
@@ -120,10 +174,11 @@ const serviceSchema = {
   "@type": "Service",
   name: "Développement de sites web professionnels",
   description:
-    "Création de sites web optimisés SEO, landing pages et applications web pour entreprises et professionnels",
+    "Création de sites web optimisés SEO, landing pages et applications web pour entreprises et professionnels en Haute-Savoie",
   provider: {
-    "@type": "Organization",
-    name: "AtypikCode",
+    "@type": "ProfessionalService",
+    name: "Atypik Code",
+    url: "https://www.atypikcode.fr",
   },
   areaServed: {
     "@type": "Place",
@@ -138,20 +193,27 @@ const serviceSchema = {
         itemOffered: {
           "@type": "Service",
           name: "Landing Page",
+          description: "Page unique optimisée pour la conversion",
         },
+        price: "950",
+        priceCurrency: "EUR",
       },
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Site Vitrine",
+          name: "Site Business",
+          description: "Site vitrine complet jusqu'à 5 pages",
         },
+        price: "1900",
+        priceCurrency: "EUR",
       },
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Application Web",
+          name: "Application Web Sur Mesure",
+          description: "Solution e-commerce ou application personnalisée",
         },
       },
     ],
@@ -202,29 +264,6 @@ export default function RootLayout({ children }) {
         `}
       </Script>
 
-      {/* Schema.org structured data */}
-      <Script
-        id="schema-organization"
-        type="application/ld+json"
-        strategy="afterInteractive"
-      >
-        {JSON.stringify(organizationSchema)}
-      </Script>
-      <Script
-        id="schema-local-business"
-        type="application/ld+json"
-        strategy="afterInteractive"
-      >
-        {JSON.stringify(localBusinessSchema)}
-      </Script>
-      <Script
-        id="schema-service"
-        type="application/ld+json"
-        strategy="afterInteractive"
-      >
-        {JSON.stringify(serviceSchema)}
-      </Script>
-
       <body
         className={`${inter.className} bg-[#0A0A0F] text-white min-h-screen`}
       >
@@ -238,6 +277,20 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
         {/* End Google Tag Manager (noscript) */}
+
+        {/* Schema.org structured data - inline pour indexation SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
 
         <BackgroundEffects />
         <Navbar />

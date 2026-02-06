@@ -9,6 +9,9 @@ export const metadata = {
     "Découvrez nos articles et conseils d'expert sur le développement web, la création de landing pages et l'optimisation SEO. Ressources gratuites pour améliorer votre présence en ligne.",
   keywords:
     "blog développement web, astuces création site internet, conseils landing page, optimisation SEO, tutoriels React, Next.js, expérience utilisateur",
+  alternates: {
+    canonical: "https://www.atypikcode.fr/blog",
+  },
 };
 
 // Données simulées des articles de blog

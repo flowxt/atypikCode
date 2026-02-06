@@ -12,13 +12,27 @@ export const metadata = {
   description:
     "Ne perdez plus de clients à cause d'un site lent. Sites web Next.js ultra-performants, conçus pour Google et la conversion. Landing page 950€, Site Business 1900€.",
   keywords:
-    "développeur next.js, site web performant, création site haute-savoie, site rapide, expert SEO, freelance développeur",
+    "développeur next.js, site web performant, création site haute-savoie, site rapide, expert SEO, freelance développeur, développeur web La Roche-sur-Foron",
   openGraph: {
-    title: "Atypik Code | Sites Web Ultra-Performants",
+    title: "Atypik Code | Sites Web Ultra-Performants en Haute-Savoie",
     description:
       "Ne perdez plus de clients à cause d'un site lent. Sites web Next.js ultra-rapides, conçus pour Google et la conversion.",
     type: "website",
     locale: "fr_FR",
+    images: [
+      {
+        url: "/image/florian-dev.png",
+        width: 1200,
+        height: 630,
+        alt: "Atypik Code - Développeur Web en Haute-Savoie",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Atypik Code | Sites Web Ultra-Performants en Haute-Savoie",
+    description: "Sites web Next.js ultra-rapides, conçus pour Google et la conversion.",
+    images: ["/image/florian-dev.png"],
   },
   alternates: {
     canonical: "https://www.atypikcode.fr",

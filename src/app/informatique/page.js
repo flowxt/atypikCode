@@ -11,6 +11,9 @@ export const metadata = {
     "Assistance informatique personnalisée, configuration de PC et Mac, synchronisation d'appareils Apple et assemblage de PC sur mesure en Haute-Savoie. Solutions adaptées aux particuliers et professionnels.",
   keywords:
     "assistance informatique Haute-Savoie, configuration PC, synchronisation Apple, assemblage PC sur mesure, dépannage informatique, Annecy, installation logiciels",
+  alternates: {
+    canonical: "https://www.atypikcode.fr/informatique",
+  },
 };
 
 // Données simplifiées des packs de services informatiques

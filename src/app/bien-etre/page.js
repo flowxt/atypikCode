@@ -6,11 +6,17 @@ import ImageModal from "@/components/ImageModal";
 export const metadata = {
   title: "Site Web pour Thérapeutes & Praticiens Bien-être | Atypik Code",
   description:
-    "Site web professionnel pour sophrologues, énergéticiennes et praticiens bien-être. Design doux, apaisant et adapté à votre univers.",
+    "Site web professionnel pour sophrologues, énergéticiennes et praticiens bien-être en Haute-Savoie. Design doux, apaisant et adapté à votre univers. À partir de 950€.",
   keywords:
     "site web thérapeute, site internet bien-être, site sophrologue, site naturopathe, site énergéticienne, site médecine douce, site coach bien-être, Haute-Savoie, Annecy",
   alternates: {
     canonical: "https://www.atypikcode.fr/bien-etre",
+  },
+  openGraph: {
+    title: "Site Web pour Thérapeutes & Praticiens Bien-être",
+    description: "Site web professionnel pour sophrologues, énergéticiennes et praticiens bien-être. Design doux et apaisant.",
+    type: "website",
+    images: [{ url: "/image/medium.jpg", width: 1200, height: 630, alt: "Site web pour thérapeutes bien-être - Atypik Code" }],
   },
 };
 

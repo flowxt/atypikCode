@@ -2,11 +2,14 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Guide Complet Framer Motion React 2024 | Animations Web Modernes - Atypik Code',
+  title: 'Guide Complet Framer Motion React 2025 | Animations Web Modernes - Atypik Code',
   description: 'Maîtrisez Framer Motion pour React : guide complet avec exemples pratiques, AnimatePresence, hooks avancés et meilleures pratiques pour des animations fluides.',
   keywords: 'framer motion, framer-motion, animation react, animatepresence, motion framer, framer motion animate, framer motion path',
+  alternates: {
+    canonical: 'https://www.atypikcode.fr/blog/guide-complet-framer-motion',
+  },
   openGraph: {
-    title: 'Guide Complet Framer Motion React 2024 | Animations Web Modernes',
+    title: 'Guide Complet Framer Motion React 2025 | Animations Web Modernes',
     description: 'Tout savoir sur Framer Motion : du débutant à l\'expert avec exemples pratiques et cas d\'usage.',
     type: 'article',
   },

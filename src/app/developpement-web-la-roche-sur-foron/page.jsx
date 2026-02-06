@@ -5,6 +5,9 @@ export const metadata = {
   title: 'Développement Web La Roche-sur-Foron | Création Sites Internet Haute-Savoie - Atypik Code',
   description: 'Expert en développement web à La Roche-sur-Foron. Création de sites internet modernes, landing pages et applications web en Haute-Savoie. Devis gratuit sous 24h.',
   keywords: 'développement web la roche-sur-foron, création site internet la-roche-sur-foron, site web haute-savoie, développeur web annecy',
+  alternates: {
+    canonical: 'https://www.atypikcode.fr/developpement-web-la-roche-sur-foron',
+  },
   openGraph: {
     title: 'Développement Web La Roche-sur-Foron | Sites Internet Moderne',
     description: 'Développeur web spécialisé Next.js à La Roche-sur-Foron. Création de sites performants pour entreprises en Haute-Savoie.',
@@ -17,13 +20,13 @@ export default function DeveloppementWebLaRocheSurForon() {
     {
       title: "Création de sites vitrine",
       description: "Sites web professionnels pour présenter votre activité à La Roche-sur-Foron et ses environs",
-      price: "À partir de 1200€",
+      price: "À partir de 1 900€",
       features: ["Design responsive", "Optimisation SEO locale", "Hébergement inclus", "Maintenance 6 mois"]
     },
     {
       title: "Landing pages optimisées",
       description: "Pages d'atterrissage haute conversion pour vos campagnes marketing en Haute-Savoie",
-      price: "À partir de 800€",
+      price: "À partir de 950€",
       features: ["Conversion optimisée", "A/B testing", "Analytics avancées", "Formulaires de contact"]
     },
     {
@@ -263,7 +266,7 @@ export default function DeveloppementWebLaRocheSurForon() {
               {[
                 {
                   question: "Combien coûte la création d'un site internet à La Roche-sur-Foron ?",
-                  answer: "Les tarifs varient selon la complexité : site vitrine à partir de 1200€, landing page à partir de 800€, application sur mesure sur devis. Tous les projets incluent l'optimisation SEO et la formation."
+                  answer: "Les tarifs varient selon la complexité : landing page à partir de 950€, site vitrine à partir de 1 900€, application sur mesure sur devis. Tous les projets incluent l'optimisation SEO et la formation."
                 },
                 {
                   question: "Quel délai pour créer un site web en Haute-Savoie ?",
@@ -310,7 +313,7 @@ export default function DeveloppementWebLaRocheSurForon() {
                 💬 Appel découverte gratuit
               </Link>
               <a 
-                href="tel:+33123456789" 
+                href="tel:+33683062632" 
                 className="border border-purple-500 text-purple-400 py-4 px-8 rounded-full font-semibold hover:bg-purple-500/10 transition-all"
               >
                 📞 Appeler directement
