@@ -31,7 +31,6 @@ const services = [
       "Responsive mobile parfait",
       "Optimisation SEO de base",
       "Formulaire de contact intégré",
-      "Hébergement inclus 1 an"
     ],
     color: "from-violet-500 to-purple-600"
   },
@@ -47,7 +46,6 @@ const services = [
       "Design premium personnalisé",
       "Référencement SEO avancé",
       "Formulaire + intégrations",
-      "Hébergement inclus 1 an",
       "Analytics & suivi conversions"
     ],
     popular: true,

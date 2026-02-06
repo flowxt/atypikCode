@@ -21,7 +21,7 @@ export default function DeveloppementWebLaRocheSurForon() {
       title: "Création de sites vitrine",
       description: "Sites web professionnels pour présenter votre activité à La Roche-sur-Foron et ses environs",
       price: "À partir de 1 900€",
-      features: ["Design responsive", "Optimisation SEO locale", "Hébergement inclus", "Maintenance 6 mois"]
+      features: ["Design responsive", "Optimisation SEO locale", "Maintenance 6 mois"]
     },
     {
       title: "Landing pages optimisées",

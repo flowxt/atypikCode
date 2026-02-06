@@ -17,7 +17,6 @@ export default function HomePacks() {
         "Responsive mobile parfait",
         "Optimisation SEO de base",
         "Formulaire de contact intégré",
-        "Hébergement inclus 1 an"
       ],
       popular: false
     },
@@ -33,7 +32,6 @@ export default function HomePacks() {
         "Design premium personnalisé",
         "Référencement SEO avancé",
         "Formulaire + intégrations",
-        "Hébergement inclus 1 an",
         "Analytics & suivi des conversions"
       ],
       popular: true
