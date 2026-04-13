@@ -24,14 +24,23 @@ export default function Footer() {
           
           <div className="md:w-1/3">
             <h3 className="text-xl font-semibold mb-4 text-white">Navigation</h3>
-            <ul className="space-y-2 mb-6">
+            <ul className="space-y-2 mb-4">
               <li><a href="/" className="text-gray-400 hover:text-purple-400 transition-colors">Accueil</a></li>
               <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Services</a></li>
               <li><a href="/artisans" className="text-gray-400 hover:text-purple-400 transition-colors">Sites pour Artisans</a></li>
               <li><a href="/bien-etre" className="text-gray-400 hover:text-purple-400 transition-colors">Sites Bien-être</a></li>
               <li><a href="/blog" className="text-gray-400 hover:text-purple-400 transition-colors">Blog</a></li>
               <li><a href="/contact" className="text-gray-400 hover:text-purple-400 transition-colors">Contact</a></li>
-              <li><a href="/developpement-web-la-roche-sur-foron" className="text-gray-400 hover:text-purple-400 transition-colors">Dev Web La Roche-sur-Foron</a></li>
+            </ul>
+            <h3 className="text-xl font-semibold mb-4 text-white">Zones d&apos;intervention</h3>
+            <ul className="space-y-2 mb-6">
+              <li><a href="/developpement-web-la-roche-sur-foron" className="text-gray-400 hover:text-purple-400 transition-colors">La Roche-sur-Foron</a></li>
+              <li><a href="/creation-site-internet-annecy" className="text-gray-400 hover:text-purple-400 transition-colors">Annecy</a></li>
+              <li><a href="/creation-site-internet-bonneville" className="text-gray-400 hover:text-purple-400 transition-colors">Bonneville</a></li>
+              <li><a href="/creation-site-internet-annemasse" className="text-gray-400 hover:text-purple-400 transition-colors">Annemasse</a></li>
+              <li><a href="/creation-site-internet-thonon-les-bains" className="text-gray-400 hover:text-purple-400 transition-colors">Thonon-les-Bains</a></li>
+              <li><a href="/creation-site-internet-cluses" className="text-gray-400 hover:text-purple-400 transition-colors">Cluses</a></li>
+              <li><a href="/creation-site-internet-geneve" className="text-gray-400 hover:text-purple-400 transition-colors">Genève</a></li>
             </ul>
             
             <div className="flex gap-4">
@@ -58,7 +67,7 @@ export default function Footer() {
            
           </div>
           <p className="text-xs text-gray-600 mt-3">
-            Création de site web et Landing page en Haute-Savoie, Annecy, Annemasse et toute la France
+            Création de site internet en Haute-Savoie : La Roche-sur-Foron, Annecy, Bonneville, Annemasse, Thonon-les-Bains, Cluses et Genève
           </p>
         </div>
       </div>
