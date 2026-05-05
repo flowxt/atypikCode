@@ -15,10 +15,10 @@ export default function Footer() {
           <div className="md:w-1/3">
             <h3 className="text-xl font-semibold mb-4 text-white">Services</h3>
             <ul className="space-y-2">
-              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Landing Page</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Site Business</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">E-commerce & Apps</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Optimisation SEO</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Site Vitrine Essentiel — 1 000€</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Site Vitrine Pro — 1 500€</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">Site Vitrine Premium — 1 900€</a></li>
+              <li><a href="/services" className="text-gray-400 hover:text-purple-400 transition-colors">E-commerce & Apps — Sur devis</a></li>
             </ul>
           </div>
           

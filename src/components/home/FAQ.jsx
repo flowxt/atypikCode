@@ -1,11 +1,11 @@
 const faqs = [
   {
     question: "Combien coûte un site web performant ?",
-    answer: "Mes tarifs reflètent la qualité Next.js : à partir de 950€ pour une landing page, 1 900€ pour un site business complet, et sur devis pour les projets e-commerce ou sur-mesure. À cela s'ajoutent des frais mensuels de 50 à 150€ pour l'hébergement et la maintenance selon les options choisies."
+    answer: "Mes tarifs sont transparents et adaptés à votre stade : à partir de 1 000€ pour un site vitrine Essentiel (1-3 pages), 1 500€ pour un site Vitrine Pro (5 pages, SEO avancé, le plus choisi), 1 900€ pour la formule Premium (multilingue ou réservation, design haut de gamme), et sur devis pour les projets e-commerce ou applications sur-mesure. La maintenance et l'hébergement sont en option (50 à 150€/mois selon les besoins)."
   },
   {
     question: "Quels sont les délais de livraison ?",
-    answer: "Une landing page est livrée en 7 jours, un site vitrine en 2-3 semaines, et un e-commerce en 3-4 semaines. Je m'adapte aussi à vos urgences."
+    answer: "Comptez 1 à 2 semaines pour un site vitrine Essentiel, 2 à 3 semaines pour un site Vitrine Pro, 3 à 4 semaines pour un site Premium, et 5 à 8 semaines pour un projet sur mesure (e-commerce, application). Je m'adapte aussi à vos urgences."
   },
   {
     question: "Dois-je fournir le contenu ?",

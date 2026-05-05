@@ -1,54 +1,34 @@
 import Link from 'next/link'
+import LocalPricingCards from '@/components/local/LocalPricingCards'
 
 export const metadata = {
-  title: 'Création Site Internet Annemasse | Développeur Web Frontalier - Atypik Code',
-  description: 'Création de site internet à Annemasse. Développeur web spécialisé pour entreprises frontalières, sites bilingues FR/EN et visibilité sur le marché franco-suisse. Devis gratuit.',
-  keywords: 'création site internet annemasse, développeur web annemasse, agence web annemasse, site web frontalier, création site vitrine annemasse, développeur web genevois',
+  title: 'Création Site Internet Annemasse | À partir de 1 000€ - Atypik Code',
+  description: "Création de site internet à Annemasse à partir de 1 000€. Développeur web spécialisé pour entreprises frontalières, sites bilingues FR/EN et marché franco-suisse. Devis gratuit en 24h.",
+  keywords: 'création site internet annemasse, site vitrine annemasse 1000 euros, développeur web annemasse, agence web annemasse, site web frontalier, développeur web genevois',
   alternates: {
     canonical: 'https://www.atypikcode.fr/creation-site-internet-annemasse',
   },
   openGraph: {
-    title: 'Création Site Internet Annemasse | Développeur Web Frontalier',
-    description: 'Développeur web proche d\'Annemasse. Sites performants pour entreprises frontalières, adaptés au marché franco-suisse. Tarifs compétitifs vs agences genevoises.',
+    title: 'Création Site Internet Annemasse | À partir de 1 000€',
+    description: "Développeur web proche d'Annemasse. Site vitrine pro à partir de 1 000€. Tarifs compétitifs vs agences genevoises.",
     type: 'website',
     url: 'https://www.atypikcode.fr/creation-site-internet-annemasse',
   },
 }
 
 export default function CreationSiteInternetAnnemasse() {
-  const services = [
-    {
-      title: "Landing Page",
-      description: "Page unique optimisée pour convertir vos visiteurs en clients, idéale pour lancer une offre sur le bassin annemassien et genevois.",
-      price: "950 €",
-      features: ["Design responsive", "Optimisation SEO locale", "Formulaire de contact", "Livraison rapide"],
-    },
-    {
-      title: "Site Business",
-      description: "Site vitrine complet pour présenter votre activité aux marchés français et suisse avec un positionnement professionnel.",
-      price: "1 900 €",
-      features: ["Jusqu'à 5 pages", "Référencement Annemasse & Genève", "Maintenance 6 mois", "Analytics intégrés"],
-    },
-    {
-      title: "Sur Mesure",
-      description: "Solution digitale personnalisée pour les entreprises frontalières avec des besoins spécifiques : multilingue, e-commerce, plateforme.",
-      price: "Sur devis",
-      features: ["Site bilingue FR/EN", "Fonctionnalités avancées", "Intégrations sur mesure", "Support dédié"],
-    },
-  ]
-
   const faqs = [
     {
       question: "Combien coûte un site internet à Annemasse ?",
-      answer: "Les tarifs démarrent à 950 € pour une landing page et 1 900 € pour un site vitrine complet. Ces prix sont bien en dessous de ce que pratiquent les agences web genevoises, tout en offrant la même qualité de prestation. Chaque projet fait l'objet d'un devis gratuit personnalisé sous 24h.",
+      answer: "Les tarifs démarrent à 1 000 € pour un site Vitrine Essentiel (1-3 pages), 1 500 € pour un Vitrine Pro (5 pages, SEO avancé) et 1 900 € pour la formule Premium (multilingue, design haut de gamme). Ces prix sont 5 à 10 fois inférieurs à ceux des agences web genevoises pour une qualité équivalente. Chaque projet fait l'objet d'un devis gratuit personnalisé sous 24h.",
     },
     {
       question: "Pouvez-vous créer un site bilingue français-anglais ?",
-      answer: "Oui, je conçois des sites bilingues FR/EN adaptés aux entreprises frontalières qui travaillent avec une clientèle internationale. Le contenu est optimisé pour le référencement dans les deux langues, ce qui permet d'être visible aussi bien sur Google.fr que Google.ch.",
+      answer: "Oui, je conçois des sites bilingues FR/EN adaptés aux entreprises frontalières qui travaillent avec une clientèle internationale. Le contenu est optimisé pour le référencement dans les deux langues, ce qui permet d'être visible aussi bien sur Google.fr que Google.ch. Cette option est incluse dans la formule Premium ou disponible en supplément sur les autres formules.",
     },
     {
       question: "Quelle est la différence de prix avec une agence genevoise ?",
-      answer: "Les agences web à Genève facturent généralement entre 5 et 10 fois plus cher qu'un développeur freelance basé en Haute-Savoie. Pour un site vitrine équivalent, comptez 10 000 à 20 000 CHF à Genève contre 1 900 € chez Atypik Code, avec le même niveau de qualité et de performance.",
+      answer: "Les agences web à Genève facturent généralement entre 5 et 10 fois plus cher qu'un développeur freelance basé en Haute-Savoie. Pour un site vitrine équivalent, comptez 10 000 à 20 000 CHF à Genève contre 1 000 à 1 900 € chez Atypik Code, avec le même niveau de qualité et de performance.",
     },
     {
       question: "Comment être visible sur Google à Annemasse et Genève ?",
@@ -190,25 +170,7 @@ export default function CreationSiteInternetAnnemasse() {
                 </span>
               </h2>
 
-              <div className="grid md:grid-cols-3 gap-8">
-                {services.map((service, index) => (
-                  <div key={index} className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all">
-                    <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                    <p className="text-gray-300 mb-6">{service.description}</p>
-                    <div className="text-2xl font-bold text-purple-400 mb-6">{service.price}</div>
-                    <ul className="space-y-2">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-gray-300">
-                          <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                          </svg>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
+              <LocalPricingCards localContext="à Annemasse" />
             </div>
           </div>
         </section>

@@ -4,9 +4,9 @@ import ContactForm from "@/components/contact/ContactForm";
 export const metadata = {
   title: "Contact | Développeur Web en Haute-Savoie | Atypik Code",
   description:
-    "Contactez Florian Barjon, développeur web freelance en Haute-Savoie, pour discuter de votre projet de site web, landing page ou application. Demandez un devis gratuit.",
+    "Contactez Florian Barjon, développeur web freelance en Haute-Savoie, pour discuter de votre projet de site vitrine ou application. Devis gratuit en 24h, à partir de 1 000€.",
   keywords:
-    "contact développeur web, devis site internet, freelance Haute-Savoie, création landing page, contact Atypik Code",
+    "contact développeur web, devis site internet, freelance Haute-Savoie, création site vitrine, contact Atypik Code",
   alternates: {
     canonical: "https://www.atypikcode.fr/contact",
   },

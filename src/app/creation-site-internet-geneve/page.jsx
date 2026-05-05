@@ -1,15 +1,16 @@
 import Link from 'next/link'
+import LocalPricingCards from '@/components/local/LocalPricingCards'
 
 export const metadata = {
-  title: 'Création Site Internet Genève | Développeur Web Suisse Romande - Atypik Code',
-  description: 'Création de site internet à Genève à prix compétitif. Développeur web Next.js basé à 45 min de Genève. Qualité suisse, tarifs français. Landing page dès 950€, site vitrine dès 1 900€. Devis gratuit.',
-  keywords: 'création site internet genève, développeur web genève, site internet genève pas cher, agence web genève prix, création site web suisse romande, développeur web suisse',
+  title: 'Création Site Internet Genève | À partir de 1 000€ - Atypik Code',
+  description: 'Création de site internet à Genève à prix compétitif. Développeur web Next.js à 45 min de Genève. Qualité suisse, tarifs français : site vitrine pro à partir de 1 000€. Devis gratuit en 24h.',
+  keywords: 'création site internet genève, site vitrine genève 1000 euros, développeur web genève, site internet genève pas cher, agence web genève prix, création site web suisse romande',
   alternates: {
     canonical: 'https://www.atypikcode.fr/creation-site-internet-geneve',
   },
   openGraph: {
-    title: 'Création Site Internet Genève | Qualité Suisse, Tarifs Français - Atypik Code',
-    description: 'Développeur web Next.js à 45 min de Genève. Sites performants et optimisés SEO pour entreprises genevoises. Tarifs 3 à 5x inférieurs aux agences suisses.',
+    title: 'Création Site Internet Genève | Qualité Suisse, Tarifs Français',
+    description: 'Développeur web Next.js à 45 min de Genève. Site vitrine pro à partir de 1 000€. Tarifs 3 à 5x inférieurs aux agences suisses.',
     type: 'website',
     url: 'https://www.atypikcode.fr/creation-site-internet-geneve',
   },
@@ -22,7 +23,7 @@ const faqData = [
   },
   {
     question: 'Combien coûte un site internet à Genève ?',
-    answer: 'Les agences web genevoises facturent généralement entre 5 000 et 15 000 CHF pour un site vitrine. Chez Atypik Code, une landing page performante démarre à 950€ et un site vitrine complet à 1 900€, soit une économie considérable pour une qualité équivalente voire supérieure grâce à la technologie Next.js. Vous investissez dans la performance, pas dans les charges de structure suisses.',
+    answer: "Les agences web genevoises facturent généralement entre 5 000 et 15 000 CHF pour un site vitrine. Chez Atypik Code, mes 3 formules sont transparentes : Vitrine Essentiel à partir de 1 000€, Vitrine Pro à 1 500€ (le plus choisi) et Vitrine Premium à 1 900€ (multilingue ou réservation incluse). Soit 3 à 10 fois moins cher qu'une agence genevoise pour une qualité équivalente voire supérieure grâce à la technologie Next.js.",
   },
   {
     question: 'Pouvez-vous créer un site multilingue français-anglais ?',
@@ -51,28 +52,6 @@ export default function CreationSiteInternetGeneve() {
       },
     })),
   }
-
-  const services = [
-    {
-      title: 'Landing Page',
-      price: '950€',
-      description: 'Page unique haute conversion pour capter vos prospects genevois. Idéale pour lancer une offre ou tester un marché.',
-      features: ['Design premium responsive', 'Optimisation SEO Genève', 'Formulaire de contact', 'Hébergement 1 an inclus', 'Livraison sous 2 semaines'],
-    },
-    {
-      title: 'Site Business',
-      price: '1 900€',
-      highlight: true,
-      description: 'Site vitrine complet pour asseoir votre présence digitale à Genève. Le choix des professionnels exigeants.',
-      features: ['5 à 10 pages optimisées', 'SEO local Genève + Suisse', 'Design sur mesure', 'Maintenance 6 mois incluse', 'Formation à l\'autonomie'],
-    },
-    {
-      title: 'Sur Mesure',
-      price: 'Sur devis',
-      description: 'Solution digitale personnalisée pour les projets ambitieux. E-commerce, plateforme, application web.',
-      features: ['Architecture Next.js avancée', 'Fonctionnalités sur mesure', 'Multilingue FR/EN/DE', 'Intégrations API tierces', 'Support technique dédié'],
-    },
-  ]
 
   const zones = [
     'Carouge', 'Lancy', 'Vernier', 'Meyrin', 'Thônex',
@@ -145,16 +124,16 @@ export default function CreationSiteInternetGeneve() {
                 </div>
                 <div className="space-y-6 mt-4">
                   <div className="flex justify-between items-center border-b border-white/5 pb-4">
-                    <span className="text-gray-400">Site vitrine</span>
-                    <span className="text-white font-semibold">5 000 - 15 000 CHF</span>
+                    <span className="text-gray-400">Site vitrine simple</span>
+                    <span className="text-white font-semibold">5 000 - 8 000 CHF</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-white/5 pb-4">
-                    <span className="text-gray-400">Landing page</span>
-                    <span className="text-white font-semibold">2 000 - 5 000 CHF</span>
+                    <span className="text-gray-400">Site vitrine complet</span>
+                    <span className="text-white font-semibold">8 000 - 15 000 CHF</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-white/5 pb-4">
-                    <span className="text-gray-400">Délai moyen</span>
-                    <span className="text-white font-semibold">6 - 12 semaines</span>
+                    <span className="text-gray-400">Site vitrine premium</span>
+                    <span className="text-white font-semibold">15 000 - 25 000 CHF</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-400">Technologie</span>
@@ -169,16 +148,16 @@ export default function CreationSiteInternetGeneve() {
                 </div>
                 <div className="space-y-6 mt-4">
                   <div className="flex justify-between items-center border-b border-white/5 pb-4">
-                    <span className="text-gray-300">Site vitrine</span>
+                    <span className="text-gray-300">Site Vitrine Essentiel</span>
+                    <span className="text-purple-400 font-bold text-lg">1 000€</span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-white/5 pb-4">
+                    <span className="text-gray-300">Site Vitrine Pro</span>
+                    <span className="text-purple-400 font-bold text-lg">1 500€</span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-white/5 pb-4">
+                    <span className="text-gray-300">Site Vitrine Premium</span>
                     <span className="text-purple-400 font-bold text-lg">1 900€</span>
-                  </div>
-                  <div className="flex justify-between items-center border-b border-white/5 pb-4">
-                    <span className="text-gray-300">Landing page</span>
-                    <span className="text-purple-400 font-bold text-lg">950€</span>
-                  </div>
-                  <div className="flex justify-between items-center border-b border-white/5 pb-4">
-                    <span className="text-gray-300">Délai moyen</span>
-                    <span className="text-purple-400 font-bold text-lg">2 - 4 semaines</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-300">Technologie</span>
@@ -211,47 +190,7 @@ export default function CreationSiteInternetGeneve() {
               et de Suisse romande.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className={`p-8 rounded-2xl transition-all ${
-                    service.highlight
-                      ? 'bg-gradient-to-br from-purple-900/40 to-blue-900/40 border border-purple-500/30 scale-[1.02]'
-                      : 'bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-white/10 hover:border-purple-500/20'
-                  }`}
-                >
-                  {service.highlight && (
-                    <div className="text-xs font-medium text-purple-400 uppercase tracking-wider mb-4">Le plus demandé</div>
-                  )}
-                  <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
-                  <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-4">
-                    {service.price}
-                  </div>
-                  <p className="text-gray-300 mb-6 text-sm leading-relaxed">{service.description}</p>
-                  <ul className="space-y-3">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start text-gray-300 text-sm">
-                        <svg className="w-5 h-5 text-purple-400 mr-3 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    href="/contact"
-                    className={`mt-8 block text-center py-3 px-6 rounded-full font-semibold transition-all text-sm ${
-                      service.highlight
-                        ? 'bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:shadow-lg hover:shadow-purple-500/20'
-                        : 'border border-purple-500/50 text-purple-400 hover:bg-purple-500/10'
-                    }`}
-                  >
-                    Demander un devis
-                  </Link>
-                </div>
-              ))}
-            </div>
+            <LocalPricingCards localContext="à Genève" />
           </div>
         </div>
       </section>

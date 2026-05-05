@@ -1,9 +1,10 @@
 import Link from 'next/link'
+import LocalPricingCards from '@/components/local/LocalPricingCards'
 
 export const metadata = {
-  title: 'Création Site Internet Thonon-les-Bains | Développeur Web Léman - Atypik Code',
-  description: 'Création de sites internet à Thonon-les-Bains pour hôtels, restaurants, thermes et commerces du Léman. Développeur web spécialisé tourisme et bien-être. Devis gratuit.',
-  keywords: 'création site internet thonon-les-bains, développeur web thonon, site web thonon léman, agence web chablais, création site hôtel thonon, site internet evian',
+  title: 'Création Site Internet Thonon-les-Bains | À partir de 1 000€ - Atypik Code',
+  description: "Création de site internet à Thonon-les-Bains à partir de 1 000€. Développeur web spécialisé pour hôtels, restaurants, thermes et commerces du Léman. Devis gratuit en 24h.",
+  keywords: 'création site internet thonon-les-bains, site vitrine thonon 1000 euros, développeur web thonon, site web thonon léman, agence web chablais, création site hôtel thonon',
   alternates: {
     canonical: 'https://www.atypikcode.fr/creation-site-internet-thonon-les-bains',
   },
@@ -18,11 +19,11 @@ export const metadata = {
 const faqData = [
   {
     question: "Combien coûte un site internet pour un hôtel ou restaurant à Thonon ?",
-    answer: "Les tarifs démarrent à 950 € pour une landing page efficace et à 1 900 € pour un site vitrine complet. Pour un hôtel ou restaurant avec réservation en ligne, fonctionnalités multilingues ou galeries immersives, un devis sur mesure est établi gratuitement sous 24 h."
+    answer: "Les tarifs démarrent à 1 000 € pour un Vitrine Essentiel, 1 500 € pour un Vitrine Pro (5 pages, SEO avancé) et 1 900 € pour la formule Premium qui inclut multilingue OU réservation en ligne — idéale pour les hôtels et restaurants. Pour un projet plus avancé (channel manager, e-commerce, plateforme), un devis sur mesure est établi gratuitement sous 24 h."
   },
   {
     question: "Pouvez-vous créer un site avec réservation en ligne ?",
-    answer: "Oui, j'intègre des modules de réservation adaptés à votre activité : réservation de chambres, de tables, de soins thermaux ou d'activités nautiques. Les solutions s'intègrent avec vos outils existants (channel managers, calendriers, paiement en ligne)."
+    answer: "Oui, j'intègre des modules de réservation adaptés à votre activité : réservation de chambres, de tables, de soins thermaux ou d'activités nautiques. La réservation en ligne est incluse dans la formule Premium (1 900 €), ou disponible en option sur la formule Pro. Les solutions s'intègrent avec vos outils existants (channel managers, calendriers, paiement en ligne)."
   },
   {
     question: "Comment attirer les touristes sur mon site ?",
@@ -30,32 +31,11 @@ const faqData = [
   },
   {
     question: "En combien de temps le site est-il prêt ?",
-    answer: "Comptez 1 à 2 semaines pour une landing page et 3 à 5 semaines pour un site vitrine complet. Les projets sur mesure avec réservation ou multilingue nécessitent 5 à 8 semaines. Chaque étape est validée ensemble avant de passer à la suivante."
+    answer: "Comptez 1 à 2 semaines pour un Vitrine Essentiel, 2 à 3 semaines pour un Vitrine Pro et 3 à 4 semaines pour la formule Premium. Les projets sur mesure avec fonctionnalités avancées nécessitent 5 à 8 semaines. Chaque étape est validée ensemble avant de passer à la suivante."
   }
 ]
 
 export default function CreationSiteInternetThononLesBains() {
-  const services = [
-    {
-      title: "Landing Page",
-      description: "Page unique haute conversion pour promouvoir votre établissement thermal, hôtel ou activité touristique sur le Léman.",
-      price: "À partir de 950 €",
-      features: ["Design responsive", "Optimisation SEO locale", "Formulaire de contact / réservation", "Analytics intégrées"]
-    },
-    {
-      title: "Site Business",
-      description: "Site vitrine complet pour présenter votre activité à Thonon-les-Bains : hôtellerie, restauration, bien-être, nautisme.",
-      price: "À partir de 1 900 €",
-      features: ["Multi-pages optimisées", "Référencement Léman & Chablais", "Galerie photos immersive", "Maintenance 6 mois incluse"]
-    },
-    {
-      title: "Sur Mesure",
-      description: "Solution digitale personnalisée avec réservation en ligne, multilingue (FR/EN/DE) ou fonctionnalités spécifiques à votre métier.",
-      price: "Sur devis",
-      features: ["Réservation en ligne", "Multilingue FR/EN/DE", "Intégrations sur mesure", "Support technique dédié"]
-    }
-  ]
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -178,25 +158,7 @@ export default function CreationSiteInternetThononLesBains() {
               </span>
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {services.map((service, index) => (
-                <div key={index} className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all">
-                  <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                  <p className="text-gray-300 mb-6">{service.description}</p>
-                  <div className="text-2xl font-bold text-purple-400 mb-6">{service.price}</div>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-gray-300">
-                        <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
+            <LocalPricingCards localContext="à Thonon-les-Bains" />
           </div>
         </div>
       </section>

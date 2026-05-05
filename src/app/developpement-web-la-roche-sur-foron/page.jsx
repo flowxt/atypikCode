@@ -1,9 +1,10 @@
 import Link from 'next/link'
+import LocalPricingCards from '@/components/local/LocalPricingCards'
 
 export const metadata = {
-  title: 'Création Site Internet La Roche-sur-Foron | Développeur Web 74800 - Atypik Code',
-  description: 'Développeur web freelance à La Roche-sur-Foron. Création de sites internet professionnels, landing pages et applications web pour entreprises en Haute-Savoie. Devis gratuit sous 24h.',
-  keywords: 'création site internet la roche-sur-foron, développeur web la roche-sur-foron, site web 74800, agence web la roche-sur-foron, développement web haute-savoie, site vitrine la roche-sur-foron, création site web la roche sur foron',
+  title: 'Création Site Internet La Roche-sur-Foron | À partir de 1 000€ - Atypik Code',
+  description: 'Développeur web freelance à La Roche-sur-Foron. Création de sites vitrines professionnels à partir de 1 000€ pour entreprises en Haute-Savoie. Devis gratuit en 24h.',
+  keywords: 'création site internet la roche-sur-foron, site vitrine la roche-sur-foron 1000 euros, développeur web la roche-sur-foron, site web 74800, agence web la roche-sur-foron, développement web haute-savoie',
   alternates: {
     canonical: 'https://www.atypikcode.fr/developpement-web-la-roche-sur-foron',
   },
@@ -17,11 +18,11 @@ export const metadata = {
 const faqs = [
   {
     question: "Combien coûte la création d'un site internet à La Roche-sur-Foron ?",
-    answer: "Les tarifs dépendent de la complexité de votre projet. Une landing page professionnelle optimisée pour la conversion démarre à 950€. Un site vitrine complet avec plusieurs pages, référencement SEO avancé et formulaire de contact est à partir de 1 900€. Pour les projets e-commerce ou sur mesure, je propose un devis personnalisé gratuit après un échange sur vos besoins."
+    answer: "Mes tarifs sont transparents : Vitrine Essentiel à partir de 1 000€ (1-3 pages, idéal pour démarrer), Vitrine Pro à 1 500€ (jusqu'à 5 pages, SEO avancé — le plus choisi), Vitrine Premium à 1 900€ (multilingue ou réservation, design haut de gamme). Pour les projets e-commerce ou sur mesure (application, plateforme), je propose un devis personnalisé gratuit après un échange sur vos besoins."
   },
   {
     question: "En combien de temps mon site sera-t-il en ligne ?",
-    answer: "Je privilégie la qualité et les résultats. Une landing page est généralement livrée en 1 à 2 semaines. Un site vitrine complet demande 2 à 4 semaines selon la complexité. Pour une application web, comptez 4 à 8 semaines. Chaque projet inclut des phases de validation avec vous pour garantir un résultat qui correspond exactement à vos attentes."
+    answer: "Je privilégie la qualité et les résultats. Un site Vitrine Essentiel est livré en 1 à 2 semaines, un Vitrine Pro en 2 à 3 semaines, et un Vitrine Premium en 3 à 4 semaines. Pour une application web ou un e-commerce, comptez 5 à 8 semaines. Chaque projet inclut des phases de validation avec vous pour garantir un résultat qui correspond exactement à vos attentes."
   },
   {
     question: "Mon site sera-t-il visible sur Google pour les recherches à La Roche-sur-Foron ?",
@@ -254,70 +255,7 @@ export default function DeveloppementWebLaRocheSurForon() {
               Chaque projet inclut l&apos;optimisation SEO et un design sur mesure.
             </p>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all">
-                <div className="text-sm text-purple-400 font-medium uppercase tracking-wide mb-2">Landing Page</div>
-                <h3 className="text-2xl font-bold mb-2">L&apos;Essentiel</h3>
-                <p className="text-gray-400 mb-4">Idéal pour lancer une offre ou capturer des leads</p>
-                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-6">À partir de 950€</div>
-                <ul className="space-y-3 mb-8">
-                  {["Page unique optimisée conversion", "Design sur-mesure Next.js", "Responsive mobile parfait", "Optimisation SEO de base", "Formulaire de contact intégré"].map((f, i) => (
-                    <li key={i} className="flex items-center text-gray-300 text-sm">
-                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-                <Link href="/contact" className="block w-full text-center py-3 bg-white/5 border border-white/10 rounded-full text-white font-medium hover:bg-white/10 transition-all">
-                  Demander un devis
-                </Link>
-              </div>
-
-              <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-blue-500/30 relative hover:border-blue-500/50 transition-all">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-xs font-bold px-4 py-1 rounded-full">
-                  Le plus choisi
-                </div>
-                <div className="text-sm text-blue-400 font-medium uppercase tracking-wide mb-2">Site Business</div>
-                <h3 className="text-2xl font-bold mb-2">Vitrine complète</h3>
-                <p className="text-gray-400 mb-4">Présence complète pour asseoir votre crédibilité</p>
-                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-6">À partir de 1 900€</div>
-                <ul className="space-y-3 mb-8">
-                  {["Jusqu'à 5 pages sur-mesure", "Technologie Next.js ultra-rapide", "Référencement SEO avancé", "Formulaire + intégrations", "Analytics & suivi conversions"].map((f, i) => (
-                    <li key={i} className="flex items-center text-gray-300 text-sm">
-                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-                <Link href="/contact" className="block w-full text-center py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full text-white font-medium hover:opacity-90 transition-all">
-                  Demander un devis
-                </Link>
-              </div>
-
-              <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all">
-                <div className="text-sm text-emerald-400 font-medium uppercase tracking-wide mb-2">Sur Mesure</div>
-                <h3 className="text-2xl font-bold mb-2">E-commerce & Apps</h3>
-                <p className="text-gray-400 mb-4">Projets ambitieux avec solution personnalisée</p>
-                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400 mb-6">Sur devis</div>
-                <ul className="space-y-3 mb-8">
-                  {["Solution e-commerce complète", "Application web sur-mesure", "Fonctionnalités avancées", "Architecture scalable", "Support prioritaire"].map((f, i) => (
-                    <li key={i} className="flex items-center text-gray-300 text-sm">
-                      <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-                <Link href="/contact" className="block w-full text-center py-3 bg-white/5 border border-white/10 rounded-full text-white font-medium hover:bg-white/10 transition-all">
-                  Demander un devis
-                </Link>
-              </div>
-            </div>
+            <LocalPricingCards localContext="à La Roche-sur-Foron" />
           </div>
         </div>
       </section>

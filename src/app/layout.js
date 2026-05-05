@@ -13,13 +13,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: "Atypik Code | Développeur Web & Landing Pages en Haute-Savoie",
+    default: "Atypik Code | Site Vitrine Pro à partir de 1 000€ - Haute-Savoie",
     template: "%s | Atypik Code - Développement Web Premium",
   },
   description:
-    "Développeur web freelance en Haute-Savoie spécialisé dans la création de sites web professionnels, landing pages et applications React / Next.js. Transformation digitale pour entreprises et particuliers.",
+    "Développeur web freelance en Haute-Savoie. Création de sites vitrines professionnels en Next.js à partir de 1 000€. Tarifs transparents, SEO optimisé, devis gratuit en 24h.",
   keywords:
-    "développeur web Annecy, création site internet Haute-Savoie, landing page optimisée, refonte site web, expert React Next.js, site e-commerce Annemasse, développement web Thonon, webdesign Chamonix, site responsive, applications web sur mesure, SEO local, agence digitale Haute-Savoie, site vitrine professionnel",
+    "création site internet Haute-Savoie, site vitrine 1000 euros, développeur web Annecy, site internet pas cher, refonte site web, expert React Next.js, site e-commerce Annemasse, développement web Thonon, webdesign Chamonix, site responsive, SEO local, freelance Haute-Savoie, tarif site web professionnel",
   metadataBase: new URL("https://www.atypikcode.fr"),
   alternates: {
     canonical: "/",
@@ -63,9 +63,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Atypik Code | Développeur Web Premium en Haute-Savoie",
+    title: "Atypik Code | Site Vitrine Pro à partir de 1 000€ - Haute-Savoie",
     description:
-      "Création de sites web professionnels et landing pages optimisés. Solutions digitales sur-mesure pour votre entreprise.",
+      "Création de sites vitrines professionnels en Next.js à partir de 1 000€. Tarifs transparents, SEO optimisé, devis gratuit en 24h.",
     url: "https://www.atypikcode.fr",
     siteName: "Atypik Code",
     locale: "fr_FR",
@@ -81,9 +81,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Atypik Code | Développeur Web Premium en Haute-Savoie",
+    title: "Atypik Code | Site Vitrine Pro à partir de 1 000€ - Haute-Savoie",
     description:
-      "Création de sites web professionnels et landing pages optimisés. Solutions digitales sur-mesure pour votre entreprise.",
+      "Création de sites vitrines professionnels en Next.js à partir de 1 000€. Tarifs transparents, devis gratuit en 24h.",
     images: ["/image/florian-dev.png"],
   },
 };
@@ -127,7 +127,7 @@ const localBusinessSchema = {
   name: "Atypik Code",
   image: "https://www.atypikcode.fr/logo.png",
   description:
-    "Développeur web freelance - Création de sites web professionnels, landing pages et applications web en Haute-Savoie",
+    "Développeur web freelance - Création de sites vitrines professionnels en Next.js à partir de 1 000€ en Haute-Savoie",
   address: {
     "@type": "PostalAddress",
     addressLocality: "La Roche-sur-Foron",
@@ -172,9 +172,9 @@ const localBusinessSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Développement de sites web professionnels",
+  name: "Création de sites vitrines professionnels",
   description:
-    "Création de sites web optimisés SEO, landing pages et applications web pour entreprises et professionnels en Haute-Savoie",
+    "Création de sites vitrines Next.js optimisés SEO pour entreprises et indépendants en Haute-Savoie. À partir de 1 000€.",
   provider: {
     "@type": "ProfessionalService",
     name: "Atypik Code",
@@ -184,26 +184,43 @@ const serviceSchema = {
     "@type": "Place",
     name: "Haute-Savoie, France",
   },
+  offers: {
+    "@type": "AggregateOffer",
+    priceCurrency: "EUR",
+    lowPrice: "1000",
+    highPrice: "1900",
+    offerCount: "3",
+  },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Services web",
+    name: "Formules site vitrine",
     itemListElement: [
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Landing Page",
-          description: "Page unique optimisée pour la conversion",
+          name: "Site Vitrine Essentiel",
+          description: "Site vitrine 1 à 3 pages, design responsive, SEO de base, formulaire de contact",
         },
-        price: "950",
+        price: "1000",
         priceCurrency: "EUR",
       },
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Site Business",
-          description: "Site vitrine complet jusqu'à 5 pages",
+          name: "Site Vitrine Pro",
+          description: "Site vitrine jusqu'à 5 pages, design premium, SEO avancé, animations, analytics",
+        },
+        price: "1500",
+        priceCurrency: "EUR",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Site Vitrine Premium",
+          description: "Site vitrine 5+ pages, design haut de gamme, multilingue ou réservation, maintenance 6 mois incluse",
         },
         price: "1900",
         priceCurrency: "EUR",
@@ -212,8 +229,8 @@ const serviceSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Application Web Sur Mesure",
-          description: "Solution e-commerce ou application personnalisée",
+          name: "E-commerce et Applications sur mesure",
+          description: "Solution e-commerce, application web ou outil métier 100% personnalisé",
         },
       },
     ],

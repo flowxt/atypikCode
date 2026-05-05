@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Développeur Web La Roche-sur-Foron | Création Site Internet 2025',
-  description: 'Développeur web freelance à La Roche-sur-Foron en Haute-Savoie. Création de sites internet professionnels, landing pages et applications web sur mesure. Devis gratuit.',
-  keywords: 'développeur web la roche-sur-foron, création site internet haute-savoie, freelance développeur 74, site web professionnel roche-sur-foron, agence web haute-savoie, création site vitrine 74800',
+  description: 'Développeur web freelance à La Roche-sur-Foron en Haute-Savoie. Création de sites vitrines professionnels à partir de 1 000€. Devis gratuit en 24h.',
+  keywords: 'développeur web la roche-sur-foron, création site internet haute-savoie, site vitrine 1000 euros, freelance développeur 74, site web professionnel roche-sur-foron, agence web haute-savoie',
   openGraph: {
-    title: 'Développeur Web à La Roche-sur-Foron | Sites Internet Professionnels',
-    description: 'Votre développeur web local en Haute-Savoie. Sites vitrines, landing pages et e-commerce sur mesure. Rencontrez-moi à La Roche-sur-Foron !',
+    title: 'Développeur Web à La Roche-sur-Foron | Site Vitrine à partir de 1 000€',
+    description: 'Votre développeur web local en Haute-Savoie. Site vitrine professionnel à partir de 1 000€. Rencontrez-moi à La Roche-sur-Foron.',
     type: 'article',
     locale: 'fr_FR',
   },
@@ -95,8 +95,8 @@ export default function DeveloppeurWebLaRocheSurForon() {
             </h1>
             
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-              Création de sites internet professionnels en Haute-Savoie. 
-              Sites vitrines, landing pages et e-commerce sur mesure pour les entreprises 
+              Création de sites vitrines professionnels en Haute-Savoie, à partir de 1 000€.
+              Sites web sur mesure et e-commerce pour les entreprises
               de La Roche-sur-Foron et ses environs.
             </p>
 
@@ -176,31 +176,31 @@ export default function DeveloppeurWebLaRocheSurForon() {
             </h2>
 
             <div className="space-y-6">
-              {/* Landing Page */}
+              {/* Site Vitrine Essentiel */}
               <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-white/10 p-8">
                 <div className="flex items-start gap-6">
                   <div className="text-5xl">🚀</div>
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-4 mb-3">
-                      <h3 className="text-2xl font-bold text-white">Landing Page</h3>
-                      <span className="text-purple-400 font-bold text-xl">À partir de 950€</span>
+                      <h3 className="text-2xl font-bold text-white">Site Vitrine Essentiel</h3>
+                      <span className="text-purple-400 font-bold text-xl">À partir de 1 000€</span>
                     </div>
                     <p className="text-gray-300 mb-4">
-                      Page d'atterrissage optimisée pour la conversion. Idéale pour lancer une offre, 
-                      un service ou capturer des leads qualifiés à La Roche-sur-Foron et en Haute-Savoie.
+                      Idéal pour démarrer : un site web professionnel et efficace pour les indépendants
+                      et artisans de La Roche-sur-Foron qui veulent être visibles rapidement, sans se ruiner.
                     </p>
                     <ul className="text-gray-400 space-y-2">
                       <li className="flex items-center gap-2">
                         <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        Design sur mesure et responsive
+                        1 à 3 pages sur-mesure et responsive
                       </li>
                       <li className="flex items-center gap-2">
                         <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        Optimisation SEO locale
+                        Optimisation SEO locale de base
                       </li>
                       <li className="flex items-center gap-2">
                         <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -213,38 +213,76 @@ export default function DeveloppeurWebLaRocheSurForon() {
                 </div>
               </div>
 
-              {/* Site Vitrine */}
+              {/* Site Vitrine Pro */}
               <div className="bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-2xl border border-purple-500/30 p-8">
                 <div className="flex items-start gap-6">
                   <div className="text-5xl">🏢</div>
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-4 mb-3">
-                      <h3 className="text-2xl font-bold text-white">Site Vitrine Professionnel</h3>
-                      <span className="text-purple-400 font-bold text-xl">À partir de 1 900€</span>
-                      <span className="bg-purple-500/20 text-purple-300 text-sm px-3 py-1 rounded-full">Populaire</span>
+                      <h3 className="text-2xl font-bold text-white">Site Vitrine Pro</h3>
+                      <span className="text-purple-400 font-bold text-xl">1 500€</span>
+                      <span className="bg-purple-500/20 text-purple-300 text-sm px-3 py-1 rounded-full">⭐ Le plus choisi</span>
                     </div>
                     <p className="text-gray-300 mb-4">
-                      Site web complet pour présenter votre activité, vos services et votre expertise. 
-                      Parfait pour les artisans, thérapeutes et PME de La Roche-sur-Foron.
+                      Site complet jusqu&apos;à 5 pages avec SEO avancé, animations et analytics.
+                      Parfait pour les TPE, artisans, thérapeutes et PME de La Roche-sur-Foron qui veulent
+                      asseoir leur crédibilité.
                     </p>
                     <ul className="text-gray-400 space-y-2">
                       <li className="flex items-center gap-2">
                         <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        5 à 10 pages personnalisées
+                        Jusqu&apos;à 5 pages personnalisées
                       </li>
                       <li className="flex items-center gap-2">
                         <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        SEO avancé pour Google
+                        SEO avancé + SEO local Haute-Savoie
                       </li>
                       <li className="flex items-center gap-2">
                         <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                         Performances optimales (score 100/100)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Site Vitrine Premium */}
+              <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-white/10 p-8">
+                <div className="flex items-start gap-6">
+                  <div className="text-5xl">✨</div>
+                  <div className="flex-1">
+                    <div className="flex flex-wrap items-center gap-4 mb-3">
+                      <h3 className="text-2xl font-bold text-white">Site Vitrine Premium</h3>
+                      <span className="text-purple-400 font-bold text-xl">1 900€</span>
+                    </div>
+                    <p className="text-gray-300 mb-4">
+                      Pour les activités exigeantes (hôtels, restaurants, professions libérales) qui veulent
+                      un site haut de gamme avec multilingue ou réservation en ligne intégrée.
+                    </p>
+                    <ul className="text-gray-400 space-y-2">
+                      <li className="flex items-center gap-2">
+                        <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        5+ pages avec design haut de gamme
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Multilingue OU réservation en ligne
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Maintenance 6 mois incluse
                       </li>
                     </ul>
                   </div>
@@ -436,7 +474,7 @@ export default function DeveloppeurWebLaRocheSurForon() {
                 },
                 {
                   question: "Combien de temps pour créer un site internet ?",
-                  answer: "Une landing page est livrée en 1-2 semaines. Un site vitrine complet prend 3-4 semaines. Un site e-commerce peut prendre 4-6 semaines selon la complexité."
+                  answer: "Comptez 1 à 2 semaines pour un site Vitrine Essentiel, 2 à 3 semaines pour un Vitrine Pro et 3 à 4 semaines pour un Vitrine Premium. Un site e-commerce ou une application sur-mesure peut prendre 5 à 8 semaines selon la complexité."
                 },
                 {
                   question: "Mes sites sont-ils bien référencés sur Google ?",

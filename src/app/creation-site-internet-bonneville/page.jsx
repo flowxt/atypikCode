@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import LocalPricingCards from '@/components/local/LocalPricingCards'
 
 export const metadata = {
-  title: 'Création Site Internet Bonneville | Développeur Web 74 - Atypik Code',
+  title: 'Création Site Internet Bonneville | À partir de 1 000€ - Atypik Code',
   description:
-    'Création de site internet à Bonneville (74130). Développeur web freelance basé à 10 min de Bonneville. Sites vitrines, landing pages et solutions sur mesure pour les entreprises de la vallée de l\'Arve. Devis gratuit.',
+    "Création de site internet à Bonneville (74130) à partir de 1 000€. Développeur web freelance basé à 10 min de Bonneville. Sites vitrines pour les entreprises de la vallée de l'Arve. Devis gratuit en 24h.",
   keywords:
-    'création site internet bonneville, développeur web bonneville, site web bonneville 74, agence web bonneville, création site vitrine bonneville',
+    'création site internet bonneville, site vitrine bonneville 1000 euros, développeur web bonneville, site web bonneville 74, agence web bonneville',
   alternates: {
     canonical: 'https://www.atypikcode.fr/creation-site-internet-bonneville',
   },
@@ -22,12 +23,12 @@ const faqData = [
   {
     question: 'Combien coûte la création d\'un site internet à Bonneville ?',
     answer:
-      'Les tarifs démarrent à 950 euros HT pour une landing page optimisée et à 1 900 euros HT pour un site vitrine complet. Pour un projet sur mesure avec des fonctionnalités spécifiques (réservation, catalogue produits, espace client), un devis personnalisé est établi gratuitement sous 24h après étude de vos besoins.',
+      'Les tarifs démarrent à 1 000 € HT pour un site Vitrine Essentiel (1-3 pages, design responsive, SEO de base), 1 500 € HT pour un Vitrine Pro (jusqu\'à 5 pages, SEO avancé) et 1 900 € HT pour la formule Premium. Pour un projet sur mesure avec des fonctionnalités spécifiques (réservation, catalogue produits, espace client), un devis personnalisé est établi gratuitement sous 24h après étude de vos besoins.',
   },
   {
     question: 'Quel est le délai de création d\'un site web ?',
     answer:
-      'Comptez 1 à 2 semaines pour une landing page et 3 à 5 semaines pour un site vitrine complet. Étant basé à La Roche-sur-Foron, à seulement 10 minutes de Bonneville, nous pouvons nous rencontrer facilement pour ajuster le projet et accélérer les validations.',
+      'Comptez 1 à 2 semaines pour un Vitrine Essentiel, 2 à 3 semaines pour un Vitrine Pro et 3 à 4 semaines pour la formule Premium. Étant basé à La Roche-sur-Foron, à seulement 10 minutes de Bonneville, nous pouvons nous rencontrer facilement pour ajuster le projet et accélérer les validations.',
   },
   {
     question: 'Mon site apparaîtra-t-il en première page de Google ?',
@@ -210,132 +211,7 @@ export default function CreationSiteInternetBonneville() {
               industrielle de la vallée de l'Arve.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all">
-                <div className="text-sm text-purple-400 font-medium mb-2 uppercase tracking-wide">
-                  Essentiel
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Landing Page</h3>
-                <p className="text-gray-300 mb-6">
-                  Page unique optimisée pour convertir vos visiteurs en clients. Idéale pour lancer
-                  une offre, promouvoir un service ou tester un marché à Bonneville.
-                </p>
-                <div className="text-3xl font-bold text-purple-400 mb-6">
-                  950 <span className="text-lg text-gray-400 font-normal">euros HT</span>
-                </div>
-                <ul className="space-y-3">
-                  {[
-                    'Design responsive sur mesure',
-                    'Optimisation SEO locale Bonneville',
-                    'Formulaire de contact',
-                    'Hébergement 1 an inclus',
-                    'Livraison sous 2 semaines',
-                  ].map((feature, idx) => (
-                    <li key={idx} className="flex items-start text-gray-300">
-                      <svg
-                        className="w-5 h-5 text-green-400 mr-3 mt-0.5 shrink-0"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-purple-500/40 hover:border-purple-500/60 transition-all relative">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-bold px-4 py-1 rounded-full">
-                  Populaire
-                </div>
-                <div className="text-sm text-purple-400 font-medium mb-2 uppercase tracking-wide">
-                  Professionnel
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Site Business</h3>
-                <p className="text-gray-300 mb-6">
-                  Site vitrine multi-pages complet pour présenter votre entreprise, vos services et
-                  votre savoir-faire aux habitants de Bonneville et de la vallée.
-                </p>
-                <div className="text-3xl font-bold text-purple-400 mb-6">
-                  1 900 <span className="text-lg text-gray-400 font-normal">euros HT</span>
-                </div>
-                <ul className="space-y-3">
-                  {[
-                    'Jusqu\'à 7 pages sur mesure',
-                    'SEO local avancé (Bonneville + vallée)',
-                    'Blog intégré',
-                    'Google Analytics & Search Console',
-                    'Maintenance 6 mois incluse',
-                    'Formation gestion de contenu',
-                  ].map((feature, idx) => (
-                    <li key={idx} className="flex items-start text-gray-300">
-                      <svg
-                        className="w-5 h-5 text-green-400 mr-3 mt-0.5 shrink-0"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all">
-                <div className="text-sm text-purple-400 font-medium mb-2 uppercase tracking-wide">
-                  Premium
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Sur Mesure</h3>
-                <p className="text-gray-300 mb-6">
-                  Solution digitale complète pour les entreprises ambitieuses : e-commerce, espace
-                  client, réservation en ligne, application métier.
-                </p>
-                <div className="text-3xl font-bold text-purple-400 mb-6">
-                  Sur devis
-                </div>
-                <ul className="space-y-3">
-                  {[
-                    'Architecture sur mesure Next.js',
-                    'Fonctionnalités avancées',
-                    'Intégration outils métier',
-                    'Performances optimales',
-                    'Support technique dédié',
-                    'Évolutions illimitées',
-                  ].map((feature, idx) => (
-                    <li key={idx} className="flex items-start text-gray-300">
-                      <svg
-                        className="w-5 h-5 text-green-400 mr-3 mt-0.5 shrink-0"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            <LocalPricingCards localContext="à Bonneville" />
           </div>
         </div>
       </section>

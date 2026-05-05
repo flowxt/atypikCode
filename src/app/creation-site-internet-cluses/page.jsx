@@ -1,9 +1,10 @@
 import Link from 'next/link'
+import LocalPricingCards from '@/components/local/LocalPricingCards'
 
 export const metadata = {
-  title: "Création Site Internet Cluses | Développeur Web Vallée de l'Arve - Atypik Code",
-  description: "Création de sites internet pour entreprises industrielles à Cluses. Développeur web spécialisé B2B, PME/PMI et secteur du décolletage en vallée de l'Arve. Devis gratuit.",
-  keywords: "création site internet cluses, développeur web cluses, site web vallée arve, agence web cluses 74, site internet industriel haute-savoie, création site PME cluses",
+  title: "Création Site Internet Cluses | À partir de 1 000€ - Atypik Code",
+  description: "Création de site internet à Cluses à partir de 1 000€. Développeur web spécialisé pour entreprises industrielles, PME/PMI et secteur du décolletage en vallée de l'Arve. Devis gratuit en 24h.",
+  keywords: "création site internet cluses, site vitrine cluses 1000 euros, développeur web cluses, site web vallée arve, agence web cluses 74, site internet industriel haute-savoie",
   alternates: {
     canonical: 'https://www.atypikcode.fr/creation-site-internet-cluses',
   },
@@ -18,7 +19,7 @@ export const metadata = {
 const faqData = [
   {
     question: "Combien coûte un site internet pour une entreprise industrielle à Cluses ?",
-    answer: "Les tarifs démarrent à 950\u00a0€ pour une landing page, 1\u00a0900\u00a0€ pour un site vitrine professionnel et sur devis pour les projets sur mesure (catalogue produits, configurateur technique). Chaque projet inclut l'optimisation SEO et un accompagnement personnalisé."
+    answer: "Les tarifs démarrent à 1\u00a0000\u00a0€ pour un Vitrine Essentiel (1-3 pages), 1\u00a0500\u00a0€ pour un Vitrine Pro (jusqu'à 5 pages, SEO avancé) et 1\u00a0900\u00a0€ pour un Vitrine Premium. Pour les projets industriels sur mesure (catalogue produits techniques, configurateur, espace donneur d'ordres), un devis personnalisé est établi gratuitement. Chaque projet inclut l'optimisation SEO et un accompagnement personnalisé."
   },
   {
     question: "Pouvez-vous créer un catalogue de produits en ligne ?",
@@ -47,27 +48,6 @@ export default function CreationSiteInternetCluses() {
       }
     }))
   }
-
-  const services = [
-    {
-      title: "Landing Page",
-      price: "950 €",
-      description: "Page unique optimisée pour convertir vos visiteurs en prospects qualifiés.",
-      features: ["Design responsive", "Formulaire de contact", "Optimisation SEO", "Hébergement 1 an inclus"]
-    },
-    {
-      title: "Site Business",
-      price: "1 900 €",
-      description: "Site vitrine complet pour présenter votre entreprise industrielle et vos savoir-faire.",
-      features: ["Jusqu'à 8 pages", "Catalogue produits", "SEO local Cluses", "Maintenance 6 mois"]
-    },
-    {
-      title: "Sur Mesure",
-      price: "Sur devis",
-      description: "Solution digitale personnalisée pour des besoins spécifiques : configurateur, portail client, ERP.",
-      features: ["Architecture sur mesure", "Fonctionnalités avancées", "Intégration systèmes", "Support dédié"]
-    }
-  ]
 
   const communes = [
     "Scionzier", "Marnaz", "Thyez", "Magland",
@@ -185,25 +165,7 @@ export default function CreationSiteInternetCluses() {
                 </span>
               </h2>
 
-              <div className="grid md:grid-cols-3 gap-8">
-                {services.map((service, index) => (
-                  <div key={index} className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all">
-                    <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
-                    <div className="text-3xl font-bold text-purple-400 mb-4">{service.price}</div>
-                    <p className="text-gray-300 mb-6">{service.description}</p>
-                    <ul className="space-y-2">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-gray-300">
-                          <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                          </svg>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
+              <LocalPricingCards localContext="à Cluses" />
             </div>
           </div>
         </section>

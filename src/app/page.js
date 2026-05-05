@@ -8,15 +8,15 @@ import FAQ from "@/components/home/FAQ";
 import CTA from "@/components/global/CTA";
 
 export const metadata = {
-  title: "Atypik Code | Sites Web Ultra-Performants en Haute-Savoie",
+  title: "Atypik Code | Site Vitrine Pro à partir de 1 000€ - Haute-Savoie",
   description:
-    "Ne perdez plus de clients à cause d'un site lent. Sites web Next.js ultra-performants, conçus pour Google et la conversion. Landing page 950€, Site Business 1900€.",
+    "Ne perdez plus de clients à cause d'un site lent. Site vitrine Next.js ultra-performant à partir de 1 000€ en Haute-Savoie. Tarifs transparents, devis gratuit en 24h.",
   keywords:
-    "développeur next.js, site web performant, création site haute-savoie, site rapide, expert SEO, freelance développeur, développeur web La Roche-sur-Foron",
+    "site vitrine 1000 euros, création site internet haute-savoie, développeur next.js, site web pas cher, site rapide, freelance développeur, développeur web La Roche-sur-Foron, tarif site internet",
   openGraph: {
-    title: "Atypik Code | Sites Web Ultra-Performants en Haute-Savoie",
+    title: "Atypik Code | Site Vitrine Pro à partir de 1 000€ - Haute-Savoie",
     description:
-      "Ne perdez plus de clients à cause d'un site lent. Sites web Next.js ultra-rapides, conçus pour Google et la conversion.",
+      "Site vitrine Next.js ultra-performant à partir de 1 000€. Conçu pour Google et la conversion. Tarifs transparents.",
     type: "website",
     locale: "fr_FR",
     images: [
@@ -30,8 +30,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Atypik Code | Sites Web Ultra-Performants en Haute-Savoie",
-    description: "Sites web Next.js ultra-rapides, conçus pour Google et la conversion.",
+    title: "Atypik Code | Site Vitrine Pro à partir de 1 000€ - Haute-Savoie",
+    description: "Site vitrine Next.js ultra-performant à partir de 1 000€. Tarifs transparents.",
     images: ["/image/florian-dev.png"],
   },
   alternates: {

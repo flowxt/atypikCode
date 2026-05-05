@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import LocalPricingCards from '@/components/local/LocalPricingCards'
 
 export const metadata = {
-  title: 'Création Site Internet Annecy | Développeur Web Haute-Savoie - Atypik Code',
+  title: 'Création Site Internet Annecy | À partir de 1 000€ - Atypik Code',
   description:
-    'Création de site internet à Annecy par un développeur web freelance en Haute-Savoie. Sites vitrines, landing pages et solutions sur mesure pour les entreprises annéciennes. Devis gratuit.',
+    'Création de site internet à Annecy par un développeur web freelance en Haute-Savoie. Site vitrine professionnel à partir de 1 000€. Devis gratuit en 24h.',
   keywords:
-    'création site internet annecy, développeur web annecy, agence web annecy, site vitrine annecy, création site web haute-savoie, développeur freelance annecy, site internet lac annecy, webdesign annecy',
+    'création site internet annecy, développeur web annecy, site vitrine annecy 1000 euros, agence web annecy, création site web haute-savoie, développeur freelance annecy, site internet lac annecy, webdesign annecy',
   alternates: {
     canonical: 'https://www.atypikcode.fr/creation-site-internet-annecy',
   },
@@ -22,7 +23,7 @@ const faqData = [
   {
     question: 'Combien coûte un site internet à Annecy ?',
     answer:
-      'Le tarif dépend de la nature du projet. Une landing page démarre à 950\u00a0\u20ac, un site vitrine professionnel à 1\u00a0900\u00a0\u20ac, et les projets sur mesure font l\'objet d\'un devis personnalisé. Chaque prestation inclut le design responsive, l\'optimisation SEO et un accompagnement après mise en ligne.',
+      'Le tarif dépend du périmètre. Mes 3 formules : Vitrine Essentiel à partir de 1\u00a0000\u00a0€ (1-3 pages), Vitrine Pro à 1\u00a0500\u00a0€ (jusqu\'à 5 pages, SEO avancé), Vitrine Premium à 1\u00a0900\u00a0€ (multilingue ou réservation, design haut de gamme). Les projets sur mesure (e-commerce, application) font l\'objet d\'un devis personnalisé. Chaque prestation inclut le design responsive, l\'optimisation SEO et un accompagnement après mise en ligne.',
   },
   {
     question: 'Pourquoi choisir un développeur local plutôt qu\'une agence parisienne ?',
@@ -32,7 +33,7 @@ const faqData = [
   {
     question: 'En combien de temps mon site sera-t-il en ligne ?',
     answer:
-      'Comptez 1 à 2 semaines pour une landing page et 3 à 5 semaines pour un site vitrine complet. Un projet sur mesure nécessite généralement 5 à 8 semaines selon sa complexité. Je m\'engage sur un calendrier clair dès le démarrage du projet.',
+      'Comptez 1 à 2 semaines pour un site Vitrine Essentiel, 2 à 3 semaines pour un Vitrine Pro et 3 à 4 semaines pour un Vitrine Premium. Un projet sur mesure (e-commerce, application) nécessite généralement 5 à 8 semaines selon sa complexité. Je m\'engage sur un calendrier clair dès le démarrage du projet.',
   },
   {
     question: 'Mon site sera-t-il visible sur Google pour les recherches à Annecy ?',
@@ -185,80 +186,7 @@ export default function CreationSiteInternetAnnecy() {
               digital ambitieux.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all">
-                <div className="text-sm text-purple-400 font-medium mb-2">Idéal pour démarrer</div>
-                <h3 className="text-2xl font-bold mb-4">Landing Page</h3>
-                <p className="text-gray-300 mb-6">
-                  Une page unique et percutante pour présenter votre offre, capter des
-                  prospects ou lancer un nouveau service sur le marché annécien.
-                </p>
-                <div className="text-3xl font-bold text-purple-400 mb-6">
-                  À partir de 950€
-                </div>
-                <ul className="space-y-3">
-                  {['Design sur mesure', 'Optimisation conversion', 'Formulaire de contact', 'Compatible mobile', 'Référencement SEO'].map(
-                    (feature) => (
-                      <li key={feature} className="flex items-center text-gray-300">
-                        <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        {feature}
-                      </li>
-                    )
-                  )}
-                </ul>
-              </div>
-
-              <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-500/50 transition-all relative">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-bold px-4 py-1 rounded-full">
-                  Populaire
-                </div>
-                <div className="text-sm text-purple-400 font-medium mb-2">Pour les entreprises</div>
-                <h3 className="text-2xl font-bold mb-4">Site Business</h3>
-                <p className="text-gray-300 mb-6">
-                  Un site vitrine complet pour établir votre crédibilité à Annecy :
-                  plusieurs pages, galerie, témoignages et intégration Google Maps.
-                </p>
-                <div className="text-3xl font-bold text-purple-400 mb-6">
-                  À partir de 1 900€
-                </div>
-                <ul className="space-y-3">
-                  {['Site multi-pages', 'Design premium', 'SEO local Annecy', 'Maintenance 6 mois', 'Formation utilisation', 'Performances optimales'].map(
-                    (feature) => (
-                      <li key={feature} className="flex items-center text-gray-300">
-                        <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        {feature}
-                      </li>
-                    )
-                  )}
-                </ul>
-              </div>
-
-              <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-all">
-                <div className="text-sm text-purple-400 font-medium mb-2">Projets complexes</div>
-                <h3 className="text-2xl font-bold mb-4">Sur Mesure</h3>
-                <p className="text-gray-300 mb-6">
-                  Application web, plateforme de réservation, outil métier : une solution
-                  taillée pour les besoins spécifiques de votre activité.
-                </p>
-                <div className="text-3xl font-bold text-purple-400 mb-6">Sur devis</div>
-                <ul className="space-y-3">
-                  {['Architecture dédiée', 'Développement Next.js / React', 'Intégrations API', 'Sécurité renforcée', 'Support technique', 'Évolutivité garantie'].map(
-                    (feature) => (
-                      <li key={feature} className="flex items-center text-gray-300">
-                        <svg className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        {feature}
-                      </li>
-                    )
-                  )}
-                </ul>
-              </div>
-            </div>
+            <LocalPricingCards localContext="à Annecy" />
           </div>
         </div>
       </section>

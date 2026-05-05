@@ -1,74 +1,24 @@
 import CTA from "@/components/global/CTA";
 import BookingCalendar from "@/components/services/BookingCalendar";
 import Link from "next/link";
+import { packs, monthlyMaintenance } from "@/data/packs";
 
 export const metadata = {
-  title: "Services | Sites Web Ultra-Performants - Atypik Code",
+  title: "Services | Site Vitrine à partir de 1 000€ - Atypik Code",
   description:
-    "Création de sites web Next.js ultra-rapides en Haute-Savoie. Landing page à partir de 950€, Site Business 1900€, E-commerce sur devis. Devis gratuit en 24h.",
+    "Création de sites vitrines professionnels en Next.js, à partir de 1 000€ en Haute-Savoie. 3 formules claires : Essentiel 1 000€, Pro 1 500€, Premium 1 900€. Devis gratuit en 24h.",
   keywords:
-    "création site web next.js, landing page performante, site vitrine professionnel, e-commerce, développeur web haute-savoie, tarif site internet",
+    "création site vitrine, site internet pas cher, tarif site web, site vitrine 1000 euros, développeur web haute-savoie, site internet professionnel, devis site web",
   alternates: {
     canonical: "https://www.atypikcode.fr/services",
   },
   openGraph: {
-    title: "Services | Sites Web Ultra-Performants - Atypik Code",
-    description: "Landing page 950€, Site Business 1900€, E-commerce sur devis. Devis gratuit en 24h.",
+    title: "Services | Site Vitrine à partir de 1 000€ - Atypik Code",
+    description:
+      "Site vitrine pro à partir de 1 000€. 3 formules claires (Essentiel, Pro, Premium) + sur-mesure. Devis gratuit en 24h.",
     type: "website",
   },
 };
-
-const services = [
-  {
-    id: "landing-page",
-    title: "L'Essentiel",
-    subtitle: "Landing Page",
-    price: "À partir de 950€",
-    description: "Idéal pour lancer une offre ou capturer des leads. Une page unique optimisée pour la conversion.",
-    features: [
-      "Page unique optimisée conversion",
-      "Design sur-mesure Next.js",
-      "Responsive mobile parfait",
-      "Optimisation SEO de base",
-      "Formulaire de contact intégré",
-    ],
-    color: "from-violet-500 to-purple-600"
-  },
-  {
-    id: "site-business",
-    title: "Site Business",
-    subtitle: "Vitrine complète",
-    price: "À partir de 1 900€",
-    description: "Une présence complète pour asseoir votre crédibilité et convertir vos visiteurs.",
-    features: [
-      "Jusqu'à 5 pages sur-mesure",
-      "Technologie Next.js ultra-rapide",
-      "Design premium personnalisé",
-      "Référencement SEO avancé",
-      "Formulaire + intégrations",
-      "Analytics & suivi conversions"
-    ],
-    popular: true,
-    color: "from-blue-500 to-cyan-500"
-  },
-  {
-    id: "sur-mesure",
-    title: "Sur Mesure",
-    subtitle: "E-commerce & Apps",
-    price: "Sur devis",
-    description: "Pour les projets ambitieux qui veulent se démarquer avec une solution 100% personnalisée.",
-    features: [
-      "Solution e-commerce complète",
-      "Application web sur-mesure",
-      "Fonctionnalités avancées",
-      "Performance maximale",
-      "Accompagnement dédié",
-      "Architecture scalable",
-      "Support prioritaire"
-    ],
-    color: "from-emerald-500 to-teal-600"
-  }
-];
 
 export default function Services() {
   return (
@@ -80,58 +30,63 @@ export default function Services() {
             Services
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Des sites conçus pour convertir
+            Un site vitrine pro{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
+              à partir de 1 000€
+            </span>
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Technologie Next.js — la même que Netflix ou Uber — pour un site 
+            Technologie Next.js — la même que Netflix ou Uber — pour un site
             plus rapide et mieux référencé que celui de vos concurrents.
+            Tarifs transparents, devis gratuit en 24h.
           </p>
         </div>
       </section>
 
       {/* Services */}
       <section className="pb-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-6">
-            {services.map((service) => (
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {packs.map((service) => (
               <div
                 key={service.id}
                 className={`relative bg-gradient-to-b from-gray-900 to-gray-950 rounded-2xl border ${
-                  service.popular ? 'border-blue-500/30 md:-mt-4 md:-mb-4' : 'border-white/5'
-                } overflow-hidden`}
+                  service.popular ? 'border-blue-500/40 lg:-mt-4 lg:-mb-4' : 'border-white/5'
+                } overflow-hidden flex flex-col`}
               >
                 {service.popular && (
                   <div className="bg-gradient-to-r from-blue-500 to-cyan-500 py-2 text-center">
-                    <span className="text-white text-sm font-medium">Le plus choisi</span>
+                    <span className="text-white text-sm font-medium">⭐ Le plus choisi</span>
                   </div>
                 )}
-                
-                <div className="p-8">
-                  <p className="text-sm text-gray-500 uppercase tracking-wide mb-1">{service.subtitle}</p>
-                  <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-                  <div className={`text-2xl font-bold bg-gradient-to-r ${service.color} bg-clip-text text-transparent mb-4`}>
-                    {service.price}
+
+                <div className="p-7 flex flex-col flex-grow">
+                  <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">{service.tagline}</p>
+                  <h3 className="text-xl font-bold text-white mb-2">{service.name}</h3>
+                  <div className={`text-2xl font-bold bg-gradient-to-r ${service.color} bg-clip-text text-transparent mb-1`}>
+                    {service.priceLabel}
                   </div>
-                  
+                  <p className="text-xs text-gray-500 mb-5">Livraison : {service.delivery}</p>
+
                   <p className="text-gray-400 text-sm mb-6 leading-relaxed">
                     {service.description}
                   </p>
-                  
-                  <ul className="space-y-3 mb-8">
+
+                  <ul className="space-y-2.5 mb-8 flex-grow">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-gray-300 text-sm">
-                        <svg className="w-4 h-4 text-green-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <li key={idx} className="flex items-start text-gray-300 text-sm">
+                        <svg className="w-4 h-4 text-green-400 mr-2.5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                         {feature}
                       </li>
                     ))}
                   </ul>
-                  
+
                   <Link href="#booking">
                     <button className={`w-full py-3 px-6 rounded-full font-medium text-sm transition-all ${
-                      service.popular 
-                        ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white hover:opacity-90' 
+                      service.popular
+                        ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white hover:opacity-90'
                         : 'bg-white/5 text-white border border-white/10 hover:bg-white/10'
                     }`}>
                       Demander un devis
@@ -141,7 +96,7 @@ export default function Services() {
               </div>
             ))}
           </div>
-          
+
           {/* Note sur les frais */}
           <div className="mt-12 text-center">
             <div className="inline-flex items-center bg-gray-900 border border-white/5 rounded-full px-6 py-3">
@@ -149,7 +104,7 @@ export default function Services() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
               <span className="text-gray-300 text-sm">
-                Frais d&apos;hébergement et maintenance : <span className="text-white font-medium">50 à 150€/mois</span> selon les options
+                Maintenance & hébergement en option : <span className="text-white font-medium">{monthlyMaintenance}</span>
               </span>
             </div>
           </div>

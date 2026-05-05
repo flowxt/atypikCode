@@ -6,9 +6,9 @@ import { BlogHero } from "@/components/blog/BlogHero";
 export const metadata = {
   title: "Blog | Conseils et Astuces en Développement Web | Atypik Code",
   description:
-    "Découvrez nos articles et conseils d'expert sur le développement web, la création de landing pages et l'optimisation SEO. Ressources gratuites pour améliorer votre présence en ligne.",
+    "Découvrez nos articles et conseils d'expert sur le développement web, la création de sites vitrines et l'optimisation SEO. Ressources gratuites pour améliorer votre présence en ligne.",
   keywords:
-    "blog développement web, astuces création site internet, conseils landing page, optimisation SEO, tutoriels React, Next.js, expérience utilisateur",
+    "blog développement web, astuces création site internet, conseils site vitrine, optimisation SEO, tutoriels React, Next.js, expérience utilisateur",
   alternates: {
     canonical: "https://www.atypikcode.fr/blog",
   },
@@ -28,9 +28,9 @@ const blogPosts = [
   },
   {
     id: 8,
-    title: "Comment créer une landing page qui convertit en 2025",
+    title: "Comment créer une page web qui convertit en 2025",
     excerpt:
-      "Découvrez les techniques et stratégies essentielles pour concevoir des landing pages performantes qui transforment vos visiteurs en clients fidèles.",
+      "Découvrez les techniques et stratégies essentielles pour concevoir des pages web performantes qui transforment vos visiteurs en clients fidèles.",
     date: "18 avril 2025",
     image: "/image/myeasyplan.png",
     category: "Conversion",

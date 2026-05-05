@@ -4,16 +4,16 @@ import BienEtreContactForm from "@/components/bien-etre/BienEtreContactForm";
 import ImageModal from "@/components/ImageModal";
 
 export const metadata = {
-  title: "Site Web pour Thérapeutes & Praticiens Bien-être | Atypik Code",
+  title: "Site Web pour Thérapeutes & Praticiens Bien-être | À partir de 1 000€",
   description:
-    "Site web professionnel pour sophrologues, énergéticiennes et praticiens bien-être en Haute-Savoie. Design doux, apaisant et adapté à votre univers. À partir de 950€.",
+    "Site web professionnel pour sophrologues, énergéticiennes et praticiens bien-être en Haute-Savoie. Design doux et apaisant adapté à votre univers. À partir de 1 000€.",
   keywords:
-    "site web thérapeute, site internet bien-être, site sophrologue, site naturopathe, site énergéticienne, site médecine douce, site coach bien-être, Haute-Savoie, Annecy",
+    "site web thérapeute, site internet bien-être, site sophrologue 1000 euros, site naturopathe, site énergéticienne, site médecine douce, site coach bien-être, Haute-Savoie, Annecy",
   alternates: {
     canonical: "https://www.atypikcode.fr/bien-etre",
   },
   openGraph: {
-    title: "Site Web pour Thérapeutes & Praticiens Bien-être",
+    title: "Site Web pour Thérapeutes & Praticiens Bien-être | À partir de 1 000€",
     description: "Site web professionnel pour sophrologues, énergéticiennes et praticiens bien-être. Design doux et apaisant.",
     type: "website",
     images: [{ url: "/image/medium.jpg", width: 1200, height: 630, alt: "Site web pour thérapeutes bien-être - Atypik Code" }],
@@ -545,83 +545,84 @@ export default function BienEtreLandingPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {/* Formule Landing Page */}
+            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {/* Formule Essentiel */}
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 h-full flex flex-col group hover:scale-[1.02] transition-all">
                 <div className="text-center flex flex-col h-full">
                   <div className="inline-block rounded-full bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm px-5 py-1 text-sm font-medium mb-6 border border-purple-500/30">
-                    FORMULE LANDING PAGE
+                    VITRINE ESSENTIEL
                   </div>
                   <div className="flex items-center justify-center mb-2">
                     <span className="text-5xl font-bold bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
-                      950€
+                      1 000€
                     </span>
                     <span className="text-lg text-gray-400 ml-2">TTC</span>
                   </div>
-                  <p className="text-gray-400 mb-8">
-                    + 50 à 150€/mois pour l&apos;hébergement et maintenance
+                  <p className="text-gray-400 mb-6 text-sm">
+                    + 50 à 150€/mois (option hébergement & maintenance)
                   </p>
 
-                  <div className="h-px w-full bg-gray-700 my-8"></div>
+                  <div className="h-px w-full bg-gray-700 my-6"></div>
 
-                  <ul className="space-y-4 text-left mb-8 flex-grow">
+                  <ul className="space-y-3 text-left mb-8 flex-grow text-sm">
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
-                      <span>Landing page professionnelle</span>
+                      <span>1 à 3 pages sur-mesure</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
-                      <span>Formulaire de contact optimisé</span>
+                      <span>Présentation de votre pratique</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
-                      <span>Référencement local</span>
+                      <span>Formulaire de contact</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
-                      <span>Livraison en 1 semaine</span>
+                      <span>SEO local de base</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-400 mr-2">✓</span>
+                      <span>Livraison en 1 à 2 semaines</span>
                     </li>
                   </ul>
 
                   <div className="mt-auto">
                     <a
                       href="#contact"
-                      className="inline-block w-full py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-all hover:scale-105 text-center relative z-10 group"
+                      className="inline-block w-full py-3 px-6 bg-white/10 border border-white/20 rounded-lg font-medium hover:bg-white/15 transition-all text-center"
                     >
-                      <span className="relative z-10">
-                        Demander ma landing page
-                      </span>
-                      <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      Choisir cette formule
                     </a>
                   </div>
                 </div>
               </div>
 
-              {/* Formule Site Vitrine */}
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 h-full flex flex-col relative overflow-hidden group hover:scale-[1.02] transition-all">
+              {/* Formule Pro - Recommandée */}
+              <div className="bg-gradient-to-b from-purple-900/30 to-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border-2 border-purple-500/50 shadow-xl shadow-purple-500/20 h-full flex flex-col relative overflow-hidden group hover:scale-[1.02] transition-all md:-mt-4 md:-mb-4">
                 <div className="absolute top-8 right-0 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs font-bold px-8 py-1 uppercase transform rotate-45 translate-x-6">
                   Recommandé
                 </div>
                 <div className="text-center flex flex-col h-full">
-                  <div className="inline-block rounded-full bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm px-5 py-1 text-sm font-medium mb-6 border border-purple-500/30">
-                    FORMULE SITE VITRINE
+                  <div className="inline-block rounded-full bg-gradient-to-r from-purple-600/30 to-pink-600/30 backdrop-blur-sm px-5 py-1 text-sm font-medium mb-6 border border-purple-500/40">
+                    VITRINE PRO
                   </div>
                   <div className="flex items-center justify-center mb-2">
                     <span className="text-5xl font-bold bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
-                      1 900€
+                      1 500€
                     </span>
                     <span className="text-lg text-gray-400 ml-2">TTC</span>
                   </div>
-                  <p className="text-gray-400 mb-8">
-                    + 50 à 150€/mois pour l&apos;hébergement et maintenance
+                  <p className="text-gray-400 mb-6 text-sm">
+                    + 50 à 150€/mois (option hébergement & maintenance)
                   </p>
 
-                  <div className="h-px w-full bg-gray-700 my-8"></div>
+                  <div className="h-px w-full bg-gray-700 my-6"></div>
 
-                  <ul className="space-y-4 text-left mb-8 flex-grow">
+                  <ul className="space-y-3 text-left mb-8 flex-grow text-sm">
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
-                      <span>Site complet (3-6 pages)</span>
+                      <span>Jusqu&apos;à 5 pages sur-mesure</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
@@ -629,31 +630,84 @@ export default function BienEtreLandingPage() {
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
-                      <span>Système de prise de rendez-vous</span>
+                      <span>Design premium adapté à votre univers</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
-                      <span>SEO complet pour être trouvé dans votre zone</span>
+                      <span>SEO local avancé</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
-                      <span>Assistance prioritaire</span>
+                      <span>Animations douces et apaisantes</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-green-400 mr-2">✓</span>
-                      <span>Livraison en 2 semaines</span>
+                      <span>Livraison en 2 à 3 semaines</span>
                     </li>
                   </ul>
 
                   <div className="mt-auto">
                     <a
                       href="#contact"
-                      className="inline-block w-full py-4 px-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium text-lg hover:opacity-90 transition-all hover:scale-105 text-center relative z-10 group"
+                      className="inline-block w-full py-3 px-6 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-medium hover:opacity-90 transition-all hover:scale-105 text-center"
                     >
-                      <span className="relative z-10">
-                        Demander mon site vitrine
-                      </span>
-                      <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      Choisir cette formule
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Formule Premium */}
+              <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/30 shadow-xl shadow-purple-500/10 h-full flex flex-col group hover:scale-[1.02] transition-all">
+                <div className="text-center flex flex-col h-full">
+                  <div className="inline-block rounded-full bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm px-5 py-1 text-sm font-medium mb-6 border border-purple-500/30">
+                    VITRINE PREMIUM
+                  </div>
+                  <div className="flex items-center justify-center mb-2">
+                    <span className="text-5xl font-bold bg-gradient-to-r from-white to-gray-300 text-transparent bg-clip-text">
+                      1 900€
+                    </span>
+                    <span className="text-lg text-gray-400 ml-2">TTC</span>
+                  </div>
+                  <p className="text-gray-400 mb-6 text-sm">
+                    + 50 à 150€/mois (option hébergement & maintenance)
+                  </p>
+
+                  <div className="h-px w-full bg-gray-700 my-6"></div>
+
+                  <ul className="space-y-3 text-left mb-8 flex-grow text-sm">
+                    <li className="flex items-start">
+                      <span className="text-green-400 mr-2">✓</span>
+                      <span>5+ pages sur-mesure</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-400 mr-2">✓</span>
+                      <span>Réservation en ligne intégrée</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-400 mr-2">✓</span>
+                      <span>Design haut de gamme premium</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-400 mr-2">✓</span>
+                      <span>SEO avancé + stratégie locale</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-400 mr-2">✓</span>
+                      <span>Maintenance 6 mois incluse</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-green-400 mr-2">✓</span>
+                      <span>Livraison en 3 à 4 semaines</span>
+                    </li>
+                  </ul>
+
+                  <div className="mt-auto">
+                    <a
+                      href="#contact"
+                      className="inline-block w-full py-3 px-6 bg-white/10 border border-white/20 rounded-lg font-medium hover:bg-white/15 transition-all text-center"
+                    >
+                      Choisir cette formule
                     </a>
                   </div>
                 </div>
