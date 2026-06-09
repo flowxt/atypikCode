@@ -1,29 +1,39 @@
 "use client"
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
 export default function BackgroundEffects() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  
+  const spotlightRef = useRef(null);
+
   useEffect(() => {
+    let frame = null;
+
+    // Mise à jour directe du DOM via rAF : aucun re-render React par mousemove
     const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        if (spotlightRef.current) {
+          spotlightRef.current.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, rgba(101, 79, 240, 0.15), transparent 40%)`;
+        }
+        frame = null;
+      });
     };
-    
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      if (frame) cancelAnimationFrame(frame);
+    };
   }, []);
 
   return (
     <>
       {/* Effet de lumière qui suit le curseur */}
-      <div 
+      <div
+        ref={spotlightRef}
         className="pointer-events-none fixed inset-0 z-30 transition-opacity"
-        style={{
-          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(101, 79, 240, 0.15), transparent 40%)`
-        }}
       />
-      
+
       {/* Éléments de background */}
       <div className="pointer-events-none fixed inset-0 z-0">
         <div className="absolute top-40 left-20 w-72 h-72 bg-purple-600/20 rounded-full filter blur-3xl opacity-20" />

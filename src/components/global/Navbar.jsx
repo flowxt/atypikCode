@@ -34,9 +34,9 @@ export default function Navbar() {
   ]
   
   return (
-    <header className={`fixed w-full z-[110] transition-all duration-300 ${scrolled ? 'py-3 bg-gray-900/95 backdrop-blur-lg shadow-lg border-b border-white/10' : 'py-5 bg-transparent'}`}>
-      <div className="container mx-auto px-4">
-        <nav className="flex justify-between items-center">
+    <header className={`fixed w-full z-[110] transition-all duration-500 ${scrolled ? 'py-3' : 'py-5'}`}>
+      <div className={`container mx-auto px-4 transition-all duration-500 ${scrolled ? 'max-w-5xl' : ''}`}>
+        <nav className={`flex justify-between items-center transition-all duration-500 ${scrolled ? 'bg-gray-950/70 backdrop-blur-xl border border-white/10 rounded-full px-6 py-2.5 shadow-lg shadow-black/40' : 'px-0'}`}>
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <motion.div
@@ -63,13 +63,16 @@ export default function Navbar() {
               <Link 
                 key={index}
                 href={link.href}
-                className={`text-lg transition-all duration-300 hover:scale-105 ${
+                className={`relative text-base transition-all duration-300 ${
                   isActive(link.href) 
-                    ? 'text-purple-400 font-semibold' 
-                    : 'text-gray-300 hover:text-white'
+                    ? 'text-white font-semibold' 
+                    : 'text-gray-400 hover:text-white'
                 }`}
               >
                 {link.text}
+                {isActive(link.href) && (
+                  <span className="absolute -bottom-1.5 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-400 to-transparent"></span>
+                )}
               </Link>
             ))}
           </motion.div>
@@ -84,7 +87,7 @@ export default function Navbar() {
             <div className="relative">
               <Link 
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white px-6 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40"
+                className="btn-glow inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300"
               >
                 <span>Devis Gratuit</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

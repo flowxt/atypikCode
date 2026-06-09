@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
   --background: #000000;
@@ -22,12 +21,19 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   overflow-x: hidden;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.01em;
+}
+
+/* Titres avec police display premium */
+h1, h2, h3,
+.font-heading {
+  font-family: var(--font-heading), var(--font-sans), system-ui, sans-serif;
+  letter-spacing: -0.02em;
 }
 
 /* Amélioration de la sélection */
@@ -177,4 +183,91 @@ a, button {
 
 .card-gradient:hover {
   border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   Design system premium
+   ============================================ */
+
+/* Grille technique en arrière-plan (hero) */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%);
+}
+
+/* Texte en dégradé animé */
+.text-gradient-animated {
+  background: linear-gradient(90deg, #a78bfa, #818cf8, #60a5fa, #a78bfa);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-shift 6s ease infinite;
+}
+
+/* Bouton CTA premium avec glow */
+.btn-glow {
+  position: relative;
+  box-shadow: 0 0 24px rgba(139, 92, 246, 0.35), 0 4px 16px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 40px rgba(139, 92, 246, 0.55), 0 4px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Carte glassmorphism avec lueur au survol */
+.card-glow {
+  position: relative;
+  background: linear-gradient(180deg, rgba(20, 20, 28, 0.7), rgba(8, 8, 12, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-glow:hover {
+  border-color: rgba(139, 92, 246, 0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(139, 92, 246, 0.12), 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Bordure dégradée subtile */
+.border-gradient {
+  position: relative;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(#0a0a0f, #0a0a0f) padding-box,
+    linear-gradient(135deg, rgba(139, 92, 246, 0.5), rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.05)) border-box;
+}
+
+/* Halo conique tournant lentement (sections CTA) */
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+/* Apparition douce au scroll (fallback sans JS) */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease both;
 }

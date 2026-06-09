@@ -6,6 +6,9 @@ import { motion } from "framer-motion";
 export function HeroSection() {
   return (
     <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden relative">
+      {/* Grille technique en arrière-plan */}
+      <div className="absolute inset-0 bg-grid pointer-events-none z-0"></div>
+
       {/* Effet de particules en arrière-plan */}
       <div className="w-full h-full absolute inset-0 pointer-events-none z-0">
         <SparklesCore
@@ -20,7 +23,8 @@ export function HeroSection() {
         <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-black via-black/95 to-black pointer-events-none"></div>
       </div>
 
-      {/* Cercles décoratifs subtils */}
+      {/* Spotlight central + cercles décoratifs */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-purple-600/15 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -34,7 +38,7 @@ export function HeroSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mb-8"
         >
-          <span className="inline-flex items-center px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 text-sm text-green-400">
+          <span className="inline-flex items-center px-4 py-2 rounded-full bg-white/[0.03] border border-white/10 backdrop-blur-sm text-sm text-gray-300">
             <span className="flex text-yellow-400 mr-2">
               {[...Array(5)].map((_, i) => (
                 <svg key={i} className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
@@ -42,7 +46,7 @@ export function HeroSection() {
                 </svg>
               ))}
             </span>
-            5/5 sur Google • 20+ entrepreneurs accompagnés
+            <span className="font-medium text-white mr-1.5">5/5 sur Google</span> • 20+ entrepreneurs accompagnés
           </span>
         </motion.div>
 
@@ -55,7 +59,7 @@ export function HeroSection() {
         >
           Ne perdez plus de clients
           <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-400 to-blue-400">
+          <span className="text-gradient-animated">
             à cause d&apos;un site lent.
           </span>
         </motion.h1>
@@ -81,7 +85,7 @@ export function HeroSection() {
         >
           <Link 
             href="/contact" 
-            className="group px-8 py-4 bg-white text-black rounded-full font-semibold text-base hover:bg-gray-100 transition-all duration-300 inline-flex items-center justify-center"
+            className="group btn-glow px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold text-base inline-flex items-center justify-center"
           >
             Discuter de mon projet
             <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -91,7 +95,7 @@ export function HeroSection() {
           
           <Link 
             href="#portfolio" 
-            className="px-8 py-4 bg-transparent border border-white/20 rounded-full font-medium text-white hover:bg-white/5 hover:border-white/40 transition-all duration-300"
+            className="px-8 py-4 bg-white/[0.03] border border-white/15 backdrop-blur-sm rounded-full font-medium text-white hover:bg-white/[0.08] hover:border-white/30 transition-all duration-300"
           >
             Voir mes réalisations
           </Link>
@@ -102,10 +106,30 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-sm text-gray-500"
+          className="text-sm text-gray-500 mb-12"
         >
           Réponse sous 24h • Devis gratuit • Sans engagement
         </motion.p>
+
+        {/* Bandeau technologies */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3"
+        >
+          <span className="text-xs uppercase tracking-widest text-gray-600">
+            Propulsé par
+          </span>
+          {["Next.js", "React", "Tailwind CSS", "Vercel"].map((tech) => (
+            <span
+              key={tech}
+              className="text-sm font-medium text-gray-500 hover:text-gray-300 transition-colors"
+            >
+              {tech}
+            </span>
+          ))}
+        </motion.div>
       </div>
 
       {/* Scroll indicator */}

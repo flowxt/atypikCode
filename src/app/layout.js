@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import Navbar from "@/components/global/Navbar";
 import Footer from "@/components/global/Footer";
 import { Analytics } from "@vercel/analytics/next";
@@ -9,7 +9,18 @@ import "./globals.css";
 import BackgroundEffects from "@/components/global/BackgroundEffects";
 import WhatsAppButton from "@/components/global/WhatsAppButton";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-heading",
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata = {
   title: {
@@ -143,7 +154,7 @@ const localBusinessSchema = {
   url: "https://www.atypikcode.fr",
   telephone: "+33683062632",
   email: "floriandev74@gmail.com",
-  priceRange: "€€",
+  priceRange: "1000€ - 1900€",
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -166,6 +177,19 @@ const localBusinessSchema = {
     ratingValue: "5",
     reviewCount: "20",
     bestRating: "5",
+  },
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Atypik Code",
+  url: "https://www.atypikcode.fr",
+  inLanguage: "fr-FR",
+  publisher: {
+    "@type": "Organization",
+    name: "Atypik Code",
+    url: "https://www.atypikcode.fr",
   },
 };
 
@@ -282,7 +306,7 @@ export default function RootLayout({ children }) {
       </Script>
 
       <body
-        className={`${inter.className} bg-[#0A0A0F] text-white min-h-screen`}
+        className={`${inter.variable} ${spaceGrotesk.variable} ${inter.className} bg-[#0A0A0F] text-white min-h-screen`}
       >
         {/* Google Tag Manager (noscript) */}
         <noscript>
@@ -307,6 +331,10 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
 
         <BackgroundEffects />

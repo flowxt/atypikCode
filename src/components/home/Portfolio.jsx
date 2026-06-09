@@ -109,7 +109,7 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative bg-gradient-to-b from-gray-900 to-gray-950 rounded-2xl border border-white/5 overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300"
+              className="group card-glow relative rounded-2xl overflow-hidden"
             >
               {/* Image du projet */}
               <div className="relative h-48 overflow-hidden">

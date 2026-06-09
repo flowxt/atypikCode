@@ -91,9 +91,9 @@ export default function WhyNextJS() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-gradient-to-b from-gray-900 to-gray-950 rounded-2xl border border-white/5 p-8 hover:border-white/10 transition-all"
+              className="card-glow rounded-2xl p-8"
             >
-              <div className={`${advantage.color} mb-4`}>
+              <div className={`${advantage.color} mb-5 inline-flex p-3 rounded-xl bg-white/[0.04] border border-white/10`}>
                 {advantage.icon}
               </div>
               <h3 className="text-xl font-bold text-white mb-3">{advantage.title}</h3>

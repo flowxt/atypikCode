@@ -52,9 +52,9 @@ export default function HomePacks() {
               transition={{ delay: index * 0.1 }}
               className={`relative rounded-2xl p-7 flex flex-col ${
                 pack.popular
-                  ? 'bg-gradient-to-b from-blue-900/30 to-gray-950 border-2 border-blue-500/40 lg:-mt-4 lg:-mb-4'
-                  : 'bg-gradient-to-b from-gray-900 to-gray-950 border border-white/5'
-              } hover:border-white/20 transition-all`}
+                  ? 'bg-gradient-to-b from-blue-900/30 to-gray-950 border-2 border-blue-500/40 lg:-mt-4 lg:-mb-4 shadow-xl shadow-blue-500/10'
+                  : 'card-glow'
+              } transition-all`}
             >
               {/* Badge populaire */}
               {pack.popular && (
