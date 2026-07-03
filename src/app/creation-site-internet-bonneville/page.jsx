@@ -2,18 +2,18 @@ import Link from 'next/link'
 import LocalPricingCards from '@/components/local/LocalPricingCards'
 
 export const metadata = {
-  title: 'Création Site Internet Bonneville | À partir de 1 000€ - Atypik Code',
+  title: 'Développement Web & Création Site Internet Bonneville | Dès 1 000€',
   description:
-    "Création de site internet à Bonneville (74130) à partir de 1 000€. Développeur web freelance basé à 10 min de Bonneville. Sites vitrines pour les entreprises de la vallée de l'Arve. Devis gratuit en 24h.",
+    "Développement web sur mesure et création de site internet à Bonneville (74130) à partir de 1 000€. L'alternative locale aux agences : un développeur freelance à 10 min de Bonneville. Devis gratuit en 24h.",
   keywords:
-    'création site internet bonneville, site vitrine bonneville 1000 euros, développeur web bonneville, site web bonneville 74, agence web bonneville',
+    'développement web bonneville, développement web sur mesure bonneville, entreprise développement web bonneville, agence de développement web bonneville, création site internet bonneville, site vitrine bonneville 1000 euros, développeur web bonneville, site web bonneville 74, agence web bonneville',
   alternates: {
     canonical: 'https://www.atypikcode.fr/creation-site-internet-bonneville',
   },
   openGraph: {
-    title: 'Création Site Internet Bonneville | Développeur Web 74 - Atypik Code',
+    title: 'Développement Web & Site Internet Bonneville | Atypik Code',
     description:
-      'Développeur web freelance à 10 minutes de Bonneville. Création de sites internet performants pour les entreprises et artisans de la sous-préfecture de Haute-Savoie.',
+      'Développement web sur mesure à 10 minutes de Bonneville. Sites internet performants pour les entreprises et artisans de la sous-préfecture de Haute-Savoie.',
     url: 'https://www.atypikcode.fr/creation-site-internet-bonneville',
     type: 'website',
   },
@@ -34,6 +34,11 @@ const faqData = [
     question: 'Mon site apparaîtra-t-il en première page de Google ?',
     answer:
       'Chaque site est construit avec les meilleures pratiques SEO : structure sémantique, temps de chargement optimisé, balisage schema.org et contenu ciblé sur vos mots-clés locaux. Le référencement naturel est un travail continu, mais la base technique que je mets en place vous donne un avantage concret pour vous positionner sur des requêtes comme "votre activité + Bonneville".',
+  },
+  {
+    question: 'Proposez-vous du développement web sur mesure à Bonneville ?',
+    answer:
+      'Oui. Au-delà des sites vitrines, je développe des solutions web sur mesure pour les entreprises de Bonneville et de la vallée de l\'Arve : applications web, outils métier, plateformes de réservation, e-commerce. Contrairement à une agence de développement web classique, vous travaillez en direct avec le développeur : circuit court, tarifs maîtrisés et réactivité. Chaque projet sur mesure fait l\'objet d\'un devis gratuit sous 24h.',
   },
   {
     question: 'Proposez-vous un accompagnement après la mise en ligne ?',
@@ -71,16 +76,16 @@ export default function CreationSiteInternetBonneville() {
               Développeur web freelance -- basé à 10 min de Bonneville
             </p>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Création de Site Internet à{' '}
+              Création de Site Internet et Développement Web à{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
                 Bonneville
               </span>
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Sous-préfecture de Haute-Savoie, Bonneville est un pôle économique majeur de la vallée
-              de l'Arve avec ses 13 000 habitants. Offrez à votre entreprise bonnevilloise un site
-              web performant, pensé pour attirer vos clients locaux et renforcer votre visibilité en
-              ligne.
+              Vous cherchez une entreprise de développement web à Bonneville ? Plutôt qu&apos;une
+              agence, travaillez en direct avec un développeur freelance local : du site vitrine au
+              développement web sur mesure, un interlocuteur unique, des tarifs transparents et un
+              site pensé pour attirer vos clients de la vallée de l&apos;Arve.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
