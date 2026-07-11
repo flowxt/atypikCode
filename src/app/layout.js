@@ -8,6 +8,7 @@ import Script from "next/script";
 import "./globals.css";
 import BackgroundEffects from "@/components/global/BackgroundEffects";
 import WhatsAppButton from "@/components/global/WhatsAppButton";
+import SummerPromoModal from "@/components/global/SummerPromoModal";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -342,6 +343,7 @@ export default function RootLayout({ children }) {
         <PageTransition>{children}</PageTransition>
         <Footer />
         <WhatsAppButton />
+        <SummerPromoModal />
         <Analytics />
       </body>
     </html>
